@@ -1,0 +1,16 @@
+config PACKAGE_libamxd
+    tristate
+    select SAH_LIB_AMXD
+
+if PACKAGE_libamxd
+
+menu "Select libamxd build options"
+    depends on PACKAGE_libamxd
+
+config SAH_LIB_AMXD
+    bool "Build libamxd"
+    default y
+
+endmenu
+
+endif

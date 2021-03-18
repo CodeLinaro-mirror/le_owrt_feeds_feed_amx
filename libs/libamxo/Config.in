@@ -1,0 +1,16 @@
+config PACKAGE_libamxo
+    tristate
+    select SAH_LIB_AMXO
+
+if PACKAGE_libamxo
+
+menu "Select libamxo build options"
+    depends on PACKAGE_libamxo
+
+config SAH_LIB_AMXO
+    bool "Build libamxo"
+    default y
+
+endmenu
+
+endif
