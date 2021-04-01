@@ -2,15 +2,16 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxd
-PKG_VERSION:=v1.2.9
+PKG_VERSION:=v1.3.1
 SHORT_DESCRIPTION:=Data model C-API
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.2.9
+PKG_SOURCE_VERSION:=v1.3.1
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxd.git
+PKG_MIRROR_HASH:=5ba5fba51627096ab6ff94af8ac9b9db0b975f7e67f28013c5495b62cd574de8
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)

@@ -2,15 +2,16 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v2.1.2
+PKG_VERSION:=v2.1.3
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.1.2
+PKG_SOURCE_VERSION:=v2.1.3
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxb.git
+PKG_MIRROR_HASH:=59b318b2a1f3b4d86c19b5a6c6fee349739963913fd619901d74b7f0d7277a23
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)

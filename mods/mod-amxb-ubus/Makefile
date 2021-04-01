@@ -2,18 +2,20 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v1.0.6
+PKG_VERSION:=v1.0.7
 SHORT_DESCRIPTION:=Ubus Backend
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.6
+PKG_SOURCE_VERSION:=v1.0.7
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus.git
+PKG_MIRROR_HASH:=b8dc88f2d2ee7e71e7aee170539de4637819c46ee30b182b70b8e2ce70b9fe91
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)
+COMPONENT:=mod-amxb-ubus
 
 PKG_RELEASE?=1
 PKG_INSTALL:=1

@@ -2,15 +2,16 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.14
+PKG_VERSION:=v0.0.15
 SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.0.14
+PKG_SOURCE_VERSION:=v0.0.15
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxm.git
+PKG_MIRROR_HASH:=66dde86ee6ed69fca37d12a3c510f7ad97cd133fbf7dcdf6db2f4220f9bf28ed
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)

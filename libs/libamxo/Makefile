@@ -2,18 +2,20 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxo
-PKG_VERSION:=v0.7.1
+PKG_VERSION:=v0.8.1
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.7.1
+PKG_SOURCE_VERSION:=v0.8.1
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxo.git
+PKG_MIRROR_HASH:=5a579e194a59dc8438dbaaa0c486d31b65a0fea4c6edd3dd94ea242abf1798fd
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)
+COMPONENT:=libamxo
 
 PKG_RELEASE?=1
 PKG_INSTALL:=1

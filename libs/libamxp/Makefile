@@ -2,15 +2,16 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxp
-PKG_VERSION:=v0.6.7
+PKG_VERSION:=v0.6.8
 SHORT_DESCRIPTION:=Common patterns implementation
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.6.7
+PKG_SOURCE_VERSION:=v0.6.8
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxp.git
+PKG_MIRROR_HASH:=bc5735be16110c4bcc911193423cc21ce1903c21920d88a47b9c2062cc40f397
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:BSD-2-Clause-Patent
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)

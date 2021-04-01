@@ -2,18 +2,20 @@ include $(TOPDIR)/rules.mk
 -include $(STAGING_DIR)/components.config
 
 PKG_NAME:=amxrt
-PKG_VERSION:=v0.4.3
+PKG_VERSION:=v0.4.5
 SHORT_DESCRIPTION:=Data model runtime
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.4.3
+PKG_SOURCE_VERSION:=v0.4.5
 PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/applications/amxrt.git
+PKG_MIRROR_HASH:=7dc241b295dc97ead71e22f97f55239f0f64eac06f3c74742400980aa567d163
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 MACHINE:=$(shell $(CC) -dumpmachine)
+COMPONENT:=amxrt
 
 PKG_RELEASE?=1
 PKG_INSTALL:=1
