@@ -1,20 +1,19 @@
 include $(TOPDIR)/rules.mk
--include $(STAGING_DIR)/components.config
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v2.1.3
+PKG_VERSION:=v3.0.0
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.1.3
-PKG_SOURCE_URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxb.git
-PKG_MIRROR_HASH:=59b318b2a1f3b4d86c19b5a6c6fee349739963913fd619901d74b7f0d7277a23
+PKG_SOURCE_VERSION:=v3.0.0
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb.git
+PKG_MIRROR_HASH:=10cf14e434e8cc39c0e9adeeef49b077ee789e9c5a71a4dde9d38eefc3767bcd
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
-MACHINE:=$(shell $(CC) -dumpmachine)
+COMPONENT:=libamxb
 
 PKG_RELEASE?=1
 PKG_INSTALL:=1
@@ -27,10 +26,10 @@ PKG_BUILD_DEPENDS += uriparser
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=amx
+  CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=git@gitlab.com:soft.at.home/ambiorix/libraries/libamxb
+  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd
@@ -43,22 +42,17 @@ define Package/$(PKG_NAME)/description
 endef
 
 define Build/Compile
-	echo "$(PKG_NAME): Build/Compile"
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
 endef
 
 define Build/Install
-	echo "$(PKG_NAME): Build/Install"
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
-	$(call SAHConfig/Install)
 endef
 
 define Build/InstallDev
-	echo "$(PKG_NAME): Build/InstallDev"
 	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
 endef
 

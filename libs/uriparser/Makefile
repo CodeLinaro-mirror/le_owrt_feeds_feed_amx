@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/cmake.mk
 
 define Package/$(PKG_NAME)
 	SECTION:=libs
-	CATEGORY:=amx
+	CATEGORY:=ambiorix
 	SUBMENU:=Libraries
 	TITLE:=RFC 3986 compliant URI parsing and handling library
 	URL:=https://uriparser.github.io/
