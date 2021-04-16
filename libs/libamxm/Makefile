@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.17
+PKG_VERSION:=v0.0.18
 SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.0.17
+PKG_SOURCE_VERSION:=v0.0.18
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm.git
-PKG_MIRROR_HASH:=c56b6ebe33b0423ed8c10c41ea9356846ee5a9bd9a731a2ce4ddb2117ebee329
+PKG_MIRROR_HASH:=7a2bb575353c5f86c149772645a52a84dfeaf8bebc5cda1fcf75dc503c9b4e0b
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -46,6 +46,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v2.0.1
+PKG_VERSION:=v2.0.3
 SHORT_DESCRIPTION:=Ubus Backend
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.0.1
+PKG_SOURCE_VERSION:=v2.0.3
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus.git
-PKG_MIRROR_HASH:=e79a2f7029121820f0a61748461ecccf86d0deebd1fdeef9f11cd8b8067835b2
+PKG_MIRROR_HASH:=21cb90c540b7fe245b81e946f46b1c15f23401a02e4b41d40370cd2ed24c089a
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -50,6 +50,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

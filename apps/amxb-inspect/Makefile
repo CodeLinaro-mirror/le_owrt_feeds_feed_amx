@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxb-inspect
-PKG_VERSION:=v1.0.0
+PKG_VERSION:=v1.0.1
 SHORT_DESCRIPTION:=Ambiorix Backend inspector/validation tool
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.0
+PKG_SOURCE_VERSION:=v1.0.1
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect.git
-PKG_MIRROR_HASH:=a1f905ed91a55b64b0ce19281e6457c6276e48de8f204f33d61ea105cb128e03
+PKG_MIRROR_HASH:=01047aac834801f88fdc8e4cbf0a9b373692876e8d7641b086447fed4d0c63a1
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -44,6 +44,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

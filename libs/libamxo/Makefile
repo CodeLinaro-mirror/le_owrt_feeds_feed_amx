@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=v1.0.0
+PKG_VERSION:=v1.0.2
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.0
+PKG_SOURCE_VERSION:=v1.0.2
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo.git
-PKG_MIRROR_HASH:=92fbcae31d90d588b6c071bf1df922113c07a03850fefc0e36b9fe916233ad14
+PKG_MIRROR_HASH:=f11410378472f52d9a3c9d9af25c90b3dab229e8d986a6c0ee0bfa9af6b9dde1
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -48,6 +48,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

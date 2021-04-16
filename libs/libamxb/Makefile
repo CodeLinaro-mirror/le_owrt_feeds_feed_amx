@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v3.0.0
+PKG_VERSION:=v3.0.2
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v3.0.0
+PKG_SOURCE_VERSION:=v3.0.2
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb.git
-PKG_MIRROR_HASH:=10cf14e434e8cc39c0e9adeeef49b077ee789e9c5a71a4dde9d38eefc3767bcd
+PKG_MIRROR_HASH:=ce7265c7d75a34f297bf7b1e851884c5cc05b689366e80060033828acd72e8a5
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -50,6 +50,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

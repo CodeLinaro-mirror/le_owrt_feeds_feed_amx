@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=v1.0.0
+PKG_VERSION:=v1.0.2
 SHORT_DESCRIPTION:=Data model runtime
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.0
+PKG_SOURCE_VERSION:=v1.0.2
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxrt.git
-PKG_MIRROR_HASH:=84d5c29b3596ed71e14f24ee4ba1370c299e087394de29b7da378e8ecf45c4ab
+PKG_MIRROR_HASH:=d8f05f22104888eac0349d542fa14c9829d2e95390862083f54a5fd32ef8f0a3
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -54,6 +54,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev

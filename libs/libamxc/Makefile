@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v1.0.11
+PKG_VERSION:=v1.0.12
 SHORT_DESCRIPTION:=Libamxc is a library containing data containers, implemented in ansi C (C99)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.11
+PKG_SOURCE_VERSION:=v1.0.12
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc.git
-PKG_MIRROR_HASH:=61d6e38b518eee8d37dc1da1658e9e6b4ed629daf91210fc0cccf9b28ea3e63a
+PKG_MIRROR_HASH:=f3c41f3b6de555e6369cee4f02e3030e7f29a1c9c5c000c3818032e66fb6e100
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -42,6 +42,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev
