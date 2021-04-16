@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxb-inspect
-PKG_VERSION:=v1.0.1
+PKG_VERSION:=v1.0.2
 SHORT_DESCRIPTION:=Ambiorix Backend inspector/validation tool
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.1
+PKG_SOURCE_VERSION:=v1.0.2
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect.git
-PKG_MIRROR_HASH:=01047aac834801f88fdc8e4cbf0a9b373692876e8d7641b086447fed4d0c63a1
+PKG_MIRROR_HASH:=d7956ef21dc1a5d4bd5a5aeb77d8f592c1a1bb1f96a150629b09ccaebe72eabd
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

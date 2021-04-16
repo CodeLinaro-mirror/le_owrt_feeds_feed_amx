@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxj
-PKG_VERSION:=v0.3.10
+PKG_VERSION:=v0.3.12
 SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.3.10
+PKG_SOURCE_VERSION:=v0.3.12
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj.git
-PKG_MIRROR_HASH:=9c021f4ac769a487fd0f8847c7a4a95c40c8be211365e55b5528c189d0112b4a
+PKG_MIRROR_HASH:=7351e21cce7beabd9b481834bfb7cce281c550474d76137ecde4a4978764a76e
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -46,6 +46,7 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+
 endef
 
 define Build/InstallDev
