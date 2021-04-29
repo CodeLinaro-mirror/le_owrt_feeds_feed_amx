@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=v1.0.2
+PKG_VERSION:=v1.0.4
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.2
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo.git
-PKG_MIRROR_HASH:=5f4102ef0075c73d7c2bf54f14c28759c12679f3983680ee264d043ad8f7ce6f
+PKG_SOURCE:=libamxo-v1.0.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo/-/archive/v1.0.4
+PKG_HASH:=984189187e3fb79c581cf887e701462d38423e1005d26c3de615c97ca4711a10
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,9 +17,6 @@ COMPONENT:=libamxo
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxp
-PKG_BUILD_DEPENDS += libamxd
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -36,7 +32,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Ambiorix Object Definition Language library"
+	Ambiorix Object Definition Language library
 endef
 
 define Build/Compile
@@ -48,7 +44,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -57,10 +52,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

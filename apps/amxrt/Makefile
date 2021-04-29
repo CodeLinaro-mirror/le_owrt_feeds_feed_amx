@@ -4,10 +4,9 @@ PKG_NAME:=amxrt
 PKG_VERSION:=v1.0.2
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.2
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxrt.git
-PKG_MIRROR_HASH:=5d8c7386ff212dc5f742c4601a8fe535c2dc05e31650ef6f99cdd1754afb66de
+PKG_SOURCE:=amxrt-v1.0.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxrt/-/archive/v1.0.2
+PKG_HASH:=4de4f8d45e3ceb31b436229bd5d0860f108a5b4896b745f1d8fa2ab969b325fd
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,12 +17,6 @@ COMPONENT:=amxrt
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxd
-PKG_BUILD_DEPENDS += libamxp
-PKG_BUILD_DEPENDS += libamxb
-PKG_BUILD_DEPENDS += libamxo
-PKG_BUILD_DEPENDS += libevent2
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -42,7 +35,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Data model runtime"
+	Data model runtime
 endef
 
 define Build/Compile
@@ -54,7 +47,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -63,10 +55,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

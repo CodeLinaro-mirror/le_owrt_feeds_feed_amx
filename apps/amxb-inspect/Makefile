@@ -4,10 +4,9 @@ PKG_NAME:=amxb-inspect
 PKG_VERSION:=v1.0.2
 SHORT_DESCRIPTION:=Ambiorix Backend inspector/validation tool
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.2
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect.git
-PKG_MIRROR_HASH:=d7956ef21dc1a5d4bd5a5aeb77d8f592c1a1bb1f96a150629b09ccaebe72eabd
+PKG_SOURCE:=amxb-inspect-v1.0.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect/-/archive/v1.0.2
+PKG_HASH:=51e7f28a8c371a32217e233bb77700ba68d1f40b87c6938b1de73129f153899f
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,7 +17,6 @@ COMPONENT:=amxb-inspect
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxb
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -32,7 +30,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Ambiorix Backend inspector/validation tool"
+	Ambiorix Backend inspector/validation tool
 endef
 
 define Build/Compile
@@ -44,7 +42,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -53,10 +50,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

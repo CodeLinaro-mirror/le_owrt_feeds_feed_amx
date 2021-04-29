@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v3.0.2
+PKG_VERSION:=v3.0.5
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v3.0.2
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb.git
-PKG_MIRROR_HASH:=7f50fd3366e296ab4ec51ba1a962c7178ae124bf6d6480035dcd1659c4516cbc
+PKG_SOURCE:=libamxb-v3.0.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb/-/archive/v3.0.5
+PKG_HASH:=219f8e76237ef1e3dd6a238af8f825ea0fc25dfe596c3c7e89a8da51ecf661d6
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,10 +17,6 @@ COMPONENT:=libamxb
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxp
-PKG_BUILD_DEPENDS += libamxd
-PKG_BUILD_DEPENDS += uriparser
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -38,7 +33,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Bus agnostic C API (mediator)"
+	Bus agnostic C API (mediator)
 endef
 
 define Build/Compile
@@ -50,7 +45,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -59,10 +53,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

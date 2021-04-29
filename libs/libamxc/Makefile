@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v1.0.12
+PKG_VERSION:=v1.0.13
 SHORT_DESCRIPTION:=Libamxc is a library containing data containers, implemented in ansi C (C99)
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.12
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc.git
-PKG_MIRROR_HASH:=f3c41f3b6de555e6369cee4f02e3030e7f29a1c9c5c000c3818032e66fb6e100
+PKG_SOURCE:=libamxc-v1.0.13.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/archive/v1.0.13
+PKG_HASH:=02571834b0d5238ed30257251dc919347603a48475b8d45cce108b78c2f9c630
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -30,7 +29,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Libamxc is a library containing data containers, implemented in ansi C (C99)."
+	Libamxc is a library containing data containers, implemented in ansi C (C99).
 endef
 
 define Build/Compile
@@ -42,7 +41,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -51,10 +49,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

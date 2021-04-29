@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.0.3
+PKG_VERSION:=v1.0.4
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v1.0.3
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg.git
-PKG_MIRROR_HASH:=cefc2cfa1fd2280f782d106a6330dacc0404fd1508a8b4a78a5c1a7a6d521677
+PKG_SOURCE:=amxo-cg-v1.0.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg/-/archive/v1.0.4
+PKG_HASH:=e746ca6db15a418af2eb30f308edef50e9ba12afd15123098fb49462484011ba
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,9 +17,6 @@ COMPONENT:=amxo-cg
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxd
-PKG_BUILD_DEPENDS += libamxo
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -36,7 +32,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Object Definition Language Compiler/Generator"
+	Object Definition Language Compiler/Generator
 endef
 
 define Build/Compile
@@ -48,7 +44,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -57,10 +52,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

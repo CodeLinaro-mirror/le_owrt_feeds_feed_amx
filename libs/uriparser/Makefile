@@ -23,10 +23,17 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"uriparser is a strictly RFC 3986 compliant URI parsing and handling library written in C89 ("ANSI C"). uriparser is cross-platform, fast, supports Unicode, and is licensed under the New BSD license."
+	Uriparser is a strictly RFC 3986 compliant URI parsing and handling library written in C89 ("ANSI C"). Uriparser is cross-platform, fast, supports Unicode, and is licensed under the New BSD license.
 endef
 
 CMAKE_OPTIONS += -DURIPARSER_BUILD_DOCS:BOOL=OFF -DURIPARSER_BUILD_TESTS:BOOL=OFF
+
+define Build/Install
+	$(call Build/Install/Default)
+	find $(PKG_INSTALL_DIR) -name *.cmake -exec rm {} +;
+	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
+	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
+endef
 
 define Build/InstallDev
 	$(INSTALL_DIR) $(STAGING_DIR)/usr/include/uriparser

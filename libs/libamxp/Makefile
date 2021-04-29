@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxp
-PKG_VERSION:=v0.6.10
+PKG_VERSION:=v0.6.11
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.6.10
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp.git
-PKG_MIRROR_HASH:=cfa4a3a397f3fadcf4dcde2358753589cadab34eeddc3f00b0f19d49c74abf28
+PKG_SOURCE:=libamxp-v0.6.11.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp/-/archive/v0.6.11
+PKG_HASH:=ee2b7e62bb498206842709e733b3d8ac63f70c8f52958f992d5dda387de7af50
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,7 +17,6 @@ COMPONENT:=libamxp
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -32,7 +30,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Common patterns implementation"
+	Common patterns implementation
 endef
 
 define Build/Compile
@@ -44,7 +42,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -53,10 +50,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.18
+PKG_VERSION:=v0.0.19
 SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v0.0.18
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm.git
-PKG_MIRROR_HASH:=7a2bb575353c5f86c149772645a52a84dfeaf8bebc5cda1fcf75dc503c9b4e0b
+PKG_SOURCE:=libamxm-v0.0.19.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm/-/archive/v0.0.19
+PKG_HASH:=905b822af4a7e2cc3c2696fa565818d628eaff94e25429ef877d3e604dd65d2a
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,8 +17,6 @@ COMPONENT:=libamxm
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxp
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -34,7 +31,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"modularity api, simplifies creation of add-ons (plug-ins, modules)"
+	modularity api, simplifies creation of add-ons (plug-ins, modules)
 endef
 
 define Build/Compile
@@ -46,7 +43,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -55,10 +51,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

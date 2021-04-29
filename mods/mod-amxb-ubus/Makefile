@@ -1,14 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v2.0.3
+PKG_VERSION:=v2.0.5
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.0.3
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus.git
-PKG_MIRROR_HASH:=8102d741ea0f9684b0770b9be8e5590d3604070be88bd9e40ce92fcd1ef261a1
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE:=amxb_ubus-v2.0.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v2.0.5
+PKG_HASH:=e2b12eb814baa47800cfd7c3c1a90bdfc64097bf7c024980c8b69c9adb5e4a2c
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v2.0.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,10 +17,6 @@ COMPONENT:=mod-amxb-ubus
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxb
-PKG_BUILD_DEPENDS += libamxd
-PKG_BUILD_DEPENDS += ubus
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -38,7 +33,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Ubus Backend"
+	Ubus Backend
 endef
 
 define Build/Compile
@@ -50,7 +45,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -59,10 +53,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

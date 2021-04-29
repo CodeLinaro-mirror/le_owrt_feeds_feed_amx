@@ -1,13 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxd
-PKG_VERSION:=v2.0.1
+PKG_VERSION:=v2.0.5
 SHORT_DESCRIPTION:=Data model C-API
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.0.1
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd.git
-PKG_MIRROR_HASH:=0e780c94ba2fcb2337c9b76867afd3ddac3a82337f4d1e779e4d48ec0a58d115
+PKG_SOURCE:=libamxd-v2.0.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd/-/archive/v2.0.5
+PKG_HASH:=7a040fc34c823e0610af8c7c24989d4614553c518515e035ffc17f760ba62d08
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -18,8 +17,6 @@ COMPONENT:=libamxd
 PKG_RELEASE?=1
 PKG_INSTALL:=1
 
-PKG_BUILD_DEPENDS += libamxc
-PKG_BUILD_DEPENDS += libamxp
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -34,7 +31,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	"Data model C-API"
+	Data model C-API
 endef
 
 define Build/Compile
@@ -46,7 +43,6 @@ define Build/Install
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
-
 endef
 
 define Build/InstallDev
@@ -55,10 +51,6 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
-endef
-
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
