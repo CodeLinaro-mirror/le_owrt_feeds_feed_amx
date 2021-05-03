@@ -12,8 +12,6 @@ PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
-COMPONENT:=amxo-cg
-
 PKG_RELEASE:=1
 
 
