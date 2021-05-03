@@ -12,10 +12,7 @@ PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
-COMPONENT:=libamxp
-
-PKG_RELEASE?=1
-PKG_INSTALL:=1
+PKG_RELEASE:=1
 
 
 include $(INCLUDE_DIR)/package.mk
