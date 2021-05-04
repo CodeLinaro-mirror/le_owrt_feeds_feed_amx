@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/amx/modules/mod_sahtrace
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/mod-sahtrace
   DEPENDS += +libamxc
   DEPENDS += +libamxd
   DEPENDS += +libamxo
