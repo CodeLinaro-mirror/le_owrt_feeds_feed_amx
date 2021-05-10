@@ -7,13 +7,12 @@ SHORT_DESCRIPTION:=Data model runtime
 PKG_SOURCE:=amxrt-v1.0.2.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxrt/-/archive/v1.0.2
 PKG_HASH:=4de4f8d45e3ceb31b436229bd5d0860f108a5b4896b745f1d8fa2ab969b325fd
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v1.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
-
 
 include $(INCLUDE_DIR)/package.mk
 
