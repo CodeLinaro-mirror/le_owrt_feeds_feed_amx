@@ -14,7 +14,6 @@ PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 
-
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
