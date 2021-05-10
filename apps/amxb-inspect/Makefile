@@ -7,13 +7,12 @@ SHORT_DESCRIPTION:=Ambiorix Backend inspector/validation tool
 PKG_SOURCE:=amxb-inspect-v1.0.2.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect/-/archive/v1.0.2
 PKG_HASH:=51e7f28a8c371a32217e233bb77700ba68d1f40b87c6938b1de73129f153899f
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb-inspect-v1.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
-
 
 include $(INCLUDE_DIR)/package.mk
 
