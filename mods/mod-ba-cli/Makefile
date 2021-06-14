@@ -1,35 +1,39 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.0.4
-SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
+PKG_NAME:=mod-ba-cli
+PKG_VERSION:=v0.3.1
+SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
-PKG_SOURCE:=amxo-cg-v1.0.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg/-/archive/v1.0.4
-PKG_HASH:=e746ca6db15a418af2eb30f308edef50e9ba12afd15123098fb49462484011ba
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE:=mod-ba-cli-v0.3.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.3.1
+PKG_HASH:=79f20995d44a1b7afa795e086e57aec00c55d26ef6c40551e44828377fd351aa
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.3.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 
-
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
-  SUBMENU:=Applications
+  SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=git@gitlab.com:soft.at.home/ambiorix/applications/amxo-cg
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli
   DEPENDS += +libamxc
+  DEPENDS += +libamxt
+  DEPENDS += +libamxm
+  DEPENDS += +libamxp
   DEPENDS += +libamxd
+  DEPENDS += +libamxb
   DEPENDS += +libamxo
+  DEPENDS += +amx-cli
   MENU:=1
 endef
 
 define Package/$(PKG_NAME)/description
-	Object Definition Language Compiler/Generator
+	Bus Agnostic Command Line Interface
 endef
 
 define Build/Compile
@@ -49,6 +53,10 @@ endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
+endef
+
+define Package/$(PKG_NAME)/config
+	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
