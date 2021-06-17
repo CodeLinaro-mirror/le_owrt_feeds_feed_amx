@@ -1,19 +1,18 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.0.4
+PKG_VERSION:=v1.1.5
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-v1.0.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg/-/archive/v1.0.4
-PKG_HASH:=e746ca6db15a418af2eb30f308edef50e9ba12afd15123098fb49462484011ba
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE:=amxo-cg-v1.1.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg/-/archive/v1.1.5
+PKG_HASH:=56693de36934309e83b27261fc6f9a3dc784029a39f4e4308f54f96df0106b9b
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.1.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
-
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -21,10 +20,11 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=git@gitlab.com:soft.at.home/ambiorix/applications/amxo-cg
+  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg
   DEPENDS += +libamxc
   DEPENDS += +libamxd
   DEPENDS += +libamxo
+  DEPENDS += +libxml2
   MENU:=1
 endef
 
