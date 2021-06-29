@@ -1,12 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=v0.2.13
+PKG_VERSION:=v0.2.14
+SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-v0.2.13.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli/-/archive/v0.2.13
-PKG_HASH:=ed91e2f1e07be7df555cb78d2ffb32679f989109de8896017b0c402fb6dc08a6
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.2.13
+PKG_SOURCE:=amx-cli-v0.2.14.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli/-/archive/v0.2.14
+PKG_HASH:=69e599bf6c02083ddec33e74a3dba009ba96c5f6bfe14f319f8ae9fe54554331
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.2.14
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +19,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Applications
-  TITLE:=$(PKG_NAME)
+  TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli
   DEPENDS += +libamxc
   DEPENDS += +libamxp
@@ -31,6 +32,9 @@ define Package/$(PKG_NAME)
   MENU:=1
 endef
 
+define Package/$(PKG_NAME)/description
+	Ambiorix interactive CLI
+endef
 
 define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
