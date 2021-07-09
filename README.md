@@ -40,9 +40,11 @@ These components are not managed by SoftAtHome.
 ## How to add feed_amx to your OpenWrt build
 
 At the root of your OpenWrt tree, add the following to your `feeds.conf` file:
+
 ```sh
-src-git feed_amx git@gitlab.com:soft.at.home/buildsystems/openwrt/feed_amx.git;master
+src-git feed_amx git@gitlab.com:soft.at.home/buildsystems/openwrt/feed_amx.git;main
 ```
+
 Add the packages to your OpenWrt instance with the following commands:
 ```sh
 ./scripts/feeds update feed_amx #retrieve the feed from service/update to latest
