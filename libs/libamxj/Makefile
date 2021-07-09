@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
 
 PKG_SOURCE:=libamxj-v0.3.21.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj/-/archive/v0.3.21
-PKG_HASH:=skip
+PKG_HASH:=4141137c0780562fd8401aaa10158e496ed932eea437c53cb37b8be21647b221
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v0.3.21
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
