@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
 PKG_SOURCE:=libamxo-v1.3.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo/-/archive/v1.3.0
-PKG_HASH:=skip
+PKG_HASH:=5d854ff0165ae498e9e3eadab9158194ad6fa769dcdfd8d864eeec25337c9e43
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-v1.3.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
