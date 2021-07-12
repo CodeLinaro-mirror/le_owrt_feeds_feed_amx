@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Ubus Backend
 
 PKG_SOURCE:=amxb_ubus-v2.1.1.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v2.1.1
-PKG_HASH:=skip
+PKG_HASH:=cefabd59ac43b79d345048e08fc3d73621208f554051e15e0c39a9c3c6139a87
 PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v2.1.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
