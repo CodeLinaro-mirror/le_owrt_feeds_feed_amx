@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
 PKG_SOURCE:=amx-cli-v0.2.15.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli/-/archive/v0.2.15
-PKG_HASH:=skip
+PKG_HASH:=fee29ae6ec2c3ef37e48fdae6c9463221cf2ddd4c9b9165b343e52b05f331f37
 PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.2.15
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
