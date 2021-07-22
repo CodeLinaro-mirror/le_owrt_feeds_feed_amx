@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Data model C-API
 
 PKG_SOURCE:=libamxd-v3.2.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd/-/archive/v3.2.0
-PKG_HASH:=skip
+PKG_HASH:=747c379528650ddbdb819ec2e0da1e9e27b0cdcb735e9a5845d887274009b1e5
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v3.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
