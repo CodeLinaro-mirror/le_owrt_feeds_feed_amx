@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, mod
 
 PKG_SOURCE:=libamxm-v0.0.28.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm/-/archive/v0.0.28
-PKG_HASH:=skip
+PKG_HASH:=b2c88c06f6c26a193d20923ef60410296292f4bea96ecf72d42292fc365043d1
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.28
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
