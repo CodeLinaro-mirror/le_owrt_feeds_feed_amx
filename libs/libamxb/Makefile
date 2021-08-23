@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE:=libamxb-v3.4.3.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb/-/archive/v3.4.3
-PKG_HASH:=skip
+PKG_HASH:=d2a8021f6470f997765c90c7554a40a38531c3c957c11f394782bd305c3fa1d2
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v3.4.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
