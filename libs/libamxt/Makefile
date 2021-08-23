@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Common patterns implementation
 
 PKG_SOURCE:=libamxt-v0.1.27.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt/-/archive/v0.1.27
-PKG_HASH:=skip
+PKG_HASH:=f30218512c6e95825e9cc0d3dd81ac4f4c5b6b5df60570261727a2d68e7b127b
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-v0.1.27
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
