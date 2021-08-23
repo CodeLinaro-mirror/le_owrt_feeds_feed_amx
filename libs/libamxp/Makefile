@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Common patterns implementation
 
 PKG_SOURCE:=libamxp-v0.9.4.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp/-/archive/v0.9.4
-PKG_HASH:=skip
+PKG_HASH:=41d8049ff678cc41a8e1902275c7c5c2a25f55f8754bf474200d826acaaed788
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-v0.9.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
