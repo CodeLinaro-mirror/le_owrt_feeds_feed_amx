@@ -8,6 +8,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.8.0 - 2021-08-24(08:47:32 +0000)
+
+### New
+
+- [amxo-cg](https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg): Extra info needed in generated xml
+
+### Fixes
+
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): Cannot remove last part from path if it ends with an asterisk
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): Verifying if an object has a parameter can cause a segmentation fault
+
+### Changes
+
+- [mod-amxb-ubus](https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus): Tests must be added
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): no more Shadow warning if nesting of ...for_each... macros is used
+
+### Other
+
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): Issue: ambiorix/libraries/libamxd#102 Add macro to iterate over the content of objects that can be nested
+
 ## Release v2.7.0 - 2021-08-20(14:10:03 +0000)
 
 ### New
