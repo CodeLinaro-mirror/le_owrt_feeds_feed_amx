@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v1.2.2
+PKG_VERSION:=v1.3.1
 SHORT_DESCRIPTION:=Libamxc is a library containing data containers, implemented in ansi C (C99)
 
-PKG_SOURCE:=libamxc-v1.2.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/archive/v1.2.2
-PKG_HASH:=f85400c2341fd62f37942d06e2b02da601ea5c9aefc1e642585fb1eb45c3ee80
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v1.2.2
+PKG_SOURCE:=libamxc-v1.3.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/archive/v1.3.1
+PKG_HASH:=e4602fea33e0da28e7e8a80be2066553d5adf07a1a70f081f71f3be04beb9755
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v1.3.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
