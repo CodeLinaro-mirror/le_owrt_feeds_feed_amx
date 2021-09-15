@@ -8,6 +8,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.9.0 - 2021-09-15(14:54:15 +0000)
+
+### New
+
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): Add functions to convert a string to capital/lower case.
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): [status macros] Add when_null_status macros in amxc
+- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa): Component added
+
+### Fixes
+
+- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp): Disconnecting slots in slot callback function can lead to segmentation fault
+- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp): When child process is killed it stays in <defunc>
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): GCC11 archlinux compiler warning
+
+### Changes
+
+- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp): Adds support for bbf in operator ~=
+
+### Other
+
+- [mod-amxb-ubus](https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus): Turns on unit tests and coverage reports
+- [libamxt](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt): Generate junit xml files with unit-tests
+- [libamxt](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt): Issue: ambiorix/libraries/libamxt#6 Generate junit xml files with unit-tests
+- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp): Generate junit xml files with unit-tests
+- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp): Issue: ambiorix/libraries/libamxp#36 Generate junit xml files with unit-tests
+- [libamxm](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm): Generate junit xml files with unit-tests
+- [libamxm](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm): Issue: ambiorix/libraries/libamxm#5 Generate junit xml files with unit-tests
+- [libamxj](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj): Generate junit xml files with unit-tests
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): Generate junit xml files with unit-tests
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): Issue: ambiorix/libraries/libamxc#56 Generate junit xml files with unit-tests
+
 ## Release v2.8.0 - 2021-08-24(08:47:32 +0000)
 
 ### New
