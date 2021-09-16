@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Libamxc is a library containing data containers, implemented 
 
 PKG_SOURCE:=libamxc-v1.3.1.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/archive/v1.3.1
-PKG_HASH:=e4602fea33e0da28e7e8a80be2066553d5adf07a1a70f081f71f3be04beb9755
+PKG_HASH:=64dd4133c6781e19bd983de4fe853d7bde1b5bfce0360d0e73c7ed887060c4fd
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v1.3.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
