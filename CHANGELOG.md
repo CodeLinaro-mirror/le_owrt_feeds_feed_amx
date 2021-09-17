@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.10.0 - 2021-09-17(07:06:53 +0000)
+
+### New
+
+- [acl-manager](https://gitlab.com/soft.at.home/plugins/acl-manager): Component added
+
 ## Release v2.9.0 - 2021-09-15(14:54:15 +0000)
 
 ### New
