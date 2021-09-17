@@ -8,6 +8,7 @@ Feed_amx includes the following components:
 
 ### Applications
 
+- [acl-manager](https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager) - The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
 - [amx-cli](https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli) - Ambiorix interactive CLI
 - [amxb-inspect](https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect) - Ambiorix Backend inspector/validation tool
 - [amxo-cg](https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg) - Object Definition Language Compiler/Generator
@@ -32,10 +33,6 @@ Feed_amx includes the following components:
 - [mod-ba-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli) - Bus Agnostic Command Line Interface
 - [mod-dm-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli) - Data Model Command Line Interface
 - [mod-sahtrace](https://gitlab.com/soft.at.home/ambiorix/modules/mod-sahtrace) - Module for sahtrace logging
-
-### Plugins
-
-- [acl-manager](https://gitlab.com/soft.at.home/plugins/acl-manager) - The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
 
 ### Other
 
