@@ -8,6 +8,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.10.1 - 2021-09-28(07:17:33 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus): When using auto load with events turned off objects are not registered to bus
+- [libamxo](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo): Saved odl files with mib extensions can not be loaded
+- [libamxo](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo): it must be possible to indicate that an instance parameter must be saved in the header
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): Key parameters must be validated when instance is created
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): Instances with Alias parameter containing a dot can not be deleted
+- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd): method amxd_object_for_all can be invoked on any object
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): It must be possible to indicate that amxc_var_get_path must not search positional if key is not found
+- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc): Unexpected behavior of amxc_var_get_path
+- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa): It is possible to bypass acl verification in object tree
+- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa): [ACL] Make sure ACL verification works for Device path
+- [amxrt](https://gitlab.com/soft.at.home/ambiorix/applications/amxrt): When using auto load with events turned off objects are not registered to bus
+
+### Changes
+
+- [mod-ba-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli): Add acl verification for get
+- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa): Resolving search paths is not needed if fixed part does not exist in acls
+- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa): [ACL] [BAF] Configure default ACL directory variable in baf templates
+- [acl-manager](https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager): [ACL] [BAF] Configure default ACL directory variable in baf templates
+
+### Other
+
+- [amxrt](https://gitlab.com/soft.at.home/ambiorix/applications/amxrt): Issue: ambiorix/applications/amxrt#34 Make sure eventing is enabled before entry-points are called
+- [acl-manager](https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager): Move project to ambiorix/applications
+
 ## Release v2.10.0 - 2021-09-17(07:06:53 +0000)
 
 ### New
