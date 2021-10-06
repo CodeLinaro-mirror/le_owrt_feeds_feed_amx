@@ -16,7 +16,7 @@ Feed_amx includes the following components:
 
 ### Libraries
 
-- [libamxa](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa) - Access control verification
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa) - Access control verification
 - [libamxb](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb) - Bus agnostic C API (mediator)
 - [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc) - Libamxc is a library containing data containers, implemented in ansi C (C99).
 - [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd) - Data model C-API
