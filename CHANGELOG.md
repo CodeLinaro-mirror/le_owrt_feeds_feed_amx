@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.10.2 - 2021-10-06(09:08:22 +0000)
+
+### Fixes
+
+- [mod-ba-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli): Fixes acl get verification
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): When parameter paths are added to the filter list, they have a dot suffix
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Resolving search paths can fail for paths with a Device. prefix
+
 ## Release v2.10.1 - 2021-09-28(07:17:33 +0000)
 
 ### Fixes
