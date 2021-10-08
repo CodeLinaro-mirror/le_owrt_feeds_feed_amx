@@ -8,28 +8,28 @@ Feed_amx includes the following components:
 
 ### Applications
 
-- [acl-manager](https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager) - The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
-- [amx-cli](https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli) - Ambiorix interactive CLI
-- [amxb-inspect](https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect) - Ambiorix Backend inspector/validation tool
-- [amxo-cg](https://gitlab.com/soft.at.home/ambiorix/applications/amxo-cg) - Object Definition Language Compiler/Generator
-- [amxrt](https://gitlab.com/soft.at.home/ambiorix/applications/amxrt) - Data model runtime
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager) - The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli) - Ambiorix interactive CLI
+- [amxb-inspect](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxb-inspect) - Ambiorix Backend inspector/validation tool
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg) - Object Definition Language Compiler/Generator
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt) - Data model runtime
 
 ### Libraries
 
 - [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa) - Access control verification
-- [libamxb](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb) - Bus agnostic C API (mediator)
-- [libamxc](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc) - Libamxc is a library containing data containers, implemented in ansi C (C99).
-- [libamxd](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd) - Data model C-API
-- [libamxj](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj) - JSON parser & generator using yajl and libamxc variants
-- [libamxm](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm) - modularity api, simplifies creation of add-ons (plug-ins, modules)
-- [libamxo](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo) - Ambiorix Object Definition Language library
-- [libamxp](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxp) - Common patterns implementation
-- [libamxt](https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt) - Common patterns implementation
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb) - Bus agnostic C API (mediator)
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc) - Libamxc is a library containing data containers, implemented in ansi C (C99).
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd) - Data model C-API
+- [libamxj](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj) - JSON parser & generator using yajl and libamxc variants
+- [libamxm](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm) - modularity api, simplifies creation of add-ons (plug-ins, modules)
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo) - Ambiorix Object Definition Language library
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp) - Common patterns implementation
+- [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt) - Common patterns implementation
 - [libsahtrace](https://gitlab.com/soft.at.home/logging/libsahtrace) - Small and flexible library to enable tracing and logging
 
 ### Modules
 
-- [mod-amxb-ubus](https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus) - Ubus Backend
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus) - Ubus Backend
 - [mod-ba-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli) - Bus Agnostic Command Line Interface
 - [mod-dm-cli](https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli) - Data Model Command Line Interface
 - [mod-sahtrace](https://gitlab.com/soft.at.home/ambiorix/modules/mod-sahtrace) - Module for sahtrace logging
