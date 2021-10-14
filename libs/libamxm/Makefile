@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.32
+PKG_VERSION:=v0.0.33
 SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
 
-PKG_SOURCE:=libamxm-v0.0.32.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm/-/archive/v0.0.32
-PKG_HASH:=d905574fdeca668bd877337647f019b71875d19cdaa19887debafac92ab98fb7
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.32
+PKG_SOURCE:=libamxm-v0.0.33.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.0.33
+PKG_HASH:=d861d9c1e3e534dbc69e748bfee874818fba6389869709b14873b984a28638a5
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.33
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxm
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   MENU:=1

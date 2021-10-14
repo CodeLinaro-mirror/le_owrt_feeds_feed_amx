@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxj
-PKG_VERSION:=v0.3.29
+PKG_VERSION:=v0.3.31
 SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
 
-PKG_SOURCE:=libamxj-v0.3.29.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj/-/archive/v0.3.29
-PKG_HASH:=ea5bbb46780a225c94e55781753dd854ca7d7c35cb8ec6c6499d40faaadfcdfd
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v0.3.29
+PKG_SOURCE:=libamxj-v0.3.31.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj/-/archive/v0.3.31
+PKG_HASH:=3dcda4272433e42da27904ac24d61d35a95270d1a2645aaa5897518b5567a602
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v0.3.31
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxj
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj
   DEPENDS += +libamxc
   DEPENDS += +yajl
   MENU:=1

@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v3.4.6
+PKG_VERSION:=v3.5.2
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-v3.4.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb/-/archive/v3.4.6
-PKG_HASH:=276f1a2ecd152dca70aa560761ff60e74ec35291bc97bbf38648d11381072d75
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v3.4.6
+PKG_SOURCE:=libamxb-v3.5.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v3.5.2
+PKG_HASH:=3280867807ad030351eaa1ab3059adb9242d7063002d40bc77ef17c2f1b21728
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v3.5.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

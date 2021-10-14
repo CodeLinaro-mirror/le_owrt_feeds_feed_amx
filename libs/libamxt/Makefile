@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxt
-PKG_VERSION:=v0.1.30
+PKG_VERSION:=v0.1.31
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxt-v0.1.30.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt/-/archive/v0.1.30
-PKG_HASH:=6a25b728b1e23bbcd8c7689b634415ce1183b00b8e9b929900974baff683c684
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-v0.1.30
+PKG_SOURCE:=libamxt-v0.1.31.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/v0.1.31
+PKG_HASH:=5b542c0f77022d2043129da4dbcb189f40dc816d598254957ad5c37d297a535e
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-v0.1.31
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   MENU:=1

@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=v1.3.7
+PKG_VERSION:=v1.3.10
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE:=libamxo-v1.3.7.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo/-/archive/v1.3.7
-PKG_HASH:=3949bef48006f4017379159416ac12ceca137e8498db3227a9763d86806acb79
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-v1.3.7
+PKG_SOURCE:=libamxo-v1.3.10.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/v1.3.10
+PKG_HASH:=22a58383b4af85231565acbc9f264c9506b579593c0670131ba6f7f69cebfb98
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-v1.3.10
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -22,7 +22,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxo
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

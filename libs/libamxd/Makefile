@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxd
-PKG_VERSION:=v3.2.5
+PKG_VERSION:=v3.2.8
 SHORT_DESCRIPTION:=Data model C-API
 
-PKG_SOURCE:=libamxd-v3.2.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd/-/archive/v3.2.5
-PKG_HASH:=acfda17452d627ae11863d1b5eec59938dbaac8573e67d5d02fa70b68e678421
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v3.2.5
+PKG_SOURCE:=libamxd-v3.2.8.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/v3.2.8
+PKG_HASH:=831d635cac00ca62bec5818e74586da7300b6df7b3f681d261aac597db8163be
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v3.2.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxd
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   MENU:=1
