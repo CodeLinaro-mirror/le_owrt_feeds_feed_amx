@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-dm-cli
-PKG_VERSION:=v0.2.1
+PKG_VERSION:=v0.2.2
 SHORT_DESCRIPTION:=Data Model Command Line Interface
 
-PKG_SOURCE:=mod-dm-cli-v0.2.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.1
-PKG_HASH:=660764b83ddf2ef7e170296a9d6d0cd13e3a0e76ee379c80d32f006997363c7c
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-dm-cli-v0.2.1
+PKG_SOURCE:=mod-dm-cli-v0.2.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.2
+PKG_HASH:=72631ff86ec55f704d365d1317c08d45a750422ce5e0c93c8ba64ca86ea334a4
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-dm-cli-v0.2.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli
   DEPENDS += +libamxc
   DEPENDS += +libamxt
   DEPENDS += +libamxm

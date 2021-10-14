@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v2.1.8
+PKG_VERSION:=v2.2.1
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-v2.1.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v2.1.8
-PKG_HASH:=ec762132ca8141700b05f4c686235130a62bcf44596941b44e69a4af89867e4c
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v2.1.8
+PKG_SOURCE:=amxb_ubus-v2.2.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v2.2.1
+PKG_HASH:=132e5b455afd62a287daca7a1ba2774c38f5b489b0286318b7a635019c6adb43
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v2.2.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus
   DEPENDS += +libamxc
   DEPENDS += +libamxb
   DEPENDS += +libamxd

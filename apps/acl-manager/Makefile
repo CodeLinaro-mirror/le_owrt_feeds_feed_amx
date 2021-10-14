@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.4.5
+PKG_VERSION:=v0.5.1
 SHORT_DESCRIPTION:=The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role
 
-PKG_SOURCE:=acl-manager-v0.4.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager/-/archive/v0.4.5
-PKG_HASH:=133d4930ab0b496d95a745c1aac4983bf9de890ef8edb978675c86e73f4efcd5
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.4.5
+PKG_SOURCE:=acl-manager-v0.5.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.5.1
+PKG_HASH:=68e76b329ab5f18f5a0cfcdefa1090004166cebcadb3fa4443ca32ec61f7e521
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.5.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=
 PKG_LICENSE_FILES:=LICENSE
@@ -20,7 +20,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libamxd
