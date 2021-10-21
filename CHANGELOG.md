@@ -8,6 +8,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.12.0 - 2021-10-21(13:02:16 +0000)
+
+### New
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Introduces function to add wait-for-write fd to event loop
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Listen to signals that indicate a wait-for-write fd must be added to the event loop
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Memory leak in amxb_ubus_has back-end interface implementation
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Amxd_path_get_type returns a bool
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Segmentation fault occurs when NULL pointer passed to amxc_var_dump or amxc_var_log
+
+### Changes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Always return index path
+
+### Other
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [BAF] add support for amx docgen
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [BAF] add support for amx docgen
+
 ## Release v2.11.0 - 2021-10-14(11:23:00 +0000)
 
 ### New
