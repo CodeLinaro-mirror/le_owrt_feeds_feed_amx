@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.5.1
+PKG_VERSION:=v0.5.2
 SHORT_DESCRIPTION:=The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role
 
-PKG_SOURCE:=acl-manager-v0.5.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.5.1
-PKG_HASH:=68e76b329ab5f18f5a0cfcdefa1090004166cebcadb3fa4443ca32ec61f7e521
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.5.1
+PKG_SOURCE:=acl-manager-v0.5.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.5.2
+PKG_HASH:=9beadb661a2eaa33732be43fa4c490fc6dd7d820c5b4d721138456c5760e2869
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.5.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=
 PKG_LICENSE_FILES:=LICENSE
