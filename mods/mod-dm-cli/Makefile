@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-dm-cli
-PKG_VERSION:=v0.2.2
+PKG_VERSION:=v0.2.3
 SHORT_DESCRIPTION:=Data Model Command Line Interface
 
-PKG_SOURCE:=mod-dm-cli-v0.2.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.2
-PKG_HASH:=72631ff86ec55f704d365d1317c08d45a750422ce5e0c93c8ba64ca86ea334a4
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-dm-cli-v0.2.2
+PKG_SOURCE:=mod-dm-cli-v0.2.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.3
+PKG_HASH:=0b565ae3a6426746cbfa3a60b26dfdf92b0b449421bfccb65bd0238032f7e247
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-dm-cli-v0.2.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
