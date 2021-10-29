@@ -8,6 +8,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v2.13.0 - 2021-10-29(09:27:23 +0000)
+
+### New
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [CLI][AMX] Add support for ACLs in the cli
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): It must be possible to connect to uris without registering a data model
+
+### Fixes
+
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Restarting timers can lead to early sigalrm
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Infinite loop when removing parent object having underlying depth greater than 10
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Amxd_object_remove_mib removes mibs when they are not added
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): amxo-cg sometimes doesn't properly detect passed filename
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [AMX] ACL merged directory must be writable
+
+### Changes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Parse odl files in order given on commandline
+
 ## Release v2.12.0 - 2021-10-21(13:02:16 +0000)
 
 ### New
