@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.2.2
+PKG_VERSION:=v1.2.3
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-v1.2.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.2
-PKG_HASH:=8ff93db4c3479634062abe9444d9b38fcb6216e74c02190770e20973713e48ae
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.2
+PKG_SOURCE:=amxo-cg-v1.2.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.3
+PKG_HASH:=c99900cf799874d55df2d8a591f055d8c03e053cba898820c8a0b3ddc2e9b79b
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
