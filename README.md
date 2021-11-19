@@ -32,7 +32,7 @@ Feed_amx includes the following components:
 - [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus) - Ubus Backend
 - [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli) - Bus Agnostic Command Line Interface
 - [mod-dm-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli) - Data Model Command Line Interface
-- [mod-sahtrace](https://gitlab.com/soft.at.home/ambiorix/modules/mod-sahtrace) - Module for sahtrace logging
+- [mod-sahtrace](https://gitlab.com/prpl-foundation/components/core/modules/mod-sahtrace) - Module for sahtrace logging
 
 ### Other
 
