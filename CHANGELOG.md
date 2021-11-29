@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v3.0.0 - 2021-11-29(12:59:06 +0000)
+
+### Removed
+
+- [mod-sahtrace](https://gitlab.com/prpl-foundation/components/core/modules/mod-sahtrace): Component removed
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Memory leak in amxb_ubus_get_longest_path when invoked with a non existing path
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Improve default set action
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): Guest role should only have read access
+
 ## Release v2.14.1 - 2021-11-19(12:47:42 +0000)
 
 ### Fixes
