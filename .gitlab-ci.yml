@@ -36,7 +36,6 @@ generate:
         mod-amxb-ubus
         mod-ba-cli
         mod-dm-cli
-        mod-sahtrace
         uriparser 
 
 build:
