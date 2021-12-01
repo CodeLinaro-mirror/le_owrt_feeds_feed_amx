@@ -20,6 +20,7 @@ generate:
     CI_SDK_BUILD_PACKAGES: |
         acl-manager
         amx-cli
+        amx-fcgi
         amxb-inspect
         amxo-cg
         amxrt

@@ -10,6 +10,7 @@ Feed_amx includes the following components:
 
 - [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager) - The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
 - [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli) - Ambiorix interactive CLI
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi) - Ambiorix Fast CGI app for web-servers
 - [amxb-inspect](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxb-inspect) - Ambiorix Backend inspector/validation tool
 - [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg) - Object Definition Language Compiler/Generator
 - [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt) - Data model runtime
