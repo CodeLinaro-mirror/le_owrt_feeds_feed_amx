@@ -1,10 +1,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.2.0
-SHORT_DESCRIPTION:=POC ambiorix Fast CGI app for web-servers
+PKG_VERSION:=v0.2.3
+SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
+PKG_SOURCE:=amx-fcgi-v0.2.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.2.3
+PKG_HASH:=0dc4b22ce4d5f1dc1c9620a75a33cb1e3b7b08179a51a6ea48196e2807e93203
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.2.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
+PKG_LICENSE:=BSD-2-Clause-Patent
+PKG_LICENSE_FILES:=LICENSE
 
 COMPONENT:=amx-fcgi
 
@@ -30,6 +36,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
+  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libamxp
@@ -42,7 +49,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	POC ambiorix Fast CGI app for web-servers
+	Ambiorix Fast CGI app for web-servers
 endef
 
 define Build/Compile
