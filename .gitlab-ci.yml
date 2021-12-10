@@ -24,6 +24,7 @@ generate:
         amxb-inspect
         amxo-cg
         amxrt
+        amx-webui
         libamxa
         libamxb
         libamxc
