@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-webui
-PKG_VERSION:=v0.1.0
+PKG_VERSION:=v0.1.1
 SHORT_DESCRIPTION:=Ambiorix webui example using amx-fcgi
 
-PKG_SOURCE:=webui-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/examples/webui/webui/-/archive/v0.1.0
-PKG_HASH:=702cc0420b8d72990ec38dd4d81bdc02e527b6693ea1ec99e2a28ffbacb5c889
-PKG_BUILD_DIR:=$(BUILD_DIR)/webui-v0.1.0
+PKG_SOURCE:=webui-v0.1.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/examples/webui/webui/-/archive/v0.1.1
+PKG_HASH:=422d5999a18e88b76e675afc056921fc39f0b7c7801d6cb0e30c4699c556503f
+PKG_BUILD_DIR:=$(BUILD_DIR)/webui-v0.1.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=ambiorix
-  SUBMENU:=Applications
+  SUBMENU:=Examples
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/examples/webui/webui
   DEPENDS += +lighttpd
