@@ -8,6 +8,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v4.0.0 - 2021-12-17(14:06:26 +0000)
+
+### Breaking
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Update minimum and maximum version of supported libamxb
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Remove deprecated functions
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Add support for allow partial with set operator
+
+### New
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Make it possible to do partial set
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add support for allow partial in set operator
+
+### Fixes
+
+- [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt): Command value parser ignores single or double quotes for values
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Fixes version check test due to upstep of major version
+- [amx-webui](https://gitlab.com/prpl-foundation/components/ambiorix/examples/webui/webui): Update variables to work with amx-fcgi
+
 ## Release v3.2.0 - 2021-12-10(14:56:49 +0000)
 
 ### New
