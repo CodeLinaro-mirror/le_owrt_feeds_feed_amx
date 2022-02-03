@@ -8,6 +8,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.0.0 - 2022-02-03(19:58:21 +0000)
+
+### Breaking
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): [prplOS][ambiorix] Several component failing to start on NEC mips xrx500 target
+
+### New
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Implement amxb_set_multiple
+
+### Fixes
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Revert set partial option
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): Too much callbacks are called when multiple parameters with the same name are synced
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): memory leak in amxs_sync_entry_build_opposite_path_entry
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): amxp_signal_has_slots only checks the first slot
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Cannot load unknown instance parameter with "populate-behavior.unknown-parameter=add"
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Allow object write with only optional parameters
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Adding a valid MIB to an object with a transaction makes the transaction fail
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Objects added using a mib can not be addressed with search path or named path
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Correct allow partial for set
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Fixes test version cehcking
+
 ## Release v4.0.0 - 2021-12-17(14:06:26 +0000)
 
 ### Breaking
