@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.1.0 - 2022-02-04(19:34:21 +0000)
+
+### New
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): It must be possible to show and access protected Parameters/Objects.
+
+### Fixes
+
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Variant conversions to integer values is going wrong on mips target
+
 ## Release v5.0.0 - 2022-02-03(19:58:21 +0000)
 
 ### Breaking
