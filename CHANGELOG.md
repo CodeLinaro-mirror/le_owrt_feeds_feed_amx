@@ -8,6 +8,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.2.0 - 2022-02-17(18:18:23 +0000)
+
+### New
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add API to get applied mib names
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add permission denied status code
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Add implementation of amxc_var_set_path and amxc_var_set_pathf
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Implement amxa_set_multiple
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Commandline options -o and -F must support configuration paths and json data
+
+### Fixes
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Run tests with sah-ci image
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Update implementation of amxo_parser_get_config, amxo_parser_set_config, amxo_parser_claim_config
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Copybara replaces too many lib occurences
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Link amxrt with libyajl
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Adds yajl as dependency in baf
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Fixes regression
+
+### Other
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Update documentation on AMXO_ODL_LOADED
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Issue: ambiorix/libraries/libamxo#72 Update documentation on AMXO_ODL_LOADED
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Issue: ambiorix/libraries/libamxd#125 Update documentation on return variant of transaction
+
 ## Release v5.1.0 - 2022-02-04(19:34:21 +0000)
 
 ### New
