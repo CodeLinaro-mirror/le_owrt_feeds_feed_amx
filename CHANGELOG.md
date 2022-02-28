@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.2.1 - 2022-02-28(13:57:36 +0000)
+
+### Fixes
+
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): Use correct logic to determine if an instance exists
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Plug-in name is not correctly passed to pcb back-end
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [ACL][USP] ACL files must be located in writable directory
+
 ## Release v5.2.0 - 2022-02-17(18:18:23 +0000)
 
 ### New
