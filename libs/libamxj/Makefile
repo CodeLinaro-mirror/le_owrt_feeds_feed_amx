@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxj
 PKG_VERSION:=v0.3.37
-SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
+SHORT_DESCRIPTION:=JSON parser & generator using yajl and lib_amxc variants
 
 PKG_SOURCE:=libamxj-v0.3.37.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj/-/archive/v0.3.37
@@ -27,7 +27,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	JSON parser & generator using yajl and libamxc variants
+	JSON parser & generator using yajl and lib_amxc variants
 endef
 
 define Build/Compile
