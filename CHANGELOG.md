@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.2.2 - 2022-03-10(09:09:25 +0000)
+
+### Fixes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Use dyncast to get the index out of a variant
+
 ## Release v5.2.1 - 2022-02-28(13:57:36 +0000)
 
 ### Fixes
