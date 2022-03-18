@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.2.3 - 2022-03-18(13:22:08 +0000)
+
+### Fixes
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [ACL][USP] ACL files must be located in writable directory
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Aliases containing dots causes problems when used in object paths
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Segmentation fault when amxb_ubus_list is called with invalid path
+
+### Other
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Update ubus dependency
+
 ## Release v5.2.2 - 2022-03-10(09:09:25 +0000)
 
 ### Fixes
