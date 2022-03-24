@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.2.4 - 2022-03-24(16:04:18 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): uBus does not always respect order of in-coming messages
+
 ## Release v5.2.3 - 2022-03-18(13:22:08 +0000)
 
 ### Fixes
