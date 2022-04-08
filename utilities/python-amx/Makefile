@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Python AMX Bindings
 
 PKG_SOURCE:=python3-v0.2.10.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/python3/-/archive/v0.2.10
-PKG_HASH:=skip
+PKG_HASH:=8b453d09e4fa79e23c48377a9510c8581d64e30cd8410b918e41c69e0f0e9e03
 PKG_BUILD_DIR:=$(BUILD_DIR)/python3-v0.2.10
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

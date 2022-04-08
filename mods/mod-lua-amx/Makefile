@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Ambiorix LUA extension
 
 PKG_SOURCE:=mod-lua-amx-v0.0.1.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/v0.0.1
-PKG_HASH:=skip
+PKG_HASH:=07a09c90283a464be36a356f22605fb7ec8bad431830ad8d2dd319b3222f2781
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-v0.0.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
