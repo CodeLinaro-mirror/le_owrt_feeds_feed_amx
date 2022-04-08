@@ -8,6 +8,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.3.0 - 2022-04-08(11:04:07 +0000)
+
+### New
+
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Component added
+- [mod-lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx): Component added
+- [python-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/python3): Component added
+
+### Fixes
+
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): no-colors should be set to true by default
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Constructor functions that add custom expression function must be run at level higher then 101
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Remove macro IS_SET
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): It is not possible to add multiple times the same object action callback with different private data
+
+### Changes
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [GetDebugInformation] Add data model debuginfo in component services
+
 ## Release v5.2.5 - 2022-04-04(14:46:20 +0000)
 
 ### Fixes
