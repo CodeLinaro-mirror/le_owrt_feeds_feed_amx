@@ -1,19 +1,18 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=lua-amx
-PKG_VERSION:=v0.0.2
+PKG_VERSION:=v0.1.0
 SHORT_DESCRIPTION:=LUA AMX Bindings 
 
-PKG_SOURCE:=lua-amx-v0.0.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.0.2
-PKG_HASH:=55735a9d1fe9dd22acc7e3852e74c63045c7c84db97c0d6c6cc3cb10e8b8ed04
-PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.0.2
+PKG_SOURCE:=lua-amx-v0.1.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.1.0
+PKG_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.1.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
-PKG_BUILD_DEPENDS += libevent2
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -27,6 +26,8 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxd
   DEPENDS += +libamxb
   DEPENDS += +libamxo
+  DEPENDS += +lua
+  DEPENDS += +libevent2
   MENU:=1
 endef
 
