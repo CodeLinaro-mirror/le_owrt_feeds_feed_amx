@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v5.4.1 - 2022-05-09(14:34:26 +0000)
+
+### Changes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Update get supported data model implementation according to USP specification 1.2
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [MQTT] Topic must be writable after creation
+
+### Other
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Issue: ambiorix/modules/amx_cli/mod-ba-cli#18 Update output of gsdm command [changed]
+
 ## Release v5.4.0 - 2022-05-05(07:49:45 +0000)
 
 ### New
