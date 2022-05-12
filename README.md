@@ -43,7 +43,6 @@ Feed_amx includes the following components:
 ### Utilities
 
 - [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx) - LUA AMX Bindings 
-- [python-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/python3) - Python AMX Bindings 
 
 ### Other
 
