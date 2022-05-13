@@ -8,6 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v6.0.0 - 2022-05-13(07:12:46 +0000)
+
+### Removed
+
+- [python-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/python3): Component removed
+
+### New
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Add implementation for seBatch
+
+### Changes
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [Ambiorix] Implementation of reference following decorator
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Update path parser to be able to detect reference path
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [Ambiorix] Implementation of reference following decorator
+
 ## Release v5.4.1 - 2022-05-09(14:34:26 +0000)
 
 ### Changes
