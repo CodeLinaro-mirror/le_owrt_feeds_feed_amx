@@ -15,10 +15,6 @@ Feed_amx includes the following components:
 - [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg) - Object Definition Language Compiler/Generator
 - [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt) - Data model runtime
 
-### Examples
-
-- [amx-webui](https://gitlab.com/prpl-foundation/components/ambiorix/examples/webui/webui) - Ambiorix webui example using amx-fcgi
-
 ### Libraries
 
 - [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa) - Access control verification
