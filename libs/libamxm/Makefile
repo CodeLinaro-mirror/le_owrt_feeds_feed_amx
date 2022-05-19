@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.39
+PKG_VERSION:=v0.0.40
 SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
 
-PKG_SOURCE:=libamxm-v0.0.39.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.0.39
-PKG_HASH:=35c2824a92d61ce406787a765cbc1cf7c4bc8634faf64e2343afda8f20f86044
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.39
+PKG_SOURCE:=libamxm-v0.0.40.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.0.40
+PKG_HASH:=6075378095ab8e7b7e19e5a769f33cf125183331270e62e726668ce933a8d7de
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.40
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
