@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=v2.0.13
+PKG_VERSION:=v2.0.14
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE:=libamxo-v2.0.13.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/v2.0.13
-PKG_HASH:=d5db262396f3328b615ce75c0fca82c783f31d7d8b9eb4d53691a34f4e92bd3c
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-v2.0.13
+PKG_SOURCE:=libamxo-v2.0.14.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/v2.0.14
+PKG_HASH:=58e2abbebb45d1b3fc1d241dbd516b9fb87f495e978dec07ce7c7dc477055f25
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-v2.0.14
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
