@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.2.3
+PKG_VERSION:=v0.3.3
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.2.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.2.3
-PKG_HASH:=0dc4b22ce4d5f1dc1c9620a75a33cb1e3b7b08179a51a6ea48196e2807e93203
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.2.3
+PKG_SOURCE:=amx-fcgi-v0.3.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.3.3
+PKG_HASH:=80225f40246c67e83d90c3f1960641ae23b7f3d490fd87b0baef4b70a08ed92b
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.3.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -45,6 +45,13 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxb
   DEPENDS += +libamxa
   DEPENDS += +fcgi
+  DEPENDS += +lighttpd
+  DEPENDS += +lighttpd-mod-cgi
+  DEPENDS += +lighttpd-mod-fastcgi
+  DEPENDS += +lighttpd-mod-auth
+  DEPENDS += +REST_API_WEBUI_DEMO:lighttpd-mod-expire
+  DEPENDS += +lighttpd-mod-authn_file
+  DEPENDS += +lighttpd-mod-proxy
   MENU:=1
 endef
 
@@ -53,11 +60,11 @@ define Package/$(PKG_NAME)/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/)
+	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_REST_API_WEBUI_DEMO=$(CONFIG_REST_API_WEBUI_DEMO))
 endef
 
 define Build/Install
-	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_REST_API_WEBUI_DEMO=$(CONFIG_REST_API_WEBUI_DEMO))
 	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
 	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
@@ -67,11 +74,15 @@ define Build/Install
 endef
 
 define Build/InstallDev
-	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_REST_API_WEBUI_DEMO=$(CONFIG_REST_API_WEBUI_DEMO))
 endef
 
 define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
+endef
+
+define Package/$(PKG_NAME)/config
+	source "$(SOURCE)/Config.in"
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
