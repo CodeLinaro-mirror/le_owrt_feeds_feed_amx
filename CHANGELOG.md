@@ -8,6 +8,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.2.0 - 2022-06-02(11:22:27 +0000)
+
+### New
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Add implementation for seBatch
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): When there are required objects events can appear before the entry points are called
+
+### Fixes
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [Gitlab CI][Unit tests][valgrind] Pipeline doesn't stop when memory leaks are detected
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): amxa_get() should return -1 when no access rights
+
+### Other
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Rework configuration to work with default lighttpd
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Use amxa_get to avoid code duplications
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): [amx] crash on amxp signal read
+
 ## Release v7.1.0 - 2022-05-31(06:24:00 +0000)
 
 ### New
