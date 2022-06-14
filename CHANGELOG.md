@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.2.1 - 2022-06-14(13:20:55 +0000)
+
+### Fixes
+
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Load order must be the same as save order
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): The default rpc _get must be able to support parameter paths
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Issue: # 19 Pcb and ubus config files should be installed by default
+
+### Other
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [ACL manager] Update documentation for the acl manager in confluence
+
 ## Release v7.2.0 - 2022-06-02(11:22:27 +0000)
 
 ### New
