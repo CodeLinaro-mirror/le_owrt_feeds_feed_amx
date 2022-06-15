@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.2.2 - 2022-06-15(12:40:39 +0000)
+
+### Changes
+
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Plugins not starting at boot
+
 ## Release v7.2.1 - 2022-06-14(13:20:55 +0000)
 
 ### Fixes
