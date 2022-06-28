@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=v1.5.2
+PKG_VERSION:=v1.5.3
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-v1.5.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v1.5.2
-PKG_HASH:=a2462c3e235c799e75521027edd6513b0aed94582b370607de2bff8d6dcb4387
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v1.5.2
+PKG_SOURCE:=amxrt-v1.5.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v1.5.3
+PKG_HASH:=e93e83a9ade261cb809340faa4512264aa3b0c1d9b868409986eef032d1768e2
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v1.5.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
