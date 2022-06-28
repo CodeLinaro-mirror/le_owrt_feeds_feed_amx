@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxd
-PKG_VERSION:=v3.6.8
+PKG_VERSION:=v3.6.9
 SHORT_DESCRIPTION:=Data model C-API
 
-PKG_SOURCE:=libamxd-v3.6.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/v3.6.8
-PKG_HASH:=97d3bd67b3533a1090a01f68a6dd634d8435cbed071223ab4f54ef7e45a49c17
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v3.6.8
+PKG_SOURCE:=libamxd-v3.6.9.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/v3.6.9
+PKG_HASH:=67061a5e1fe6d59ac03225cd16e71fd08c566ea644e93871707280593db8b790
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v3.6.9
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
