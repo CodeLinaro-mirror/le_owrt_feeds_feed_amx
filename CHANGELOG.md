@@ -8,6 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.3.0 - 2022-07-05(20:15:03 +0000)
+
+### New
+
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx):  Add bus.wait_for, auto_connect, disconnect_all methods to lua bindings
+
+### Fixes
+
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Changes for hop-1509 causes regressions
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Plugins not starting at boot
+
+### Changes
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Adds lookup cache for amxb_who_has
+
 ## Release v7.2.4 - 2022-06-30(15:07:19 +0000)
 
 ## Release v7.2.3 - 2022-06-29(07:36:42 +0000)
