@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release proj_prpl_M1-2022_v1.0.0 - 2022-07-19(12:56:32 +0000)
+
+### Removed
+
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Component removed
+- [mod-lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx): Component removed
+
 ## Release proj_prpl_M1-2022_v0.1.1 - 2022-07-19(06:20:14 +0000)
 
 ### Fixes
