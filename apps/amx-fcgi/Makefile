@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.3.3
+PKG_VERSION:=v0.3.4
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.3.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.3.3
-PKG_HASH:=80225f40246c67e83d90c3f1960641ae23b7f3d490fd87b0baef4b70a08ed92b
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.3.3
+PKG_SOURCE:=amx-fcgi-v0.3.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.3.4
+PKG_HASH:=7d8f7e3a136ef03a945126ef6bdead39562d32e8ae41db3723693735e13cab05
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.3.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -49,7 +49,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +lighttpd-mod-cgi
   DEPENDS += +lighttpd-mod-fastcgi
   DEPENDS += +lighttpd-mod-auth
-  DEPENDS += +REST_API_WEBUI_DEMO:lighttpd-mod-expire
+  DEPENDS += +REST_API_WEBUI_DEMO:lighttpd-module-expire
   DEPENDS += +lighttpd-mod-authn_file
   DEPENDS += +lighttpd-mod-proxy
   MENU:=1
