@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxs
-PKG_VERSION:=v0.1.26
+PKG_VERSION:=v0.1.27
 SHORT_DESCRIPTION:=Data model synchronization C-API
 
-PKG_SOURCE:=libamxs-v0.1.26.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/v0.1.26
-PKG_HASH:=a9088231189b6cd0e7ffb27519b71e88ed44f60f3fcb337ed00feac679566bda
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-v0.1.26
+PKG_SOURCE:=libamxs-v0.1.27.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/v0.1.27
+PKG_HASH:=9db9970bf917a10fd1e1c56c606f6441fb12e6563b43ca50520fa6da89c7d850
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-v0.1.27
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -48,6 +48,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	if [ -d ./files ]; then \
+		$(CP) ./files/* $(1)/; \
+	fi
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
