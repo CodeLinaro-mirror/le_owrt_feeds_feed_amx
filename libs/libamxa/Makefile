@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxa
-PKG_VERSION:=v0.4.20
+PKG_VERSION:=v0.4.21
 SHORT_DESCRIPTION:=Access control verification
 
-PKG_SOURCE:=libamxa-v0.4.20.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/v0.4.20
-PKG_HASH:=81a529761f90b1f7d02db74f64528baf2ad65962e7f2d9d8367dba6a5c1af4d2
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-v0.4.20
+PKG_SOURCE:=libamxa-v0.4.21.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/v0.4.21
+PKG_HASH:=7cd69e1f3db033dccd70e70cdcacd6cdeb012327431b40ac862d8e7a1290102d
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-v0.4.21
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -48,6 +48,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	if [ -d ./files ]; then \
+		$(CP) ./files/* $(1)/; \
+	fi
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
