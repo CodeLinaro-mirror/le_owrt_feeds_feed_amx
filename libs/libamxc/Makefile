@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v1.7.0
+PKG_VERSION:=v1.7.1
 SHORT_DESCRIPTION:=Libamxc is a library containing data containers, implemented in ansi C (C99)
 
-PKG_SOURCE:=libamxc-v1.7.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/v1.7.0
-PKG_HASH:=62a71af39410a8a487232f3f4d02b2eec8645efc22bb56c6feed9541436a45c3
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v1.7.0
+PKG_SOURCE:=libamxc-v1.7.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/v1.7.1
+PKG_HASH:=7d7ad97d2bc1c6af91f7ef438e4292f2308e93321b1576a89aa08a2257d75881
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v1.7.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -44,6 +44,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	if [ -d ./files ]; then \
+		$(CP) ./files/* $(1)/; \
+	fi
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
