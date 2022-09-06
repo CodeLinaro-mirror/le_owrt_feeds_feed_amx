@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.3.7 - 2022-09-06(11:13:34 +0000)
+
+### Fixes
+
+- [libamxj](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj): Due to change in libamxc a unit test is failing
+
 ## Release v7.3.6 - 2022-08-30(13:43:48 +0000)
 
 ### Fixes
