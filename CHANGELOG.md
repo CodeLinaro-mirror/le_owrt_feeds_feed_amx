@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.4.1 - 2022-09-28(12:14:56 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [USP][LCM] InstallDU called from the backend failed; Calling Device.SoftwareModules.InstallDU fails as well (but not SoftwareModules.InstallDU)
+
+### Changes
+
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Auto detect usp sockets
+
 ## Release v7.4.0 - 2022-09-22(12:11:44 +0000)
 
 ### New
