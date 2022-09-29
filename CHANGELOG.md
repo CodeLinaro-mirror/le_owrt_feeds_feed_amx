@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.4.2 - 2022-09-29(13:48:54 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Regression - translation to _exec function is going wrong
+
 ## Release v7.4.1 - 2022-09-28(12:14:56 +0000)
 
 ### Fixes
