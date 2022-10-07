@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.2.5
+PKG_VERSION:=v1.2.6
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-v1.2.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.5
-PKG_HASH:=3054315d351f60a4075bc9014a2b1bf18ce68d6231f9308fe8a0699cb3536688
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.5
+PKG_SOURCE:=amxo-cg-v1.2.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.6
+PKG_HASH:=4b2c063f2e5d9bab1b53aa918e3ff8872a6e91830dac79f7ca98d74ca762342e
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -22,6 +22,7 @@ define Package/$(PKG_NAME)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg
   DEPENDS += +libamxc
+  DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libamxo
   DEPENDS += +libxml2
@@ -48,6 +49,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	if [ -d ./files ]; then \
+		$(CP) ./files/* $(1)/; \
+	fi
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
