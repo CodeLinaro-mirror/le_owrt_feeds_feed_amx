@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.4.2
+PKG_VERSION:=v0.4.3
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.4.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.2
-PKG_HASH:=a1ebb0eeb4c9276f47ccee77cc2eaef045b6f5280c2c41d5fa023341292c78e2
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.2
+PKG_SOURCE:=amx-fcgi-v0.4.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.3
+PKG_HASH:=98b3f76bca2d35b372f21e5670451b51635a0caedd7ed0bc94aa1562d7b3beb3
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ PKG_RELEASE:=1
 
 define SAHInit/Install
 	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/$(COMPONENT) ${PKG_INSTALL_DIR}/etc/rc.d/S99$(COMPONENT)
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/$(COMPONENT) ${PKG_INSTALL_DIR}/etc/rc.d/S85$(COMPONENT)
 endef
 
 define SAHBackupRestore/Install
