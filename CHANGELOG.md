@@ -8,6 +8,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.5.0 - 2022-10-14(16:14:16 +0000)
+
+### New
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [ACLManager] Create ACL user to handle secure acl checking
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [ACLManager] Create ACL user to handle secure acl checking
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Add comparison implementation for htable variants
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc):  Add comparison implementation for linked list variants
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Add directory utility functions
+
+### Fixes
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): Clean up code
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): Issue: verify return value of chown
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Issue: Fix _describe RPC method definition
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP][CDROUTER] GetSupportedDMResp presents wrong syntax of inner nested multi-instanceobject
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): [USP][CDROUTER] GetSupportedDM on Device.LocalAgent. using a single object, first_level_only true, all options presents no event
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Apply change owner when uid or gid is different from zero
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): When signals are triggered in a recursive way it can lead to segfaults
+
+### Changes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Use amxp functions for scanning directories
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Use amxp functions for creating and scanning directories
+
+### Other
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Improve plugin boot order
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Remove configuration for lighttpd
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP][CDROUTER] GetSupportedDM on Device.LocalAgent. using a single object, first_level_only true, all options presents no event
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [USP][CDROUTER] GetSupportedDM on Device.LocalAgent. using a single object, first_level_only true, all options presents no event
+
 ## Release v7.4.2 - 2022-09-29(13:48:54 +0000)
 
 ### Fixes
