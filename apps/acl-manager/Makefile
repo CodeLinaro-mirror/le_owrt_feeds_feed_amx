@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.6.0
+PKG_VERSION:=v0.6.1
 SHORT_DESCRIPTION:=The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role
 
-PKG_SOURCE:=acl-manager-v0.6.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.6.0
-PKG_HASH:=79bde3f11c4cd06dfc7ef5e88b2bc7a6da10bff0c655988d41f3cd4c84b669e5
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.6.0
+PKG_SOURCE:=acl-manager-v0.6.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.6.1
+PKG_HASH:=7d1a7ecf1775d9d09d1c7ff2e88baedfd0c916e57b9ae321487654797816dad2
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.6.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=
 PKG_LICENSE_FILES:=LICENSE
@@ -60,10 +60,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
