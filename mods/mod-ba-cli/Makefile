@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-ba-cli
-PKG_VERSION:=v0.7.7
+PKG_VERSION:=v0.7.8
 SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
-PKG_SOURCE:=mod-ba-cli-v0.7.7.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.7.7
-PKG_HASH:=909acd46b85aeda16567d79219f10c6a5bd5d501bb845253d8d89065c6a38b8f
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.7.7
+PKG_SOURCE:=mod-ba-cli-v0.7.8.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.7.8
+PKG_HASH:=db4f89b24417c5a3e019a558a5bccb9fdee6300dc83033fb7e41579f2fe73aee
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.7.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -53,10 +53,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 define Package/$(PKG_NAME)/config
