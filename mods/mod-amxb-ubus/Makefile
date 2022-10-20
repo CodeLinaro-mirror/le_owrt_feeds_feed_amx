@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v3.0.35
+PKG_VERSION:=v3.0.38
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-v3.0.35.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.0.35
-PKG_HASH:=3837cd801e0a3a4e7d549657ea491f2c2af8b2a0977c7f162b75cf24d700154c
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.0.35
+PKG_SOURCE:=amxb_ubus-v3.0.38.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.0.38
+PKG_HASH:=d3f086ba254eacbef5596c918813f0ffd91e53b526390f8046b145ce2d30f78c
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.0.38
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -48,10 +48,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
