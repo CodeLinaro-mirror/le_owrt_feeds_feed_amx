@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=v1.2.6
+PKG_VERSION:=v1.2.7
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-v1.2.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.6
-PKG_HASH:=4b2c063f2e5d9bab1b53aa918e3ff8872a6e91830dac79f7ca98d74ca762342e
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.6
+PKG_SOURCE:=amxo-cg-v1.2.7.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.2.7
+PKG_HASH:=54e1d6ccbed3c3df983246a0af327b82a99b7c4aca5a33c5e3ae44a5df33ea2c
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.2.7
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -49,10 +49,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
