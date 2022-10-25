@@ -8,6 +8,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.5.1 - 2022-10-25(06:56:48 +0000)
+
+### Fixes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Parameter attributes are not correctly checked when adding the parameter to an object
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Init data before cleaning in amxb_ubus_func_handler
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Wrong configuration is passed to back-ends when connecting
+
+### Changes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [ACS][V12] Setting of VOIP in a single SET does not enable VoiceProfile
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [ACS][V12] Setting of VOIP in a single SET does not enable VoiceProfile
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): It must be possible for a function resolver to known for which action an action callback function is needed
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Make it possible to implement a data model in lua
+- [mod-lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx): Make it possible to write a data model plugin in lua
+
+### Other
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Issue: ambiorix/applications/amxo-cg#21 Variant return type is not properly converted to doc
+
 ## Release v7.5.0 - 2022-10-14(16:14:16 +0000)
 
 ### New
