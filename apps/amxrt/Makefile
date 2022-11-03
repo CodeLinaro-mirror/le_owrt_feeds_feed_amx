@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=v1.5.10
+PKG_VERSION:=v1.5.11
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-v1.5.10.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v1.5.10
-PKG_HASH:=3a2f846bb6fd2bf00e828731fd50127d635a4576bce43f51cf9f6e60fb92942a
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v1.5.10
+PKG_SOURCE:=amxrt-v1.5.11.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v1.5.11
+PKG_HASH:=d3f8570e760e49b9ab1c7a8c97e4a4ae77064c6191787af559cf9163ca97b225
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v1.5.11
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -52,10 +52,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 define Package/$(PKG_NAME)/config
