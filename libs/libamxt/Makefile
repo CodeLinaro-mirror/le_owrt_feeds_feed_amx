@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxt
-PKG_VERSION:=v0.1.56
+PKG_VERSION:=v0.1.57
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxt-v0.1.56.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/v0.1.56
-PKG_HASH:=ea0b121d32b94e44a2328dc9718323c96a017eb429a0e189776510afe20ddd53
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-v0.1.56
+PKG_SOURCE:=libamxt-v0.1.57.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/v0.1.57
+PKG_HASH:=b3a7a90312900b9850e5d70260df445a6c2b94146ec4b1ccb3ebe50aafd96335
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-v0.1.57
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
