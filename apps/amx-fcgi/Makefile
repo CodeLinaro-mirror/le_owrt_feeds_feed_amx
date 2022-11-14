@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.4.3
+PKG_VERSION:=v0.4.4
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.4.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.3
-PKG_HASH:=98b3f76bca2d35b372f21e5670451b51635a0caedd7ed0bc94aa1562d7b3beb3
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.3
+PKG_SOURCE:=amx-fcgi-v0.4.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.4
+PKG_HASH:=211acc9eb5e80077e968158b725f4d70d101284e01da3daa3b692636e0d190af
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -78,10 +78,10 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
+	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
 define Package/$(PKG_NAME)/config
