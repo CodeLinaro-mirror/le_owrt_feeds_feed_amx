@@ -8,6 +8,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.6.0 - 2022-11-17(12:33:33 +0000)
+
+### New
+
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Install object monitor scripts
+
+### Fixes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Ignore deprecated declarations
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Files passed with -i option are not handled as include files
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Investigate and fix klocwork reports for ambiorix libs and tools
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Make it possible to wait for instances
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Update documentation of functions amxc_var_get_next, amxc_var_get_previous and amxc_var_get_parent
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Investigate and fix klocwork reports for ambiorix libs and tools
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Do not use expression to filter parameters on name or attributes
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Investigate and fix klocwork reports for ambiorix libs and tools
+- [libamxm](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm): Investigate and fix klocwork reports for ambiorix libs and tools
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Compile regular expressions and validate expressions only once
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Investigate and fix klocwork reports for ambiorix libs and tools
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Wait for objects in sequence causes wrong callback invoke
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Improve wait for and subscribe functionality
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Segmentation fault when stopping process
+
+### Changes
+
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [AMX] Dump output arguments of failed methods
+
+### Other
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Improve documentation of amxd_object function with regard to events
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Improve documentation of amxd_object function with regard to events
+
 ## Release v7.5.3 - 2022-11-15(12:12:32 +0000)
 
 ## Release v7.5.2 - 2022-11-04(07:30:23 +0000)
