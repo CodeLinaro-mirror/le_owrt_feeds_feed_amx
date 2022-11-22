@@ -8,6 +8,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v7.7.0 - 2022-11-22(14:38:41 +0000)
+
+### New
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [AMX] Extend libamxa for easier verification of RPC methods
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add function to retrieve parameter path
+
+### Fixes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Invalid ACL file must result in an error
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Converting an empty string variant to a list should result in an empty list
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Fix wrong comma in amxc_var_dump output
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Get with search path returns too many results
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Missing functions in GSDM response
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Missing functions in GSDM response
+
+### Other
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add new error code amxd_status_not_supported
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Issue: ambiorix/libraries/libamxd#148 Add new error code amxd_status_not_supported
+
 ## Release v7.6.0 - 2022-11-17(12:33:33 +0000)
 
 ### New
