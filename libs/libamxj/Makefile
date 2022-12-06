@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxj
-PKG_VERSION:=v0.3.51
+PKG_VERSION:=v0.3.52
 SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
 
-PKG_SOURCE:=libamxj-v0.3.51.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj/-/archive/v0.3.51
-PKG_HASH:=6a735148be61295fade71be15ea748ba8d3548b7a94b17046105c98408ccefa9
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v0.3.51
+PKG_SOURCE:=libamxj-v0.3.52.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj/-/archive/v0.3.52
+PKG_HASH:=c0148d86c9b975c837b587702f7a4650b32145176b0f3617f35728203944794a
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v0.3.52
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
