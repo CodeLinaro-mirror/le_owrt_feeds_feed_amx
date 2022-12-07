@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-lua-amx
-PKG_VERSION:=v0.1.5
+PKG_VERSION:=v0.1.6
 SHORT_DESCRIPTION:=Ambiorix LUA extension
 
-PKG_SOURCE:=mod-lua-amx-v0.1.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/v0.1.5
-PKG_HASH:=9a8b38579cf6ff4b23bfc8b9ccb457ca71975d09511223ac17f9a7c4531666e9
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-v0.1.5
+PKG_SOURCE:=mod-lua-amx-v0.1.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/v0.1.6
+PKG_HASH:=416ec6fa7d053db4ebcb5a8ec1530881b39b506018cbc7d69bf942edd1b8df4a
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-v0.1.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
