@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release proj_prpl_M1-2022_v1.0.4 - 2022-12-16(15:19:19 +0000)
+
+### Changes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Component downstepped from v0.4.25 to v0.4.24
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Component downstepped from v4.2.19 to v4.2.18
+- [libamxj](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj): Component downstepped from v0.3.44 to v0.3.43
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Component downstepped from v2.0.27 to v2.0.26
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): Component downstepped from v0.1.31 to v0.1.30
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Component downstepped from v3.0.30 to v3.0.29
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Component downstepped from v0.7.6 to v0.7.5
+
 ## Release proj_prpl_M1-2022_v1.0.3 - 2022-09-06(11:15:28 +0000)
 
 ### Fixes
