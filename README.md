@@ -34,6 +34,11 @@ Feed_amx includes the following components:
 - [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus) - Ubus Backend
 - [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli) - Bus Agnostic Command Line Interface
 - [mod-dm-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli) - Data Model Command Line Interface
+- [mod-lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx) - Ambiorix LUA extension
+
+### Utilities
+
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx) - LUA AMX Bindings 
 
 ### Other
 
