@@ -13,7 +13,7 @@ config SAH_MOD-LUA-AMX
 
 config SAH_LUA_AMX_LUA_VERSION
     string "Lua version that will be used"
-    default ""
+    default "5.1"
 
 endmenu
 
