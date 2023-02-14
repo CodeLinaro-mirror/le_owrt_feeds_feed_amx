@@ -45,13 +45,6 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxb
   DEPENDS += +libamxa
   DEPENDS += +fcgi
-  DEPENDS += +lighttpd
-  DEPENDS += +lighttpd-mod-cgi
-  DEPENDS += +lighttpd-mod-fastcgi
-  DEPENDS += +lighttpd-mod-auth
-  DEPENDS += +REST_API_WEBUI_DEMO:lighttpd-mod-expire
-  DEPENDS += +lighttpd-mod-authn_file
-  DEPENDS += +lighttpd-mod-proxy
   MENU:=1
 endef
 
