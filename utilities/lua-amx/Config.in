@@ -13,11 +13,11 @@ config SAH_LUA_AMX
 
 config SAH_LUA_AMX_LUA_VERSION_OVERRIDE
     bool "Override default lua version"
-    default n
+    default y
 
 config SAH_LUA_AMX_LUA_VERSION
     string "Lua version that will be used"
-    default ""
+    default "5.1"
     depends on SAH_LUA_AMX_LUA_VERSION_OVERRIDE
 
 endmenu
