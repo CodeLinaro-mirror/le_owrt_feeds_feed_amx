@@ -77,8 +77,4 @@ define Package/$(PKG_NAME)/install
 	fi
 endef
 
-define Package/$(PKG_NAME)/config
-	source "$(SOURCE)/Config.in"
-endef
-
 $(eval $(call BuildPackage,$(PKG_NAME)))
