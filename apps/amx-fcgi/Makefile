@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.4.8
+PKG_VERSION:=v0.4.9
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.4.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.8
-PKG_HASH:=c914983bdb08fca71bb35c3d59fc50613d8b1986a38a9c458752fafea758c043
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.8
+PKG_SOURCE:=amx-fcgi-v0.4.9.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.4.9
+PKG_HASH:=8f5ea587deab693dc4aac9f0c55f46239fdadf6cc5da7be1d2703a69774cb846
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.4.9
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -45,13 +45,6 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxb
   DEPENDS += +libamxa
   DEPENDS += +fcgi
-  DEPENDS += +lighttpd
-  DEPENDS += +lighttpd-mod-cgi
-  DEPENDS += +lighttpd-mod-fastcgi
-  DEPENDS += +lighttpd-mod-auth
-  DEPENDS += +REST_API_WEBUI_DEMO:lighttpd-module-expire
-  DEPENDS += +lighttpd-mod-authn_file
-  DEPENDS += +lighttpd-mod-proxy
   MENU:=1
 endef
 
@@ -60,7 +53,7 @@ define Package/$(PKG_NAME)/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
 endef
 
 define Build/Install
