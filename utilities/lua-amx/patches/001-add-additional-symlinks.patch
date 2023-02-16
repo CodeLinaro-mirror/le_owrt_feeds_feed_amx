@@ -1,0 +1,69 @@
+From 50d1f9f55eb260002e742a36bee9c00cf2c9470a Mon Sep 17 00:00:00 2001
+From: Matthias Franck <7363593-Matthias_franck@users.noreply.gitlab.com>
+Date: Thu, 16 Feb 2023 15:36:28 +0000
+Subject: [PATCH] Add extra symlinks in /usr/lib/lua
+
+---
+ makefile | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+
+diff --git a/makefile b/makefile
+index 646285a..1347e7b 100644
+--- a/makefile
++++ b/makefile
+@@ -41,6 +41,22 @@ ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
+ endif
+ 	$(INSTALL) -D -p -m 0755 scripts/amx_monitor_dm.lua $(DEST)/usr/bin/amx_monitor_dm
+ 	$(INSTALL) -D -p -m 0755 scripts/amx_wait_for.lua $(DEST)/usr/bin/amx_wait_for
++ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(CONFIG_SAH_LUA_AMX_LUA_VERSION)/lamx.so $(DEST)/usr/lib/lua/lamx.so
++endif
++ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(LUA_DEFAULT_VERSION)/lamx.so $(DEST)/usr/lib/lua/lamx.so
++endif
++ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(CONFIG_SAH_LUA_AMX_LUA_VERSION)/lamx_wait_for.lua $(DEST)/usr/lib/lua/lamx_wait_for.lua
++endif
++ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(LUA_DEFAULT_VERSION)/lamx_wait_for.lua $(DEST)/usr/lib/lua/lamx_wait_for.lua
++endif
+ 
+ package: all
+ ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
+@@ -54,6 +70,22 @@ ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
+ endif
+ ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
+ 	$(INSTALL) -D -p -m 0644 scripts/lamx_wait_for.lua $(PKGDIR)/usr/local/lib/lua/$(LUA_DEFAULT_VERSION)/lamx_wait_for.lua
++endif
++ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(CONFIG_SAH_LUA_AMX_LUA_VERSION)/lamx.so $(DEST)/usr/lib/lua/lamx.so
++endif
++ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(LUA_DEFAULT_VERSION)/lamx.so $(DEST)/usr/lib/lua/lamx.so
++endif
++ifeq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(CONFIG_SAH_LUA_AMX_LUA_VERSION)/lamx_wait_for.lua $(DEST)/usr/lib/lua/lamx_wait_for.lua
++endif
++ifneq ($(CONFIG_SAH_LUA_AMX_LUA_VERSION_OVERRIDE),y)
++	$(INSTALL) -d -m 0755 $(DEST)/usr/lib/lua
++	ln -sfr $(DEST)/usr/local/lib/lua/$(LUA_DEFAULT_VERSION)/lamx_wait_for.lua $(DEST)/usr/lib/lua/lamx_wait_for.lua
+ endif
+ 	$(INSTALL) -D -p -m 0755 scripts/amx_monitor_dm.lua $(PKGDIR)/usr/bin/amx_monitor_dm
+ 	$(INSTALL) -D -p -m 0755 scripts/amx_wait_for.lua $(PKGDIR)/usr/bin/amx_wait_for
+@@ -72,4 +104,4 @@ test:
+ 	$(MAKE) -C test run
+ 	$(MAKE) -C test coverage
+ 
+-.PHONY: all clean changelog install package doc test
+\ No newline at end of file
++.PHONY: all clean changelog install package doc test
+-- 
+GitLab
+
