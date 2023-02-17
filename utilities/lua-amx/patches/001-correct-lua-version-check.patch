@@ -1,0 +1,28 @@
+From 5f9bc1a9ca6af35a7d284c598163039b10715240 Mon Sep 17 00:00:00 2001
+From: Matthias FRANCK <matthias.franck_ext@softathome.com>
+Date: Fri, 17 Feb 2023 14:15:48 +0100
+Subject: [PATCH] Update lua_amx.h
+
+---
+ include_priv/lua_amx.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/include_priv/lua_amx.h b/include_priv/lua_amx.h
+index 770bb21..059c868 100644
+--- a/include_priv/lua_amx.h
++++ b/include_priv/lua_amx.h
+@@ -78,9 +78,9 @@ extern "C"
+ #include <lualib.h>
+ 
+ #if defined(LUA_VERSION_NUM)
+-#if LUA_VERSION_NUM == 510
++#if LUA_VERSION_NUM == 501
+ #include "lamx_lua5.1.h"
+-#elif LUA_VERSION_NUM == 530
++#elif LUA_VERSION_NUM == 503
+ #include "lamx_lua5.3.h"
+ #endif
+ #endif
+-- 
+GitLab
+
