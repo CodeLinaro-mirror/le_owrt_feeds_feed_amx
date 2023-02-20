@@ -8,6 +8,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.0.0 - 2023-02-20(13:43:34 +0000)
+
+### Breaking
+
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Improve logical expression parser
+
+### New
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [USP] Requirements for Get further clarified
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP] Requirements for Get further clarified
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Add json output format to cli (ubus-cli, pcb-cli, ba-cli)
+
+### Fixes
+
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): Issue:  HOP-2086 [WNC] Keyboard arrows not working within ubus-cli on serial
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): [AMX][CLI] Scripting: ubus-cli or ba-cli doesn't output anything without a pseudo-terminal
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): amx-fastcgi crashes at boot when webui is installed in LCM container
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): amx-fastcgi crashes at boot when webui is installed in LCM container
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): [MQTT][USP] Overlapping reconnects can cause a segmentation fault
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Issue: semgrep reports
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Data model functions arguments don't inherit attributes from mib
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): [SSH][AMX] Processes spawned by dropbear instance managed SSH Manager ignores SIGINT
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Fix memory leakj wehn empty expression is used
+- [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt): [WNC] Keyboard arrows not working within ubus-cli on serial
+- [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt): [AMX][CLI] Scripting: ubus-cli or ba-cli doesn't output anything without a pseudo-terminal
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [AMXB] protected objects are listed for public connection
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): list operator using ubus backend without a path doesn't give a reply
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): When asking a parameter value in the cli, it returns more than expected.
+
+### Changes
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [USP] Requirements for Get changed
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP] Requirements for Get changed
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Issue NET-4423 [USP] Requirements for Get changed
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Replace openwrt ASCII art by prplOS one
+
+### Other
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [amx-fcgi] generated datamodel documentation is empty
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Remove unneeded dependencies
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): unblock a signal when disabling it with amxp_syssig_enable
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Add amxb_set_config support to lua bindings
+
 ## Release v7.7.4 - 2023-01-20(13:33:34 +0000)
 
 ### Fixes
