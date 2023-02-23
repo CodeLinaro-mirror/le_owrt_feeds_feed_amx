@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.0.1 - 2023-02-23(08:34:44 +0000)
+
+### Fixes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Ignore empty read filter
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): amxd_object_get_param_value should have its object parameter const
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): unbound does not start after reboot in tagged mode
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): [CDROUTER][IPv6] Box sends 2 ICMPv6 RA when a RS is received on LAN
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Fix conditions when `luaL_setfuncs` should be set
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): list operator using ubus backend without a path doesn't give a reply
+
 ## Release v8.0.0 - 2023-02-20(13:43:34 +0000)
 
 ### Breaking
