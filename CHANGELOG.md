@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.0.2 - 2023-02-24(12:24:33 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [ubus-cli] No alias paths in datamodel
+
 ## Release v8.0.1 - 2023-02-23(08:34:44 +0000)
 
 ### Fixes
