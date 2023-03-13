@@ -8,6 +8,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.1.0 - 2023-03-13(14:24:52 +0000)
+
+### New
+
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): [prpl][tr181-upnp] UPnP.Discovery and UPnP.Description are not implemented
+
+### Fixes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): amxo-cg fails to build correct include tree when parsing error occurs
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Can write event must only be created once
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Object path verification should be done when subscribing
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [amxd] methods with amxd_aattr_out argument return NULL
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Protected objects should not be retrieved by gsdm
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Mop test netmodel_02_check_interfaces_test.py::test_wan_isup_query_loop fails due to unexpected out argument
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): Always execute the initial sync with protected access
+
+### Changes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): [PRPL] amxo-cg does not compile with libxml2 version 2.10.2
+
+### Other
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): [amxo] Saving and restoring the odl (config) section gives errors.
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): When odl includes an empty directory no error should be printed
+
 ## Release v8.0.2 - 2023-02-24(12:24:33 +0000)
 
 ### Fixes
