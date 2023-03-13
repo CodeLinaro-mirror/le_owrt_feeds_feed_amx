@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxs
-PKG_VERSION:=v0.1.58
+PKG_VERSION:=v0.1.59
 SHORT_DESCRIPTION:=Data model synchronization C-API
 
-PKG_SOURCE:=libamxs-v0.1.58.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/v0.1.58
-PKG_HASH:=9c526f5117bd5074e47fc32b135ede4772f419e212da5b2834bcde9902c1f829
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-v0.1.58
+PKG_SOURCE:=libamxs-v0.1.59.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/v0.1.59
+PKG_HASH:=daf3df7a65911d581288702c3266ea041555acac02b22cce1e4d5081ce9ceaa6
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-v0.1.59
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
