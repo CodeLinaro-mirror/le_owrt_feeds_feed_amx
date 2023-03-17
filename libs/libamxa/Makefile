@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxa
-PKG_VERSION:=v0.8.14
+PKG_VERSION:=v0.8.15
 SHORT_DESCRIPTION:=Access control verification
 
-PKG_SOURCE:=libamxa-v0.8.14.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/v0.8.14
-PKG_HASH:=8b0dc38748b24a3ba51093035927c7edfcd2fd586c5bfe996193ea6ca3797310
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-v0.8.14
+PKG_SOURCE:=libamxa-v0.8.15.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/v0.8.15
+PKG_HASH:=2ba4f6ea5bf0038d166bafad88dbf5283500bbe96b662038569fb41d139afeb2
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-v0.8.15
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
