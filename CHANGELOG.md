@@ -8,6 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.2.0 - 2023-03-21(13:11:28 +0000)
+
+### New
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [amx-fcgi][SWUpdate] Add upload file functionality
+- [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt): Some control key sequences are incorrect defined
+
+### Fixes
+
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Improvements in amxp regarding amxp_dir_scan, timer documentation and slot disconnects
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [amxb_ubus]When calling a not existing method asynchronously no reply is given
+
+### Other
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): [odl] Regression conditional include does not take second if first is an empty directory
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): Create the voice interface between ubus and pcb (tr104i1/2 mapper)
+
 ## Release v8.1.0 - 2023-03-13(14:24:52 +0000)
 
 ### New
