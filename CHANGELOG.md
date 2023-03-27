@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.3.0 - 2023-03-27(20:06:36 +0000)
+
+### New
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [pcb] usp endpoint doesn't support pcb requests
+
+### Other
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [KPN SW2][Security]Restrict ACL of guest user in Ambiorix datamodels
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): [KPN SW2][Security]Restrict ACL of guest user in Ambiorix datamodels
+
 ## Release v8.2.0 - 2023-03-21(13:11:28 +0000)
 
 ### New
