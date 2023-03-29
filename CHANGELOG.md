@@ -8,6 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.4.0 - 2023-03-29(09:17:21 +0000)
+
+### New
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [AMX] Take bus access into account for GSDM
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Take bus access into account for GSDM
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): AMX : make it possible to to define event handlers directly under object
+
+### Fixes
+
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): [AMX] gdbgui provides full path of cli module
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [uspagent] The 'Discovery' object in the dm cannot use gsdm
+
 ## Release v8.3.1 - 2023-03-28(06:48:26 +0000)
 
 ## Release v8.3.0 - 2023-03-27(20:06:36 +0000)
