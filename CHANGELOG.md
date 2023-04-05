@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.4.4 - 2023-04-05(13:46:18 +0000)
+
+### Fixes
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Fix and complete unit tests
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Listen socket connections are not removed from the event loop
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [amx pcb]Who has on search paths with pcb back-end is not working
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [Ambiorix] Implement function call with search path
+
 ## Release v8.4.3 - 2023-03-29(15:21:38 +0000)
 
 ## Release v8.4.2 - 2023-03-29(14:52:18 +0000)
