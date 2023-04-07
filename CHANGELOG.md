@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.4.5 - 2023-04-07(16:43:34 +0000)
+
+### Fixes
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [TR069-manager] [wnc] No ManagementServer object for wnc
+
 ## Release v8.4.4 - 2023-04-05(13:46:18 +0000)
 
 ### Fixes
