@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.4.6 - 2023-04-18(09:48:23 +0000)
+
+### Fixes
+
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [AMX] Unable to unsubscribe from search path
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP][AMX] GSDM needs a ValueChangeType
+- [libamxj](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj): [AMX] Reduce write calls done in amxj_write
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [LCM] Error code is not forwarded correctly from LCM to USP in case of InstallDU using a non-existent EE
+
 ## Release v8.4.5 - 2023-04-07(16:43:34 +0000)
 
 ### Fixes
