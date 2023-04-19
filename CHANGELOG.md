@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v8.4.7 - 2023-04-19(10:28:34 +0000)
+
+### Other
+
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): Fix a typo in the description of amxc_var_add_new_key_amxc_llist_t
+
 ## Release v8.4.6 - 2023-04-18(09:48:23 +0000)
 
 ### Fixes
