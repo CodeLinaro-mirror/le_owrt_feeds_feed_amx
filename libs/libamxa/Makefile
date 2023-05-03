@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Access control verification
 
 PKG_SOURCE:=libamxa-v0.8.23.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/v0.8.23
-PKG_HASH:=skip
+PKG_HASH:=a24ee117e8a747c4a032649cffb066147af5ac80db0370a5845647201e2778ff
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-v0.8.23
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
