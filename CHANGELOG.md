@@ -8,6 +8,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.0.0 - 2023-05-04(05:51:21 +0000)
+
+### Breaking
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): gsdm missing arguments for commands and events
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Remove deprecated odl syntax and pcb compatibility syntax
+
+### New
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): gsdm missing arguments for commands and events
+
+### Fixes
+
+- [amxo-cg](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg): Fixes unit tests, removed deprecated syntax in tests
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): gsdm missing arguments for commands and events
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Changing optional parameters gives no events
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): ODL syntax documentation must be updated
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Check if htables are initialized
+- [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs): [Amxs] Parameter callbacks are not called when an object instance is added
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Fix unit-tests, update test odls remove deprecated syntax
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): gsdm missing arguments for commands and events
+
+### Changes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): - [HTTPManager][Login][amx-fcgi] Create a session
+
 ## Release v8.4.9 - 2023-04-24(16:50:09 +0000)
 
 ### Fixes
