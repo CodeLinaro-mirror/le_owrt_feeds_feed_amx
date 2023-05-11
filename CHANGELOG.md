@@ -8,6 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.0.1 - 2023-05-11(10:26:18 +0000)
+
+### Fixes
+
+- [libamxc](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc): [amxc] Fix missing semicolon
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [unit-tests] Complete and extend unit tests
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Fix regression in amxd_path api
+
+### Other
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): Issue: ambiorix/applications/amx-fcgi#16 Document how to launch the example webui in a container
+- [amxrt](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt): Create the voice interface between ubus and pcb (tr104i1/2 mapper)
+
 ## Release v9.0.0 - 2023-05-04(05:51:21 +0000)
 
 ### Breaking
