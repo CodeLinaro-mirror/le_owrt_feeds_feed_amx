@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.0.2 - 2023-05-15(05:46:49 +0000)
+
+### Fixes
+
+- [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo): Use index paths when sending events after an odl file is parsed
+
 ## Release v9.0.1 - 2023-05-11(10:26:18 +0000)
 
 ### Fixes
