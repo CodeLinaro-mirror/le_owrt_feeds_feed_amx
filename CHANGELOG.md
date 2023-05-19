@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.0.3 - 2023-05-19(12:49:42 +0000)
+
+### Fixes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [HTTPManager][Login][acl-manager] After firstboot acl group doesn't exist
+
 ## Release v9.0.2 - 2023-05-15(05:46:49 +0000)
 
 ### Fixes
