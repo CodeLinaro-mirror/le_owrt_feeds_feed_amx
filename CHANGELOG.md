@@ -8,6 +8,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.1.0 - 2023-05-25(16:36:09 +0000)
+
+### New
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [Security][USP] Add ACLs for get instances to USP agent
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [USP] Add specific error codes for get instances
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): [libamxp]Provide API for cron expression parsing and calculating next occurence
+
+### Fixes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Add documentation to default action implementations
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): [AMX] Get instances supports search paths
+
+### Changes
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [USP] Must be able to call methods with named path
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [USP] Add specific error codes for get instances
+
+### Other
+
+- [acl-manager](https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager): - [HTTPManager][Login][amx-fcgi] Create a session
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Documentation is missing for the get_instances operator
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): Issue: ambiorix/libraries/libamxb#68 Documentation is missing for the get_instances operator
+
 ## Release v9.0.3 - 2023-05-19(12:49:42 +0000)
 
 ### Fixes
