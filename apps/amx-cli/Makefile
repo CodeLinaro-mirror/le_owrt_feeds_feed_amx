@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=v0.2.27
+PKG_VERSION:=v0.2.28
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-v0.2.27.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.2.27
-PKG_HASH:=f341f96d298f2228f03c1721a581bdd476fc69dd2af0291ccbe3cbcd2655e9e4
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.2.27
+PKG_SOURCE:=amx-cli-v0.2.28.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.2.28
+PKG_HASH:=388a82fbb3d096c5c8212b1b8430aa9431c0441d5e206d5e9fe12296f9af63f4
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.2.28
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
