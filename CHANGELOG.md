@@ -8,6 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.1.1 - 2023-05-30(09:47:12 +0000)
+
+### Fixes
+
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): Link with libyajl
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): Scheduler does not take correct duration into account when multiple schedules expire at the same moment
+- [lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx): Fix return values and throwing errors
+- [mod-lua-amx](https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx): Add unit tests
+
+### Other
+
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): Update documentation
+
 ## Release v9.1.0 - 2023-05-25(16:36:09 +0000)
 
 ### New
