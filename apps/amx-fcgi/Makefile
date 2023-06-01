@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v0.5.4
+PKG_VERSION:=v1.2.1
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v0.5.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v0.5.4
-PKG_HASH:=d3ceadc337b63c5b074473557e8e3d0df540b297104f7dd7505d126d391ab401
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v0.5.4
+PKG_SOURCE:=amx-fcgi-v1.2.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v1.2.1
+PKG_HASH:=839e98b3fb8aefe422d0c6ccfdcaed8d77cc5b7f10886d385d57d41fda8dc55c
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v1.2.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -40,6 +40,7 @@ define Package/$(PKG_NAME)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi
   DEPENDS += +libamxc
   DEPENDS += +libamxj
+  DEPENDS += +libamxm
   DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libamxo
