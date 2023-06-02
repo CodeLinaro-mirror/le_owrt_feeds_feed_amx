@@ -8,6 +8,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.2.0 - 2023-06-02(12:52:22 +0000)
+
+### New
+
+- [amx-cli](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli): [PCB] add option to pcb-cli to mimic operator (usp) access
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [TR181-DeviceInfo][FCGI] Add rpc to read/write a file
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [amx-fcgi]Refactor sessions code to make it easier to run the provided web-ui example
+- [libamxa](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa): [USP] GSDM events need to be filtered out
+- [libamxb](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb): [AMX] Ambiorix should return the same error codes regardless of the used bus
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [AMX] Ambiorix should return the same error codes regardless of the used bus
+
+### Fixes
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): [TR181-DeviceInfo][FCGI] Add rpc to read/write a file
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): [AMX] Ambiorix should return the same error codes regardless of the used bus
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): Regression in ubus back-end due to changes in error code passing.
+
+### Other
+
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): - [HTTPManager][Login][amx-fcgi] Create a session
+- [amx-fcgi](https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi): - [HTTPManager][Login] Increase unit test coverage
+
 ## Release v9.1.1 - 2023-05-30(09:47:12 +0000)
 
 ### Fixes
