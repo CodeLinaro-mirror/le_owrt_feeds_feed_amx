@@ -25,6 +25,7 @@ Feed_amx includes the following components:
 - [libamxm](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm) - modularity api, simplifies creation of add-ons (plug-ins, modules)
 - [libamxo](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo) - Ambiorix Object Definition Language library
 - [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp) - Common patterns implementation
+- [libamxrt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt) - Ambiorix Run Time API
 - [libamxs](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs) - Data model synchronization C-API
 - [libamxt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt) - Common patterns implementation
 - [libsahtrace](https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace) - Small and flexible library to enable tracing and logging
