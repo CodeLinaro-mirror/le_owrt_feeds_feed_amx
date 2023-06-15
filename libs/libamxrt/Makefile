@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Ambiorix Run Time API
 
 PKG_SOURCE:=libamxrt-v0.0.2.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.0.2
-PKG_HASH:=skip
+PKG_HASH:=f247384c96418464f61cd5bfaa0357f44cb60bbc823d095f9bccb9354e6d5d4d
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
