@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.3.0 - 2023-06-16(03:57:53 +0000)
+
+### New
+
+- [libamxrt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt): Component added
+
+### Fixes
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Failing transactions not fully cleaned
+
+### Other
+
+- [libamxd](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd): Issue: ambiorix/libraries/libamxd#153 Sending an object event with object, eobject or path in the event data causes never ending loop
+
 ## Release v9.2.1 - 2023-06-06(14:56:39 +0000)
 
 ### Fixes
