@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.4.0 - 2023-06-21(13:38:40 +0000)
+
+### New
+
+- [libamxrt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt): Add API documentation
+
+### Fixes
+
+- [libamxp](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp): When a schedule item is changed and is currently started send a stop event
+- [libamxrt](https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt): When using libamxrt a segfault can occur when closing the application
+- [mod-ba-cli](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli): Remove destructor and use exit function
+
 ## Release v9.3.0 - 2023-06-16(03:57:53 +0000)
 
 ### New
