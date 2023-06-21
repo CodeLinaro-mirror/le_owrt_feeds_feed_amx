@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v9.4.1 - 2023-06-21(14:04:43 +0000)
+
+### Fixes
+
+- [mod-amxb-ubus](https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus): [ubus-cli] extra rpc arguments not returned
+
 ## Release v9.4.0 - 2023-06-21(13:38:40 +0000)
 
 ### New
