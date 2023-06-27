@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxrt
-PKG_VERSION:=v0.1.2
+PKG_VERSION:=v0.2.0
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
-PKG_SOURCE:=libamxrt-v0.1.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.1.2
-PKG_HASH:=54fc373f47cc3555d32a1aef6d3e9cc4548a43e0e4a8be2c5efd6a431aedcee7
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.1.2
+PKG_SOURCE:=libamxrt-v0.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.2.0
+PKG_HASH:=acc21b83dd9c74a9f77085fe89a510c81235d9461d4488adfba7ec363330257d
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -29,6 +29,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxo
   DEPENDS += +libamxb
   DEPENDS += +libevent2
+  DEPENDS += +libcap-ng
   MENU:=1
 endef
 
