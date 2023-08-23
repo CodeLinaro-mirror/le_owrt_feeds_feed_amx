@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxrt
-PKG_VERSION:=v0.2.9
+PKG_VERSION:=v0.2.10
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
-PKG_SOURCE:=libamxrt-v0.2.9.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.2.9
-PKG_HASH:=b65210ecdcdf68dcb7ddba160ba997c81bdc4ae472d22c4fc802725fbddd9694
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.2.9
+PKG_SOURCE:=libamxrt-v0.2.10.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.2.10
+PKG_HASH:=f7281f0c417c62fcd6d8fbb54a1548f5ab8f2f3f1dd1c97268254090a0541005
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.2.10
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
