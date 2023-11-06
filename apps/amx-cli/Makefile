@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=v0.3.5
+PKG_VERSION:=v0.4.0
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-v0.3.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.3.5
-PKG_HASH:=9f35eb6a4a716743cfe4bbeb64d378cf642695dc067cdd82e6ae785a4bd25377
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.3.5
+PKG_SOURCE:=amx-cli-v0.4.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.4.0
+PKG_HASH:=cc03f1f8eefda4b406db463fd8a6745df7a3512f9911c0a27fe0a154d334bcc3
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -26,7 +26,6 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxp
   DEPENDS += +libamxt
   DEPENDS += +libamxm
-  DEPENDS += +libamxo
   DEPENDS += +libamxj
   DEPENDS += +libevent2
   DEPENDS += +yajl
