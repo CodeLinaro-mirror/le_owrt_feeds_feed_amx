@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-ba-cli
-PKG_VERSION:=v0.8.23
+PKG_VERSION:=v0.8.24
 SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
-PKG_SOURCE:=mod-ba-cli-v0.8.23.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.8.23
-PKG_HASH:=01d62b461edfc8ce005d22dd206add815a383c835524e5b0750e493fb3e42a74
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.8.23
+PKG_SOURCE:=mod-ba-cli-v0.8.24.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.8.24
+PKG_HASH:=5861c0d11ce65cde23961a8772171336385b84e17d5c596cc6c7b7b973c840b9
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.8.24
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
