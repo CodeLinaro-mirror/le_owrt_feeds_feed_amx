@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=lua-amx
-PKG_VERSION:=v0.3.15
+PKG_VERSION:=v0.4.0
 SHORT_DESCRIPTION:=LUA AMX Bindings 
 
-PKG_SOURCE:=lua-amx-v0.3.15.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.3.15
-PKG_HASH:=414160e30b6bb5e82de5f66f0a9386983c49a6cbdd3863217499607d3a6c91db
-PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.3.15
+PKG_SOURCE:=lua-amx-v0.4.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.4.0
+PKG_HASH:=ff041c3efc842c63dbec37b9f5072fc00d348795f4370a140cab6f2cc792cfdd
+PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -23,6 +23,7 @@ define Package/$(PKG_NAME)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx
   DEPENDS += +libamxc
+  DEPENDS += +libamxj
   DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libamxb
