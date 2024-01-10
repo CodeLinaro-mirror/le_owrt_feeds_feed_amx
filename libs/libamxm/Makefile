@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxm
-PKG_VERSION:=v0.0.62
-SHORT_DESCRIPTION:=modularity api, simplifies creation of add-ons (plug-ins, modules)
+PKG_VERSION:=v0.0.63
+SHORT_DESCRIPTION:=modularity API, simplifies creation of plug-ins
 
-PKG_SOURCE:=libamxm-v0.0.62.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.0.62
-PKG_HASH:=ff14e7337bb7ae6518d6d958e469fb834fa72a5071659e5696fbe6c683c3c076
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.62
+PKG_SOURCE:=libamxm-v0.0.63.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.0.63
+PKG_HASH:=8c98793c0b688f8c188a4787ea85af1e31ff4ca4154c6e78be664fa6f107d1c0
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.0.63
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -28,7 +28,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	modularity api, simplifies creation of add-ons (plug-ins, modules)
+	modularity API, simplifies creation of plug-ins
 endef
 
 define Build/Compile
