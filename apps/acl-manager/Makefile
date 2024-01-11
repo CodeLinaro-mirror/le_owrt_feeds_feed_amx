@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.6.5
-SHORT_DESCRIPTION:=The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role
+PKG_VERSION:=v0.6.6
+SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
-PKG_SOURCE:=acl-manager-v0.6.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.6.5
-PKG_HASH:=cc3bb413f6b1dff7479daefc6d3534f317f27a665732d054b093627222ced32e
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.6.5
+PKG_SOURCE:=acl-manager-v0.6.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.6.6
+PKG_HASH:=ef1789e6aeebbcdb9621ff59201d51d76f1a0a8cf44f7c45a129157dbaca8a3a
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.6.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -40,7 +40,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-	The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role.
+	The ACL manager monitors ACL directory and merges ACL files.
 endef
 
 define Build/Compile
