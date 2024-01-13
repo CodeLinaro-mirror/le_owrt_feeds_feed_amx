@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-pcb
-PKG_VERSION:=v3.7.1
+PKG_VERSION:=v3.7.0
 SHORT_DESCRIPTION:=PCB backend implementation for amxb
 
 PKG_SOURCE:=amxb_pcb-v3.7.1.tar.gz
