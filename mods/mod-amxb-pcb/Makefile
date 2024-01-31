@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-pcb
-PKG_VERSION:=v3.9.1
+PKG_VERSION:=v3.9.2
 SHORT_DESCRIPTION:=PCB backend implementation for amxb
 
-PKG_SOURCE:=amxb_pcb-v3.9.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/v3.9.1
-PKG_HASH:=4a255b9b99839be102c2fb2ae71248c33a13b51660684516a3d71e13261b7287
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-v3.9.1
+PKG_SOURCE:=amxb_pcb-v3.9.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/v3.9.2
+PKG_HASH:=f55c72f4840b86dce88cffa835575e46d644b1a63969104a798598d92b9cd969
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-v3.9.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -23,12 +23,14 @@ define Package/$(PKG_NAME)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb
   DEPENDS += +libamxc
+  DEPENDS += +libamxj
   DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libamxb
   DEPENDS += +libpcb
   DEPENDS += +libamxa
   DEPENDS += +libusermngt
+  DEPENDS += +yajl
   MENU:=1
 endef
 
