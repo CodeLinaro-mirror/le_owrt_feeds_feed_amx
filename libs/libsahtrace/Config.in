@@ -38,11 +38,6 @@ config SAH_TRACE_COLORS_SIMPLE
 
 endchoice
 
-config SAH_USER_TRACES_ENABLED
-    bool "Enable SAH User Traces"
-    default y
-    depends on SAH_TRACES_ENABLED
-
 endmenu
 
 endif
