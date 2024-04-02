@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Small and flexible library to enable tracing and logging
 
 PKG_SOURCE:=libsahtrace-v1.15.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/v1.15.0
-PKG_HASH:=8c289b4d9fe2a0034035e2954edf2fc322209bd7f5fbf368e24a24dd25753394
+PKG_HASH:=9e46e221170ba3029924a19372760cd43c7a6af8fc6f4532aa16345a885dfd8e
 PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-v1.15.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
