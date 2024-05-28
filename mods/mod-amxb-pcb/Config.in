@@ -1,0 +1,20 @@
+config PACKAGE_mod-amxb-pcb
+    tristate
+    select SAH_MOD_AMXB_PCB
+
+if PACKAGE_mod-amxb-pcb
+
+menu "Select mod-amxb-pcb build options"
+    depends on PACKAGE_mod-amxb-pcb
+
+config SAH_MOD_AMXB_PCB
+    bool "Build pcb backend for ambiorix"
+    default y
+
+config SAH_MOD_AMXB_PCB_ORDER
+    string "Backend load order"
+    default "02"
+
+endmenu
+
+endif
