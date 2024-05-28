@@ -5,7 +5,7 @@ PKG_VERSION:=v4.9.3
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE:=libamxb-v4.9.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.9.6
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.9.3
 PKG_HASH:=cc634b4aa5652999a94687b4855c02cfb49e192d8f27af4aa949b78d2e5dc6c2
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.9.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
