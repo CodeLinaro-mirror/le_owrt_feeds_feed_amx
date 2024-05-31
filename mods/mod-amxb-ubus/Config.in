@@ -13,7 +13,7 @@ config SAH_LIB_AMXB_UBUS
 
 config SAH_LIB_AMXB_UBUS_ORDER
     string "Backend load order"
-    default ""
+    default "01-"
 
 endmenu
 

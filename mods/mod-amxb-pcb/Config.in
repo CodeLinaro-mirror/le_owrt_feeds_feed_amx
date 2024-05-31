@@ -13,7 +13,7 @@ config SAH_MOD_AMXB_PCB
 
 config SAH_MOD_AMXB_PCB_ORDER
     string "Backend load order"
-    default ""
+    default "02-"
 
 endmenu
 
