@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
 PKG_SOURCE:=mod-ba-cli-v0.12.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/v0.12.0
-PKG_HASH:=skip
+PKG_HASH:=86626ad3f4038a8ec85c4b829d0e4d21dc47ceb150ef1abd23a84e2fa46b7e65
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-v0.12.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
