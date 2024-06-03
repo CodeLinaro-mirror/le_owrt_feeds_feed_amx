@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=PCB backend implementation for amxb
 
 PKG_SOURCE:=amxb_pcb-v3.10.4.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/v3.10.4
-PKG_HASH:=skip
+PKG_HASH:=9e76d2235b7b2dd9770c649f037597e2e715e76a691f96de4d67fc6462d0943a
 PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-v3.10.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
