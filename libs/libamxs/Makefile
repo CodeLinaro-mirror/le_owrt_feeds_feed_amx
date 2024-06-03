@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Data model synchronization C-API
 
 PKG_SOURCE:=libamxs-v0.6.2.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/v0.6.2
-PKG_HASH:=skip
+PKG_HASH:=74138af40a892171249a083f69c578045e69f4e3de89207845f48ccc5085b892
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-v0.6.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
