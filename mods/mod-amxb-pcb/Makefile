@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-pcb
-PKG_VERSION:=v3.10.3
+PKG_VERSION:=v3.10.4
 SHORT_DESCRIPTION:=PCB backend implementation for amxb
 
-PKG_SOURCE:=amxb_pcb-v3.10.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/v3.10.3
-PKG_HASH:=00c90e62451c82270625835d4e634511eb357bb31267a405c6552fc5ff07adcd
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-v3.10.3
+PKG_SOURCE:=amxb_pcb-v3.10.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/v3.10.4
+PKG_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-v3.10.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
