@@ -19,6 +19,10 @@ config SAH_MOD_BA_CLI_INSTALL_PCB_CLI
     bool "Install pcb cli"
     default y
 
+config SAH_MOD_BA_CLI_INSTALL_RBUS_CLI
+    bool "Install rbus cli"
+    default y
+
 endmenu
 
 endif
