@@ -25,6 +25,7 @@ define Package/$(PKG_NAME)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp
   DEPENDS += +libamxc
+  DEPENDS += +libcap-ng
   MENU:=1
 endef
 
