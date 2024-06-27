@@ -1,0 +1,20 @@
+config PACKAGE_acl-manager
+    tristate
+    select SAH_SERVICES_ACL-MANAGER
+
+if PACKAGE_acl-manager
+
+menu "Select acl-manager build options"
+    depends on PACKAGE_acl-manager
+
+config SAH_SERVICES_ACL-MANAGER
+    bool "The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role."
+    default y
+
+config SAH_SERVICES_ACL-MANAGER_REQUIRES_USERS
+    bool "Add a dependency on Users.Group.acl-group that is required on prpl OS"
+    default y
+
+endmenu
+
+endif
