@@ -1,19 +1,26 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=v2.1.3
+PKG_VERSION:=v2.2.0
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-v2.1.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v2.1.3
-PKG_HASH:=a414dbf2d596753641456e755521448f52d71b1f3418d9f5dba88d70b0be7678
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v2.1.3
+PKG_SOURCE:=amxrt-v2.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/v2.2.0
+PKG_HASH:=0bd6e83da66bd45127c49d686c7de62bd6f183cf9991259117db564a04a81f8f
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-v2.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
+COMPONENT:=amxrt
 
 PKG_RELEASE:=1
+
+define SAHInit/Install
+	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/amx-shutdown-wait ${PKG_INSTALL_DIR}/etc/rc.d/S90amx-shutdown-wait
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/amx-shutdown-wait ${PKG_INSTALL_DIR}/etc/rc.d/K90amx-shutdown-wait
+endef
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -44,6 +51,8 @@ endef
 
 define Build/Install
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+
+	$(call SAHInit/Install)
 endef
 
 define Build/InstallDev
