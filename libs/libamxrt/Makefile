@@ -1,11 +1,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxrt
-PKG_VERSION:=dev_obuspa
+PKG_VERSION:=v0.6.2
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=dev_obuspa
+PKG_SOURCE_VERSION:=v0.6.2
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
