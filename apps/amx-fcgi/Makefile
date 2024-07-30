@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=v1.3.10
+PKG_VERSION:=v1.3.11
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-v1.3.10.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v1.3.10
-PKG_HASH:=bcceb7c0977b65555f833b70ae67ea092887fe81c7b59478b7796188d9348f5b
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v1.3.10
+PKG_SOURCE:=amx-fcgi-v1.3.11.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/v1.3.11
+PKG_HASH:=198edbeecd391d2b57938a6013ecfaa79c8fee6bf8808ef4524c715bb7ae9c01
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-v1.3.11
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
