@@ -10,6 +10,9 @@ menu "Select libamxrt build options"
 config SAH_LIB_AMXRT
     bool "Build libamxrt"
     select KERNEL_EXT4_FS_SECURITY if USES_EXT4 || PACKAGE_kmod-fs-ext4
+    select KERNEL_JFFS2_FS_SECURITY if USES_JFFS2 || USES_JFFS2_NAND
+    select KERNEL_UBIFS_FS_SECURITY if USES_UBIFS
+    select KERNEL_F2FS_FS_SECURITY if PACKAGE_mkf2fs
     default y
 
 config SAH_AMXRT_RWDATAPATH
