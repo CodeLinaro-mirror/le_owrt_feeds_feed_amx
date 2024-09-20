@@ -9,7 +9,6 @@ menu "Select libamxrt build options"
 
 config SAH_LIB_AMXRT
     bool "Build libamxrt"
-    select KERNEL_EXT4_FS_SECURITY if USES_EXT4 || PACKAGE_kmod-fs-ext4
     default y
 
 config SAH_AMXRT_RWDATAPATH
