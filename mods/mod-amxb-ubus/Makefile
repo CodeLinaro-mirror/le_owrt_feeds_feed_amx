@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v3.6.0
+PKG_VERSION:=v3.7.0
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-v3.6.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.6.0
-PKG_HASH:=5863cfa57d30e41356ada5c0a64aba8a87bfd8353d9985b57183ef336a9881d3
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.6.0
+PKG_SOURCE:=amxb_ubus-v3.7.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.7.0
+PKG_HASH:=4357091e0654954107d773587e6f0d0f039571835f59347f9abda0689030ca66
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.7.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
