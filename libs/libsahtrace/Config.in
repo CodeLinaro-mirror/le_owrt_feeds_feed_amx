@@ -18,6 +18,7 @@ config SAH_TRACES_ENABLED
 config SAH_TRACES_LEVEL
     int "Maximum Trace Level"
     default 500
+    depends on SAH_TRACES_ENABLED
 
 config SAH_TRACES_SYSLOG_CONSOLE
     bool "Fall back to console if syslog daemon is not running"
