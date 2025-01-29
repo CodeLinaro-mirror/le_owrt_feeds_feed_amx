@@ -1,0 +1,10 @@
+--- a/src/main.c
++++ b/src/main.c
+@@ -61,6 +61,7 @@
+ #include <sys/stat.h>
+ #include <fcntl.h>
+ #include <unistd.h>
++#include <libgen.h>
+ 
+ #include "amx_cli.h"
+ #include "amx_cli_eventloop.h"
