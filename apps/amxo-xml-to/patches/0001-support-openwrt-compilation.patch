@@ -1,0 +1,23 @@
+xmlSubstituteEntitiesDefault call is deprecated in libxml2
+OpenWRT version of the pkg-config utility adds `-lz' flag before `-lxml2' with broke linkage against static libxml2
+diff --git a/src/makefile b/src/makefile
+index 52bea84..5fa8116 100644
+--- a/src/makefile
++++ b/src/makefile
+@@ -23,6 +23,7 @@ CFLAGS += -Werror -Wall -Wextra \
+           -Wformat=2 -Wno-unused-parameter -Wshadow \
+           -Wwrite-strings -Wredundant-decls \
+           -Wno-format-nonliteral \
++          -Wno-deprecated-declarations \
+           -g3 -Wmissing-declarations $(addprefix -I ,$(INCDIRS)) \
+ 		  $(shell pkg-config --cflags libxslt libexslt) \
+           -pthread
+@@ -34,7 +34,7 @@ else
+ 	CFLAGS += -Wstrict-prototypes -Wold-style-definition -Wnested-externs -std=c11
+ endif
+ 
+-LDFLAGS += $(STAGING_LIBDIR) -lamxc -lamxj $(shell pkg-config --libs libxslt libexslt)
++LDFLAGS += $(STAGING_LIBDIR) -lamxc -lamxj $(shell pkg-config --libs libxslt) $(shell pkg-config --libs libexslt)
+ 
+ # targets
+ all: ../include_priv/version.h $(COMPONENT)
