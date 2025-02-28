@@ -4,10 +4,11 @@ PKG_NAME:=amxo-cg
 PKG_VERSION:=v1.6.3
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-v1.6.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/v1.6.3
-PKG_HASH:=670d7e4958eb9d9ac209be4fb5c78607a3d485ff9bc5cd2f6cd98814f3643e6a
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-v1.6.3
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=bugfix/PCI-45-align-mapping-bug
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
