@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-ba-cli
-PKG_VERSION:=sah-next_v0.14.2
+PKG_VERSION:=sah-next_v0.14.3
 SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
-PKG_SOURCE:=mod-ba-cli-sah-next_v0.14.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.14.2
-PKG_HASH:=ad239b7b59b99b77a8b3b5dc827cee17d68da01b1df174f379d2cbfa6b0d1e64
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-sah-next_v0.14.2
+PKG_SOURCE:=mod-ba-cli-sah-next_v0.14.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.14.3
+PKG_HASH:=6adb4c588740197b95eff6beab2a16d51e0117df502100934a2f1456f9591d0b
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-sah-next_v0.14.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
