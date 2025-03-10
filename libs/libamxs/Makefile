@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxs
-PKG_VERSION:=sah-next_v0.9.1
+PKG_VERSION:=sah-next_v0.9.2
 SHORT_DESCRIPTION:=Data model synchronization C-API
 
-PKG_SOURCE:=libamxs-sah-next_v0.9.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/sah-next_v0.9.1
-PKG_HASH:=e4fbf7949d819a320aeff72005074e8aba56bf8ac67b3ccdaa2dffc3a0bcda96
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-sah-next_v0.9.1
+PKG_SOURCE:=libamxs-sah-next_v0.9.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/sah-next_v0.9.2
+PKG_HASH:=0e30e069bb752bfe07f175b193090d7451b406301500e751e68fb9c9da0d680c
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-sah-next_v0.9.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
