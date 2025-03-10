@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxa
-PKG_VERSION:=sah-next_v0.12.1
+PKG_VERSION:=sah-next_v0.12.2
 SHORT_DESCRIPTION:=Access control verification
 
-PKG_SOURCE:=libamxa-sah-next_v0.12.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/sah-next_v0.12.1
-PKG_HASH:=a5c719c146bc152d44e40a8adc8f23bff6130bf037c504b8b587a29d43909051
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-sah-next_v0.12.1
+PKG_SOURCE:=libamxa-sah-next_v0.12.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/sah-next_v0.12.2
+PKG_HASH:=bf5e751ee757424c94a03f3ae22f377144f224f7aad28754c6c682d6d9a3bb93
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-sah-next_v0.12.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
