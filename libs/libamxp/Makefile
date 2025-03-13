@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxp
-PKG_VERSION:=sah-next_v2.8.8
+PKG_VERSION:=sah-next_v2.8.9
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxp-sah-next_v2.8.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.8.8
-PKG_HASH:=5052083d30c6e554514fe56459fd7a1c97df462de0ac9e007383208388db93cd
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.8.8
+PKG_SOURCE:=libamxp-sah-next_v2.8.9.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.8.9
+PKG_HASH:=d3664579772975e948420cc721045bcef545c89bd20495e57eb474a33b5c4d53
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.8.9
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
