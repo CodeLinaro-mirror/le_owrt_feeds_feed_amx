@@ -12,6 +12,7 @@ PKG_LICENSE:=BSD-3-Clause
 PKG_LICENSE_FILES:=COPYING
 
 include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/host-build.mk
 include $(INCLUDE_DIR)/cmake.mk
 
 define Package/$(PKG_NAME)
@@ -27,6 +28,7 @@ define Package/$(PKG_NAME)/description
 endef
 
 CMAKE_OPTIONS += -DURIPARSER_BUILD_DOCS:BOOL=OFF -DURIPARSER_BUILD_TESTS:BOOL=OFF
+CMAKE_HOST_OPTIONS += -DURIPARSER_BUILD_DOCS:BOOL=OFF -DURIPARSER_BUILD_TESTS:BOOL=OFF -DURIPARSER_BUILD_TOOLS:BOOL=OFF
 
 define Build/Install
 	$(call Build/Install/Default)
@@ -48,4 +50,5 @@ define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
 endef
 
+$(eval $(call HostBuild))
 $(eval $(call BuildPackage,$(PKG_NAME)))
