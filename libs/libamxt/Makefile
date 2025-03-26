@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxt
-PKG_VERSION:=sah-next_v1.0.1
+PKG_VERSION:=sah-next_v1.0.2
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxt-sah-next_v1.0.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.1
-PKG_HASH:=f2245608f4ac6c8a44faf4f2f106dedcadc09fd8f3e55ec3c53f4404f9987d73
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-sah-next_v1.0.1
+PKG_SOURCE:=libamxt-sah-next_v1.0.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.2
+PKG_HASH:=e4dcf3eaf994092a7e88ee52de72f8f0f460f6bc9c56282fa4b9e8789538ad5a
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-sah-next_v1.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -15,7 +15,13 @@ PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 
+HOST_BUILD_DEPENDS += libamxc/host
+HOST_BUILD_DEPENDS += libamxp/host
+
 include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/host-build.mk
+
+HOST_LDFLAGS += -Wl,-rpath,$(STAGING_DIR_HOSTPKG)/lib
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
@@ -39,6 +45,10 @@ define Build/Install
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT))
 endef
 
+define Host/Install
+	$(call Host/Compile/Default, install INSTALL=install D=$(STAGING_DIR_HOSTPKG) DEST=$(STAGING_DIR_HOSTPKG) STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR_HOSTPKG)/lib/pkgconfig LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin BINDIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include INCLUDEDIR=/include )
+endef
+
 define Build/InstallDev
 	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT))
 endef
@@ -53,4 +63,5 @@ define Package/$(PKG_NAME)/install
 	find $(1) -name *.pc -exec rm {} +;
 endef
 
+$(eval $(call HostBuild))
 $(eval $(call BuildPackage,$(PKG_NAME)))
