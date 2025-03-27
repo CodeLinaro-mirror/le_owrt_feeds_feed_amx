@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=sah-next_v1.6.4
+PKG_VERSION:=sah-next_v1.7.0
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-sah-next_v1.6.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/sah-next_v1.6.4
-PKG_HASH:=8fd18a37b32866fbb42e376300aaa0df15ef45ea072189c98ed98b58638e1ffc
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-sah-next_v1.6.4
+PKG_SOURCE:=amxo-cg-sah-next_v1.7.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/sah-next_v1.7.0
+PKG_HASH:=0ddd74746a35e7f2ea82bb49437dd630316f9a52620f2aec3c5983c425215160
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-sah-next_v1.7.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
