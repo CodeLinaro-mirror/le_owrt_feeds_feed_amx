@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v4.11.8
+PKG_VERSION:=v4.12.0
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-v4.11.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.11.8
-PKG_HASH:=7ab3366281e5e66d524613dfbab7cbd5cfd0d29b4395fd64be56a88dea908ef9
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.11.8
+PKG_SOURCE:=libamxb-v4.12.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.12.0
+PKG_HASH:=568f6c901e6da48f15f6abd7f81faa9639fec3ffea85bdec6d2c8c1c60b7bf3a
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.12.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
