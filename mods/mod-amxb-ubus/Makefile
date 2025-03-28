@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v3.8.2
+PKG_VERSION:=v3.9.0
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-v3.8.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.8.2
-PKG_HASH:=15d68fc07a1e186c9651fcd22731cd29f784210e2ba2249b6dc88753af3791ec
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.8.2
+PKG_SOURCE:=amxb_ubus-v3.9.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.9.0
+PKG_HASH:=28e1e418e72579ecf86f2fc866b1afda2727098227b821ce52a387072d8c4631
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.9.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -25,7 +25,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxc
   DEPENDS += +libamxb
   DEPENDS += +libamxd
-  DEPENDS += +ubus
+  DEPENDS += +libubus
   MENU:=1
 endef
 
