@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxrt
-PKG_VERSION:=sah-next_v0.6.7
+PKG_VERSION:=sah-next_v0.6.8
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
-PKG_SOURCE:=libamxrt-sah-next_v0.6.7.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/sah-next_v0.6.7
-PKG_HASH:=3017a364713d9d81e6962762499eff99fe97f3e753b5d1bf8985b9fd4253bccc
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-sah-next_v0.6.7
+PKG_SOURCE:=libamxrt-sah-next_v0.6.8.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/sah-next_v0.6.8
+PKG_HASH:=8afa8ff71a140a862ddffc3a0f874c047994d75fcfa993e74781f9809417cbbb
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-sah-next_v0.6.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -15,7 +15,19 @@ PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 
+HOST_BUILD_DEPENDS += libamxc/host
+HOST_BUILD_DEPENDS += libamxj/host
+HOST_BUILD_DEPENDS += libamxp/host
+HOST_BUILD_DEPENDS += libamxd/host
+HOST_BUILD_DEPENDS += libamxo/host
+HOST_BUILD_DEPENDS += libamxb/host
+HOST_BUILD_DEPENDS += libevent2/host
+HOST_BUILD_DEPENDS += libcap-ng/host
+
 include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/host-build.mk
+
+HOST_LDFLAGS += -Wl,-rpath,$(STAGING_DIR_HOSTPKG)/lib
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
@@ -45,6 +57,10 @@ define Build/Install
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT) CONFIG_SAH_AMXRT_RWDATAPATH=$(CONFIG_SAH_AMXRT_RWDATAPATH))
 endef
 
+define Host/Install
+	$(call Host/Compile/Default, install INSTALL=install D=$(STAGING_DIR_HOSTPKG) DEST=$(STAGING_DIR_HOSTPKG) STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR_HOSTPKG)/lib/pkgconfig LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin BINDIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include INCLUDEDIR=/include  CONFIG_SAH_AMXRT_RWDATAPATH=$(CONFIG_SAH_AMXRT_RWDATAPATH))
+endef
+
 define Build/InstallDev
 	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT) CONFIG_SAH_AMXRT_RWDATAPATH=$(CONFIG_SAH_AMXRT_RWDATAPATH))
 endef
@@ -63,4 +79,5 @@ define Package/$(PKG_NAME)/config
 	source "$(SOURCE)/Config.in"
 endef
 
+$(eval $(call HostBuild))
 $(eval $(call BuildPackage,$(PKG_NAME)))
