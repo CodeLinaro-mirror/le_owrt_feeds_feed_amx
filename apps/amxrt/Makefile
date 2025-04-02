@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=sah-next_v2.2.5
+PKG_VERSION:=sah-next_v2.2.6
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-sah-next_v2.2.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next_v2.2.5
-PKG_HASH:=3ced6ca614372e6651c44f825b1be980008c8b066675e31211cd6c6049e36427
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next_v2.2.5
+PKG_SOURCE:=amxrt-sah-next_v2.2.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next_v2.2.6
+PKG_HASH:=a20953c5b6d29010230fa89ac301568df8478df9672c778bcee357fdd00a1b13
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next_v2.2.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
