@@ -1,0 +1,62 @@
+From f9a1bb02c2ddffb75196d3e85a1c8e505b7b85d1 Mon Sep 17 00:00:00 2001
+From: sahbot <support.opensource@softathome.com>
+Date: Tue, 25 Mar 2025 06:42:43 +0000
+Subject: [PATCH] amxb_log: Possible NULL pointer dereference
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Problem:
+========
+
+In the unit-tests of the python bindings an segmentation fault occurs in amxb_log due to a NULL pointer dereference
+
+==3058726== Invalid read of size 8
+==3058726==    at 0x74AB48A: amxb_log (amxb_config.c:86)
+==3058726==    by 0x74A5B4E: amxb_get_supported (amxb_ba_op_get_sup.c:152)
+==3058726==    by 0x7442F1F: pamx_get_supported (python_amx_connection_object.c:587)
+==3058726==    by 0x551BBD: ??? (in /usr/bin/python3.11)
+==3058726==    by 0x53B6AB: PyObject_Vectorcall (in /usr/bin/python3.11)
+==3058726==    by 0x52C2EF: _PyEval_EvalFrameDefault (in /usr/bin/python3.11)
+==3058726==    by 0x55D960: _PyFunction_Vectorcall (in /usr/bin/python3.11)
+==3058726==    by 0x53034D: _PyEval_EvalFrameDefault (in /usr/bin/python3.11)
+==3058726==    by 0x55D960: _PyFunction_Vectorcall (in /usr/bin/python3.11)
+==3058726==    by 0x53034D: _PyEval_EvalFrameDefault (in /usr/bin/python3.11)
+==3058726==    by 0x55D960: _PyFunction_Vectorcall (in /usr/bin/python3.11)
+==3058726==    by 0x51FB45: _PyObject_FastCallDictTstate (in /usr/bin/python3.11)
+==3058726==  Address 0x30 is not stack'd, malloc'd or (recently) free'd
+==3058726==
+Fatal Python error: Segmentation fault
+
+Cause:
+======
+
+The bus ctx in the python bindings unit tests is not a correctly initialized bus context.
+A dummy bus context is often used in unit tests, which could cause these kind of segmentation faults.
+
+Solution:
+=========
+
+Add an extra NULL pointer check.
+This issue will not occur in production code as the bus contexts are always correctly created.
+
+Fixes: PPM-3259
+Reported-by: Dmytro Puz <d.puz@inango-systems.com>
+Signed-off-by: Petr Štetiar <petr.stetiar@prplfoundation.org> [backport]
+(cherry picked from commit 71ca42da04dd9df26a6bcb54fbad8864f7f7a36d)
+---
+ src/amxb_config.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/amxb_config.c b/src/amxb_config.c
+index cf454f78c597..01c7abc5f926 100644
+--- a/src/amxb_config.c
++++ b/src/amxb_config.c
+@@ -83,6 +83,7 @@ void amxb_log(amxb_bus_ctx_t* ctx,
+     const char* bus_name = NULL;
+ 
+     when_null(ctx, exit);
++    when_null(ctx->bus_fn, exit);
+     bus_name = ctx->bus_fn->name;
+ 
+     // In case of a timeout, write to syslog anyway
