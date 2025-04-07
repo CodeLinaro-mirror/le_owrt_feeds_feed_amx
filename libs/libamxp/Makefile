@@ -1,19 +1,21 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxp
-PKG_VERSION:=v2.7.0
+PKG_VERSION:=v2.7.12
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxp-v2.7.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/v2.7.0
-PKG_HASH:=bbe32b48049a7818b2685d3159c430a1ebe3a2aaa87147868d20020574c8e4ef
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-v2.7.0
+PKG_SOURCE:=libamxp-v2.7.12.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/v2.7.12
+PKG_HASH:=a4ad46143877fc582e347ea9e80da0b4ca0910fbd376026d7e1d075041f74661
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-v2.7.12
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 
 PKG_RELEASE:=1
+PKG_BUILD_DEPENDS += bison/host
+PKG_BUILD_DEPENDS += flex/host
 
 include $(INCLUDE_DIR)/package.mk
 
