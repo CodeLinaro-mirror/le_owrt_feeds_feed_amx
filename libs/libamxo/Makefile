@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=sah-next_v5.4.8
+PKG_VERSION:=sah-next_v5.4.9
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE:=libamxo-sah-next_v5.4.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.4.8
-PKG_HASH:=9000abcdf43658b2f4824f1677814b2253cfbafae31b3d68fe3be53e07ed1f3d
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.4.8
+PKG_SOURCE:=libamxo-sah-next_v5.4.9.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.4.9
+PKG_HASH:=718e9dec1d329f31c74a710c061febb2d3d1fe4aa6bfcb4247e2e228330128ae
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.4.9
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -19,10 +21,6 @@ HOST_BUILD_DEPENDS += libamxc/host
 HOST_BUILD_DEPENDS += libamxp/host
 HOST_BUILD_DEPENDS += libamxd/host
 HOST_BUILD_DEPENDS += libamxs/host
-HOST_BUILD_DEPENDS += bison/host
-HOST_BUILD_DEPENDS += flex/host
-PKG_BUILD_DEPENDS += bison/host
-PKG_BUILD_DEPENDS += flex/host
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
@@ -47,6 +45,10 @@ endef
 
 define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+endef
+
+define Host/Compile
+	$(call Host/Compile/Default, STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include)
 endef
 
 define Build/Install
