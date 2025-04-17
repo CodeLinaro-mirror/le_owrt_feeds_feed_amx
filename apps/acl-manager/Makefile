@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.7.1
+PKG_VERSION:=sah-next_v0.7.2
 SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
-PKG_SOURCE:=acl-manager-v0.7.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.7.1
-PKG_HASH:=9a8c39941825da35d505f33cd8817bc5fe7674cbbb624b4b62e10f2251359b81
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.7.1
+PKG_SOURCE:=acl-manager-sah-next_v0.7.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next_v0.7.2
+PKG_HASH:=412777e757482ddd382f61ab393e3998ebf4fa120e2b5230cb50eb9d63105765
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next_v0.7.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
