@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-ba-cli
-PKG_VERSION:=sah-next_v0.14.3
+PKG_VERSION:=sah-next_v0.14.4
 SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
-PKG_SOURCE:=mod-ba-cli-sah-next_v0.14.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.14.3
-PKG_HASH:=6adb4c588740197b95eff6beab2a16d51e0117df502100934a2f1456f9591d0b
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-sah-next_v0.14.3
+PKG_SOURCE:=mod-ba-cli-sah-next_v0.14.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.14.4
+PKG_HASH:=27bf95eb4d2d23b02fdb9b488edc32548080d8671062b17e39ea7382f847478a
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-sah-next_v0.14.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
