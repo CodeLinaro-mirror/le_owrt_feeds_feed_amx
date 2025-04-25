@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxp
-PKG_VERSION:=sah-next_v2.9.3
+PKG_VERSION:=sah-next_v2.9.4
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxp-sah-next_v2.9.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.9.3
-PKG_HASH:=22b304d51264436a676653451cea2794232a6a4bc60ee21c1dd0971c78a0c6bc
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.9.3
+PKG_SOURCE:=libamxp-sah-next_v2.9.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.9.4
+PKG_HASH:=795c735ad181268402a1d5b2422733659f18a744f0b28d31b1553325def9abe3
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.9.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -17,10 +19,6 @@ PKG_RELEASE:=1
 
 HOST_BUILD_DEPENDS += libamxc/host
 HOST_BUILD_DEPENDS += libcap-ng/host
-HOST_BUILD_DEPENDS += bison/host
-HOST_BUILD_DEPENDS += flex/host
-PKG_BUILD_DEPENDS += bison/host
-PKG_BUILD_DEPENDS += flex/host
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
@@ -43,6 +41,10 @@ endef
 
 define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+endef
+
+define Host/Compile
+	$(call Host/Compile/Default, STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include)
 endef
 
 define Build/Install
