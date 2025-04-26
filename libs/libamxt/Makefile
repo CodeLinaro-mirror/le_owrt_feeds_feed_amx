@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxt
-PKG_VERSION:=sah-next_v1.0.4
+PKG_VERSION:=sah-next_v1.0.5
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxt-sah-next_v1.0.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.4
-PKG_HASH:=dd639933d480f8453f1e0eaa7110369548bb391e24a7051b1382c77b354f5339
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-sah-next_v1.0.4
+PKG_SOURCE:=libamxt-sah-next_v1.0.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.5
+PKG_HASH:=37bb181d06785aebca094d9e8175b91c59b3179ce5d4f683d16c6915bb5c96a1
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-sah-next_v1.0.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
