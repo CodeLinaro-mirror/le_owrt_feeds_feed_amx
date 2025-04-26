@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=sah-next_v0.5.3
+PKG_VERSION:=sah-next_v0.5.4
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-sah-next_v0.5.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.3
-PKG_HASH:=ad688b9c4bdaf31281da1840baf93fff553535de5fee63e4124afb2f151694a6
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-sah-next_v0.5.3
+PKG_SOURCE:=amx-cli-sah-next_v0.5.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.4
+PKG_HASH:=fe6981b8e740835a1738dd11de32e9e02814790846dbf5585186a5be524633af
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-sah-next_v0.5.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
