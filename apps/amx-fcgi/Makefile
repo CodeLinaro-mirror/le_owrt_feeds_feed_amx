@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-PKG_VERSION:=sah-next_v1.3.14
+PKG_VERSION:=sah-next_v1.3.15
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-sah-next_v1.3.14.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.3.14
-PKG_HASH:=42f179e35bf249aadfa1faf3a9cb04025d48a14a45c358a4d8941cba4d08a078
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-sah-next_v1.3.14
+PKG_SOURCE:=amx-fcgi-sah-next_v1.3.15.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.3.15
+PKG_HASH:=bdacef3ef3af3866881c1269427d682f2fd67b4b7ebfed940e681590bd9b58df
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-sah-next_v1.3.15
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
