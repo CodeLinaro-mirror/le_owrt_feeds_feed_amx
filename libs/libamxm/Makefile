@@ -4,10 +4,11 @@ PKG_NAME:=libamxm
 PKG_VERSION:=v0.1.0
 SHORT_DESCRIPTION:=modularity API, simplifies creation of plug-ins
 
-PKG_SOURCE:=libamxm-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm/-/archive/v0.1.0
-PKG_HASH:=b98980d2cf88c34a674f9a62cc2e71dc1cf9e94d2f38c52f513958669deb21f5
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxm-v0.1.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=ambiorix_coverity
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxm.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
