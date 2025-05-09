@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=v0.5.2
+PKG_VERSION:=v0.5.3
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-v0.5.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.5.2
-PKG_HASH:=a05aa44845a016db7b937ed7ad518decbd45e7484d56f62d1c1c72dee5793aef
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.5.2
+PKG_SOURCE:=amx-cli-v0.5.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/v0.5.3
+PKG_HASH:=31842aba197d4453aa73b21a5d8703fdfe1aa02c1e0fef3b1acdcba1583675c9
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-v0.5.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
