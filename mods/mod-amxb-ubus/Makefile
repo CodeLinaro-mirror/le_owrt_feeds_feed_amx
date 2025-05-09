@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=v3.9.0
+PKG_VERSION:=v3.9.1
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-v3.9.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.9.0
-PKG_HASH:=28e1e418e72579ecf86f2fc866b1afda2727098227b821ce52a387072d8c4631
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.9.0
+PKG_SOURCE:=amxb_ubus-v3.9.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/v3.9.1
+PKG_HASH:=4f3d01e6533b9bac8130a506fddfc10de4001d8050410cd69716e68c46621de0
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-v3.9.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
