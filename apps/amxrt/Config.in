@@ -11,9 +11,9 @@ config SAH_SERVICES_AMXRT
     bool "Build libamxrt application"
     default y
 
-config SAH_AMXRT_RWDATAPATH
-    string "Persistent storage location"
-    default "/etc/config"
+config SAH_SERVICES_AMXRT_STOP_ORDER
+    int "Libamxrt application shutdown order"
+    default 90
 
 endmenu
 
