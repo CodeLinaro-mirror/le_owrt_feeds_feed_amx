@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=lua-amx
-PKG_VERSION:=v0.5.5
+PKG_VERSION:=v0.5.6
 SHORT_DESCRIPTION:=LUA AMX Bindings 
 
-PKG_SOURCE:=lua-amx-v0.5.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.5.5
-PKG_HASH:=2c1af69c65a4f9edb9c8d5a53cd771400d2935e2d6448226b6228577d4e30c1b
-PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.5.5
+PKG_SOURCE:=lua-amx-v0.5.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.5.6
+PKG_HASH:=4c5e95f5534ddfedc056070c6bd90ba258e6470994f9dc27b3b2fccd0d234326
+PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.5.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
