@@ -11,6 +11,14 @@ config SAH_SERVICES_ACL-MANAGER
     bool "The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role."
     default y
 
+config SAH_SERVICES_ACL-MANAGER_START_ORDER
+    int "Start up order for the acl-manager plugin"
+    default 16
+
+config SAH_SERVICES_ACL-MANAGER_STOP_ORDER
+    int "Shutdown order for the acl-manager plugin"
+    default 84
+
 config SAH_SERVICES_ACL-MANAGER_REQUIRES_USERS
     bool "Add a dependency on Users.Group.acl-group that is required on prpl OS"
     default y
