@@ -1,20 +1,21 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libsahtrace
-PKG_VERSION:=sah-next_v1.17.0
+PKG_VERSION:=sah-next_v1.17.1
 SHORT_DESCRIPTION:=Small and flexible library to enable tracing and logging
 
-PKG_SOURCE:=libsahtrace-sah-next_v1.17.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/sah-next_v1.17.0
-PKG_HASH:=7ec6012a86a0e369a2ac45edd9fd4503e91807306b7f906a36a61c0b746811f9
-PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-sah-next_v1.17.0
+PKG_SOURCE:=libsahtrace-sah-next_v1.17.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/sah-next_v1.17.1
+PKG_HASH:=181b6aad1bb8556d66270b7e70aa2c068fdf9647468b43ee1926aac0fcb260ed
+PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-sah-next_v1.17.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 
 PKG_RELEASE:=1
-
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
@@ -35,6 +36,10 @@ endef
 
 define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_SAH_TRACES_ENABLED=$(CONFIG_SAH_TRACES_ENABLED) CONFIG_SAH_TRACES_LEVEL=$(CONFIG_SAH_TRACES_LEVEL) CONFIG_SAH_TRACES_SYSLOG_CONSOLE=$(CONFIG_SAH_TRACES_SYSLOG_CONSOLE) SAH_TRACE_NO_COLORS=$(SAH_TRACE_NO_COLORS) SAH_TRACE_COLORS=$(SAH_TRACE_COLORS) SAH_TRACE_COLORS_SIMPLE=$(SAH_TRACE_COLORS_SIMPLE) CONFIG_SAH_USER_TRACES_ENABLED=$(CONFIG_SAH_USER_TRACES_ENABLED))
+endef
+
+define Host/Compile
+	$(call Host/Compile/Default, STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include CONFIG_SAH_TRACES_ENABLED=$(CONFIG_SAH_TRACES_ENABLED) CONFIG_SAH_TRACES_LEVEL=$(CONFIG_SAH_TRACES_LEVEL) CONFIG_SAH_TRACES_SYSLOG_CONSOLE=$(CONFIG_SAH_TRACES_SYSLOG_CONSOLE) SAH_TRACE_NO_COLORS=$(SAH_TRACE_NO_COLORS) SAH_TRACE_COLORS=$(SAH_TRACE_COLORS) SAH_TRACE_COLORS_SIMPLE=$(SAH_TRACE_COLORS_SIMPLE) CONFIG_SAH_USER_TRACES_ENABLED=$(CONFIG_SAH_USER_TRACES_ENABLED))
 endef
 
 define Build/Install
