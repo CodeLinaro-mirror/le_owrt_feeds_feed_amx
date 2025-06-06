@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libsahtrace
-PKG_VERSION:=sah-next_v1.17.1
+PKG_VERSION:=sah-next_v1.17.2
 SHORT_DESCRIPTION:=Small and flexible library to enable tracing and logging
 
-PKG_SOURCE:=libsahtrace-sah-next_v1.17.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/sah-next_v1.17.1
-PKG_HASH:=181b6aad1bb8556d66270b7e70aa2c068fdf9647468b43ee1926aac0fcb260ed
-PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-sah-next_v1.17.1
+PKG_SOURCE:=libsahtrace-sah-next_v1.17.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/sah-next_v1.17.2
+PKG_HASH:=5a9746d5d521a589a69985bdeb24d60ae016ad8e9b28d67930fd0be9e98ff3c9
+PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-sah-next_v1.17.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
