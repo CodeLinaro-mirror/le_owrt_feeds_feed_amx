@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxrt
-PKG_VERSION:=v0.6.6
+PKG_VERSION:=v0.6.7
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
-PKG_SOURCE:=libamxrt-v0.6.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.6.6
-PKG_HASH:=dea27aaa844cc66437a97913eb3f9a22c5fbecb55846e1174960df7d4a876f19
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.6.6
+PKG_SOURCE:=libamxrt-v0.6.7.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/archive/v0.6.7
+PKG_HASH:=5299f5676418f2e7b7855ff8bd8ee6af17787d568c691c19fdf783cb4b82dfa0
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxrt-v0.6.7
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
