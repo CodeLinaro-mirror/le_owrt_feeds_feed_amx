@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=sah-next_v0.7.5
+PKG_VERSION:=sah-next_v0.7.6
 SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
-PKG_SOURCE:=acl-manager-sah-next_v0.7.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next_v0.7.5
-PKG_HASH:=63f842f6e29e4583afdf50d63d7e3641ea0bb1bf5cd283822292cef787624c8b
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next_v0.7.5
+PKG_SOURCE:=acl-manager-sah-next_v0.7.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next_v0.7.6
+PKG_HASH:=535ca83c1a9c3156f7a1cad432a3c834f9bc763f12d51abcce530428f9491b97
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next_v0.7.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
