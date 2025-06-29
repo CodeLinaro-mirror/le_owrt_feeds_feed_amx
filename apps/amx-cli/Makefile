@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
-PKG_VERSION:=sah-next_v0.5.6
+PKG_VERSION:=sah-next_v0.5.7
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
-PKG_SOURCE:=amx-cli-sah-next_v0.5.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.6
-PKG_HASH:=df15368c14fbe2221e2eec2b249eb6ff1f10d250a84cbbcda486cda7cbc9b8eb
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-sah-next_v0.5.6
+PKG_SOURCE:=amx-cli-sah-next_v0.5.7.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.7
+PKG_HASH:=7346bdc74d812bcde6bdad14385ce9ac8a55e052b8e22241a1c9dbcf761b94b6
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-sah-next_v0.5.7
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
