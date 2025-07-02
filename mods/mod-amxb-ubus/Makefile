@@ -3,7 +3,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=dev_PPW-522_4.0
+PKG_VERSION:=v3.9.1
 SHORT_DESCRIPTION:=Ubus Backend
 
 PKG_SOURCE_PROTO:=git
