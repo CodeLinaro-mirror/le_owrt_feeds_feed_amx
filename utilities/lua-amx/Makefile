@@ -30,7 +30,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxd
   DEPENDS += +libamxb
   DEPENDS += +libamxo
-  DEPENDS += +lua
+  DEPENDS += +lua5.3
   DEPENDS += +libevent2
   MENU:=1
 endef
