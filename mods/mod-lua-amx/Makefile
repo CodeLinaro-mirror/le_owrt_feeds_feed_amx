@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-lua-amx
-PKG_VERSION:=v0.1.11
+PKG_VERSION:=sah-next_v0.1.12
 SHORT_DESCRIPTION:=Ambiorix LUA extension
 
-PKG_SOURCE:=mod-lua-amx-v0.1.11.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/v0.1.11
-PKG_HASH:=83da54d51f4be76c121d89a48863ec0c5df90c194fc30c6db089836b97896d7d
-PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-v0.1.11
+PKG_SOURCE:=mod-lua-amx-sah-next_v0.1.12.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/sah-next_v0.1.12
+PKG_HASH:=50cd365441808544c31e86ae6c76693cf0277dffbae06e60e94b1dd906f0a7a5
+PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-sah-next_v0.1.12
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
