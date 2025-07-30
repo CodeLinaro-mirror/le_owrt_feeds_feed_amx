@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=sah-next_v2.8.0
+PKG_VERSION:=sah-next_v2.9.0
 SHORT_DESCRIPTION:=library providing generic reusable data containers
 
-PKG_SOURCE:=libamxc-sah-next_v2.8.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/sah-next_v2.8.0
-PKG_HASH:=6189417b567ee61148ae96ad73a9c74b356e7aa6189032985471ac5ecaa211ff
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-sah-next_v2.8.0
+PKG_SOURCE:=libamxc-sah-next_v2.9.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/sah-next_v2.9.0
+PKG_HASH:=dc2b0417e80a68126f1eb04aeb2aab7b8b42f648ec2927ec3bc96dec951fb1f3
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-sah-next_v2.9.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
