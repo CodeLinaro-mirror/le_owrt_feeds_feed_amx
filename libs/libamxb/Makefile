@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=sah-next_v4.14.1
+PKG_VERSION:=sah-next_v4.15.0
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-sah-next_v4.14.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/sah-next_v4.14.1
-PKG_HASH:=06291b66d9c592cac53d5e7069a74ff8f3a814f4f6f87ff111abf85760336353
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-sah-next_v4.14.1
+PKG_SOURCE:=libamxb-sah-next_v4.15.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/sah-next_v4.15.0
+PKG_HASH:=be4b16d133472f2fa364c4df6bdd6308f330ae8511bb0acb7c2369961f501fbf
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-sah-next_v4.15.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
