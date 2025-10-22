@@ -1,6 +1,6 @@
 config PACKAGE_acl-manager
     tristate
-    comment "Warning: please adapt baf.yml to include a super config"
+    select SAH_SERVICES_ACL-MANAGER
 
 if PACKAGE_acl-manager
 
@@ -8,6 +8,10 @@ menu "Select acl-manager build options"
     depends on PACKAGE_acl-manager
 
 config SAH_SERVICES_ACL-MANAGER
+    bool "The ACL manager will monitor the ACL directory and merge ACL files together to create a single master ACL file per role."
+    default y
+
+config SAH_SERVICES_ACL-MANAGER_START_ORDER
     int "Start up order for the acl-manager plugin"
     default 16
 
