@@ -11,6 +11,14 @@ config SAH_AMX_FCGI
     bool "Build Ambiorix Fast CGI"
     default y
 
+config SAH_AMX_AMX_FCGI_START_ORDER:
+    int "Start up order for the amx-fcgi plugin"
+    default 85
+
+config SAH_AMX_AMX_FCGI_STOP_ORDER:
+    int "Shutdown order for the amx-fcgi plugin"
+    default 10
+
 config REST_API_WEBUI_DEMO
     bool "Install a demo webui"
     default n
