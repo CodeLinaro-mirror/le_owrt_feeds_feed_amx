@@ -3,13 +3,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-PKG_VERSION:=v0.9.0
+PKG_VERSION:=feature-PCF-2139-enable-auto-respawn-via-procd
 SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
-PKG_SOURCE:=acl-manager-v0.9.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/v0.9.0
-PKG_HASH:=14b90243abfb79969d488d9c4302761fbb5afba81da4839cbb6f025d6b2e0223
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-v0.9.0
+
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=feature-PCF-2139-enable-auto-respawn-via-procd
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
