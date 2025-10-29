@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxs
-PKG_VERSION:=sah-next_v0.9.5
+PKG_VERSION:=sah-next_v0.9.6
 SHORT_DESCRIPTION:=Data model synchronization C-API
 
-PKG_SOURCE:=libamxs-sah-next_v0.9.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/sah-next_v0.9.5
-PKG_HASH:=ae1b87db33876087a98a86d466137c90f9040da6dedf40fbd58f84e6905360d8
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-sah-next_v0.9.5
+PKG_SOURCE:=libamxs-sah-next_v0.9.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxs/-/archive/sah-next_v0.9.6
+PKG_HASH:=31a141ae4c782a0d96d7c88690af066c8a3c8e3a5174cb172498a3a502daaf8f
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxs-sah-next_v0.9.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -43,6 +45,10 @@ endef
 
 define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include)
+endef
+
+define Host/Compile
+	$(call Host/Compile/Default, STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include)
 endef
 
 define Build/Install
