@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v4.14.2
+PKG_VERSION:=v4.15.0
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-v4.14.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.14.2
-PKG_HASH:=fce5e38ed1b441cac0d667611ef312af68a52bbe34cb4e283f7f256cc85c67de
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.14.2
+PKG_SOURCE:=libamxb-v4.15.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.15.0
+PKG_HASH:=ae3ce83f066611a8bdbe5e9aa5f4f18c1f40bf980800e9b0b887638c73dc714d
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.15.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
