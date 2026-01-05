@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-PKG_VERSION:=sah-next_v2.2.10
+PKG_VERSION:=sah-next_v2.2.11
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-sah-next_v2.2.10.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next_v2.2.10
-PKG_HASH:=55b49c7e9da07ecc86510efc0e48db143475f6157499fc124261f339117983b6
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next_v2.2.10
+PKG_SOURCE:=amxrt-sah-next_v2.2.11.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next_v2.2.11
+PKG_HASH:=c7d8c093e929f956addb1519749b698ca6a508834a5457be0c17f2571d45e1a8
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next_v2.2.11
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -19,9 +19,9 @@ COMPONENT:=amxrt
 PKG_RELEASE:=1
 
 define SAHInit/Install
-	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/amx-shutdown-wait ${PKG_INSTALL_DIR}/etc/rc.d/Samx-shutdown-wait
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/amx-shutdown-wait ${PKG_INSTALL_DIR}/etc/rc.d/K$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER)amx-shutdown-wait
+	install -d $(1)/etc/rc.d/
+	ln -sfr $(1)/etc/init.d/amx-shutdown-wait $(1)/etc/rc.d/Samx-shutdown-wait
+	ln -sfr $(1)/etc/init.d/amx-shutdown-wait $(1)/etc/rc.d/K$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER)amx-shutdown-wait
 endef
 
 include $(INCLUDE_DIR)/package.mk
@@ -52,13 +52,14 @@ define Build/Compile
 endef
 
 define Build/Install
-	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT) CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER=$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER))
+	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER=$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER))
 
-	$(call SAHInit/Install)
+	$(call SAHInit/Install,$(PKG_INSTALL_DIR))
 endef
 
 define Build/InstallDev
-	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_GATEWAY=$(CONFIG_GATEWAY) CONFIG_ACCESSPOINT=$(CONFIG_ACCESSPOINT) CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER=$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER))
+	$(call Build/Install/Default, install INSTALL=install D=$(STAGING_DIR) DEST=$(STAGING_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER=$(CONFIG_SAH_SERVICES_AMXRT_STOP_ORDER))
+	$(call SAHInit/Install,$(STAGING_DIR))
 endef
 
 define Package/$(PKG_NAME)/install
