@@ -23,6 +23,10 @@ config SAH_MOD_BA_CLI_INSTALL_RBUS_CLI
     bool "Install rbus cli"
     default y
 
+config SAH_MOD_BA_CLI_INSTALL_USP_CLI
+    bool "Install usp cli"
+    default y
+
 endmenu
 
 endif
