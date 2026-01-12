@@ -15,6 +15,10 @@ config SAH_SERVICES_AMXRT_STOP_ORDER
     int "Libamxrt application shutdown order"
     default 90
 
+config SAH_SERVICES_AMXRT_PROCD_INIT_FUNCTIONS
+    bool "Adds the procd init functions script in stead of the non-procd init functions script"
+    default PACKAGE_procd
+
 endmenu
 
 endif
