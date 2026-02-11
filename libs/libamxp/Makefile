@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxp
-PKG_VERSION:=sah-next_v2.12.0
+PKG_VERSION:=sah-next_v2.12.1
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxp-sah-next_v2.12.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.12.0
-PKG_HASH:=147e17e8a935b9711dbc29018ac1e3481c9287be3dac3dc847e10d8c4bafb2d6
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.12.0
+PKG_SOURCE:=libamxp-sah-next_v2.12.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/sah-next_v2.12.1
+PKG_HASH:=f2ec7b92da9ad2d551930ce49496167d843d464eb8645752aa9e97aaffac6a3c
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-sah-next_v2.12.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
