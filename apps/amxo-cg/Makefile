@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxo-cg
-PKG_VERSION:=sah-next_v1.7.11
+PKG_VERSION:=sah-next_v1.7.12
 SHORT_DESCRIPTION:=Object Definition Language Compiler/Generator
 
-PKG_SOURCE:=amxo-cg-sah-next_v1.7.11.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/sah-next_v1.7.11
-PKG_HASH:=acb445a7c22ede4da6e056085146ef116b9397efece02cbb1be296ecbc6249b9
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-sah-next_v1.7.11
+PKG_SOURCE:=amxo-cg-sah-next_v1.7.12.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxo-cg/-/archive/sah-next_v1.7.12
+PKG_HASH:=020865b60a02c63da10fbdf5c56183585799a5e12bb3d3d1f4ee965c13c4643d
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxo-cg-sah-next_v1.7.12
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
