@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-PKG_VERSION:=sah-next_v5.5.0
+PKG_VERSION:=sah-next_v5.5.1
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE:=libamxo-sah-next_v5.5.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.5.0
-PKG_HASH:=d7973205e0a215170edf50e445fa5e9e024a6e97fa03ff1c6bd5569735532d58
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.5.0
+PKG_SOURCE:=libamxo-sah-next_v5.5.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.5.1
+PKG_HASH:=d0dffa58f63edb30f1272b240fc61f4641c239c55491c6a0646f12807788e854
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.5.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
