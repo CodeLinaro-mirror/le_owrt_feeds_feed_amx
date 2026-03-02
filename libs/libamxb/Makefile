@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.4)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=sah-next_v4.19.2
+PKG_VERSION:=sah-next_v4.19.3
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-sah-next_v4.19.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/sah-next_v4.19.2
-PKG_HASH:=9f1ea918422a87569f13c25c46b59978fdf533d929ff3677fdf4dba69abf3708
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-sah-next_v4.19.2
+PKG_SOURCE:=libamxb-sah-next_v4.19.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/sah-next_v4.19.3
+PKG_HASH:=077a3e3f025187ca0fa3e788dab739fd8c2f41f02679c5286773eda16d6a7172
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-sah-next_v4.19.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
