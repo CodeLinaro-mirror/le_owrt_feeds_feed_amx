@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.4)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxd
-PKG_VERSION:=sah-next_v6.9.4
+PKG_VERSION:=sah-next_v6.9.5
 SHORT_DESCRIPTION:=Data model C-API
 
-PKG_SOURCE:=libamxd-sah-next_v6.9.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/sah-next_v6.9.4
-PKG_HASH:=3dc1ba56d7ef3022a7665e5ddde954f779008d3ad5b9b47129d37b6cd3584019
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-sah-next_v6.9.4
+PKG_SOURCE:=libamxd-sah-next_v6.9.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/sah-next_v6.9.5
+PKG_HASH:=c1867da60f309436d7fd0b95db4849604dcee1655ac64f1b713b93fc4fbff5db
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-sah-next_v6.9.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
