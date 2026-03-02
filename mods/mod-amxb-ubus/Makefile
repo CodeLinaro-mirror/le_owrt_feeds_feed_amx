@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.39.4)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-PKG_VERSION:=sah-next_v3.8.15
+PKG_VERSION:=sah-next_v3.8.16
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-sah-next_v3.8.15.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.15
-PKG_HASH:=77d46718a080ac3626965c2ee5c4725b7616c07f67c2ee850484e6420b433dee
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-sah-next_v3.8.15
+PKG_SOURCE:=amxb_ubus-sah-next_v3.8.16.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.16
+PKG_HASH:=160361954eec66a48299d32ec569302f5e3abef8b752b3b2b94c8d426ecec50e
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-sah-next_v3.8.16
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
