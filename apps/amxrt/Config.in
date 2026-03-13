@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.0)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/blob/main/baf.yml instead
 config PACKAGE_amxrt
     tristate
     select SAH_SERVICES_AMXRT
