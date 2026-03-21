@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/blob/main/baf.yml instead
 config PACKAGE_mod-amxb-pcb
     tristate
     select SAH_MOD_AMXB_PCB
