@@ -4,10 +4,11 @@ PKG_NAME:=libamxj
 PKG_VERSION:=v1.0.4
 SHORT_DESCRIPTION:=JSON parser & generator using yajl and libamxc variants
 
-PKG_SOURCE:=libamxj-v1.0.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj/-/archive/v1.0.4
-PKG_HASH:=4caa4c4c1505ee2eab189042058b978875f3e03cead3a115eb8eba08a168f865
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxj-v1.0.4
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=PPW-1802_fix_memory_leak
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxj.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
