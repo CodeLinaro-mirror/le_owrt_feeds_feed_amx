@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
-RAW_VERSION:=sah-next-4.1_v0.3.0
+RAW_VERSION:=sah-next-4.1_v0.4.0
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
-PKG_SOURCE:=acl-manager-sah-next-4.1_v0.3.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next-4.1_v0.3.0
-PKG_HASH:=f5467223f90c51b0b0cc5bc6231879384374e5652e4a9dea51588124b1446264
-PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next-4.1_v0.3.0
+PKG_SOURCE:=acl-manager-sah-next-4.1_v0.4.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next-4.1_v0.4.0
+PKG_HASH:=71684f1d9779252da073f63238f7d6511bf4f006aaa3f6607619672bb1720682
+PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next-4.1_v0.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -64,7 +64,9 @@ define Build/InstallDev
 endef
 
 define Package/$(PKG_NAME)/install
-	$(CP) $(PKG_INSTALL_DIR)/* $(1)/
+	if [ -d $(PKG_INSTALL_DIR) ]; then \
+		$(CP) $(PKG_INSTALL_DIR)/* $(1)/; \
+	fi
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
