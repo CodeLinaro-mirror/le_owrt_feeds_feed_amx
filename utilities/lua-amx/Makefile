@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.40.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=lua-amx
-RAW_VERSION:=sah-next_v0.7.2
+RAW_VERSION:=sah-next-4.1-lts_v0.7.2
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=LUA AMX Bindings 
 
-PKG_SOURCE:=lua-amx-sah-next_v0.7.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/sah-next_v0.7.2
-PKG_HASH:=d7455309b5300a888d382e0b2ce3b242e3ee5f1978bfd2788e996ed38df5d58a
-PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-sah-next_v0.7.2
+PKG_SOURCE:=lua-amx-sah-next-4.1-lts_v0.7.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/sah-next-4.1-lts_v0.7.2
+PKG_HASH:=7d60986871d03940ed3349261fc74f5ccfa46954ba606c5622ea3cf251066caf
+PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-sah-next-4.1-lts_v0.7.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
