@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.0)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.40.0)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amxrt
-RAW_VERSION:=sah-next_v2.3.2
+RAW_VERSION:=sah-next-4.1-lts_v2.3.2
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Data model runtime
 
-PKG_SOURCE:=amxrt-sah-next_v2.3.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next_v2.3.2
-PKG_HASH:=87a5b4d05138fc6a521d82b8352c50aede56c4445798fcf98305ddd0e05f4df5
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next_v2.3.2
+PKG_SOURCE:=amxrt-sah-next-4.1-lts_v2.3.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/archive/sah-next-4.1-lts_v2.3.2
+PKG_HASH:=2bd5b162200d8e2744a5684e84769c2e7ee2747afd689f15f640dc19a47b9b0e
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxrt-sah-next-4.1-lts_v2.3.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
