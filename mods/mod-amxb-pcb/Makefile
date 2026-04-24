@@ -1,16 +1,16 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.40.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-pcb
-RAW_VERSION:=sah-next_v3.17.0
+RAW_VERSION:=sah-next-4.1-lts_v3.17.0
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=PCB backend implementation for amxb
 
-PKG_SOURCE:=amxb_pcb-sah-next_v3.17.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/sah-next_v3.17.0
-PKG_HASH:=1af570c0bf03db8613e12abba8a7a04cdcbb4c5dadd79c1efefff852fe2b63a9
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-sah-next_v3.17.0
+PKG_SOURCE:=amxb_pcb-sah-next-4.1-lts_v3.17.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_pcb/-/archive/sah-next-4.1-lts_v3.17.0
+PKG_HASH:=18426ba33cc13cb0c26bba1ff09b4c183ef3c45c84dc0ff92039068071799f30
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_pcb-sah-next-4.1-lts_v3.17.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
