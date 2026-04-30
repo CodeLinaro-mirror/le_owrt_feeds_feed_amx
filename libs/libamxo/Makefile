@@ -3,14 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxo
-RAW_VERSION:=sah-next_v5.9.1
+RAW_VERSION:=sah-next_v5.10.0
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Ambiorix Object Definition Language library
 
-PKG_SOURCE:=libamxo-sah-next_v5.9.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.9.1
-PKG_HASH:=eb0f18e73bbfb4658658e662b103cf88c64d93ec0abef8e842c3b874bbf48c44
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.9.1
+PKG_SOURCE:=libamxo-sah-next_v5.10.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxo/-/archive/sah-next_v5.10.0
+PKG_HASH:=0333679555218e62db4b9d8b801247dfed0c82f5bd85ddbda63225cc09d24c9e
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxo-sah-next_v5.10.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
