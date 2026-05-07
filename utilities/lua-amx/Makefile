@@ -6,9 +6,10 @@ PKG_NAME:=lua-amx
 PKG_VERSION:=v0.7.1
 SHORT_DESCRIPTION:=LUA AMX Bindings 
 
-PKG_SOURCE:=lua-amx-v0.7.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/archive/v0.7.1
-PKG_HASH:=eba139f0abb53376c56f67a4847de5466663d8a19e30ee3c69cb1db4bc25ff41
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx.git
+PKG_MIRROR_HASH:=skip
+PKG_SOURCE_VERSION:=PPW-1903
 PKG_BUILD_DIR:=$(BUILD_DIR)/lua-amx-v0.7.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
