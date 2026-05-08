@@ -3,14 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
-RAW_VERSION:=sah-next_v3.8.19
+RAW_VERSION:=sah-next_v3.8.20
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Ubus Backend
 
-PKG_SOURCE:=amxb_ubus-sah-next_v3.8.19.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.19
-PKG_HASH:=6d6ada47f10766593569e3c7c39e8c1e379301433c660a929c7de0ac69c9752e
-PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-sah-next_v3.8.19
+PKG_SOURCE:=amxb_ubus-sah-next_v3.8.20.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.20
+PKG_HASH:=6d54baf8384dc20ca1e0ce012fa6da41ac87c92b27243b335c8b4fa9ca6edbc9
+PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-sah-next_v3.8.20
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
