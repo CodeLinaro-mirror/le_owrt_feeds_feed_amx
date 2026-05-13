@@ -21,11 +21,11 @@ config SAH_AMXRT_RWDATAPATH
 
 config FORCE_RUNNING_AS_ROOT
     bool "INSECURE: This options forces ambiorix components to run as the root user, even if they request to run as a different user"
-    default y
+    default n
 
 config REMOVE_CAPS_ODLS
     bool "INSECURE: This option removes all the capability ODLs (*_caps.odl) from /etc/amx and subdirectories during first boot. This will also force all components to run as root"
-    default y
+    default n
 
 endmenu
 
