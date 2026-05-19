@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v2.5.3
+PKG_VERSION:=v2.7.1
 SHORT_DESCRIPTION:=library providing generic reusable data containers
 
-PKG_SOURCE:=libamxc-v2.5.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/v2.5.3
-PKG_HASH:=85a306a49f127261396109d0c7d652e64a6d159d3caaaf89386bc5fcdb6fbd58
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v2.5.3
+PKG_SOURCE:=libamxc-v2.7.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/v2.7.1
+PKG_HASH:=0146afef7bb838538a02529defcf840652fe8c88d76a28810f29af5877708857
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v2.7.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
