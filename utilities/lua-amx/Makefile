@@ -32,6 +32,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxb
   DEPENDS += +libamxo
   DEPENDS += +libevent2
+  DEPENDS += +liblua
   MENU:=1
 endef
 
