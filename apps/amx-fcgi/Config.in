@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/blob/main/baf.yml instead
 config PACKAGE_amx-fcgi
     tristate
     select SAH_AMX_FCGI
@@ -11,9 +13,13 @@ config SAH_AMX_FCGI
     bool "Build Ambiorix Fast CGI"
     default y
 
-config REST_API_WEBUI_DEMO
-    bool "Install a demo webui"
-    default n
+config SAH_AMX_FCGI_START_ORDER
+    int "Start up order for the amx-fcgi plugin"
+    default 85
+
+config SAH_AMX_FCGI_STOP_ORDER
+    int "Shutdown order for the amx-fcgi plugin"
+    default 10
 
 endmenu
 
