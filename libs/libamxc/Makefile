@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
-PKG_VERSION:=v2.3.10
+PKG_VERSION:=v2.3.10-ppw1971
 SHORT_DESCRIPTION:=library providing generic reusable data containers
 
-PKG_SOURCE:=libamxc-v2.3.10.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/v2.3.10
-PKG_HASH:=1ea9f09366cc59c8363462d89dbf62710376404a4da818f38919b81d310d33cc
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-v2.3.10
+PKG_SOURCE:=libamxc-67ef13d7cb4810708b5d78a563f2606832f83e7b.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/67ef13d7cb4810708b5d78a563f2606832f83e7b
+PKG_HASH:=fb948e6b40553c88f6bd3588aaf3433a322e9acfe2291a79544e1f7e4aa487a9
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-67ef13d7cb4810708b5d78a563f2606832f83e7b
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
