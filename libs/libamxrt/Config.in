@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/blob/main/baf.yml instead
 config PACKAGE_libamxrt
     tristate
     select SAH_LIB_AMXRT
@@ -14,6 +16,14 @@ config SAH_LIB_AMXRT
 config SAH_AMXRT_RWDATAPATH
     string "Persistent storage location"
     default "/etc/config"
+
+config FORCE_RUNNING_AS_ROOT
+    bool "INSECURE: This options forces ambiorix components to run as the root user, even if they request to run as a different user"
+    default y
+
+config REMOVE_CAPS_ODLS
+    bool "INSECURE: This option removes all the capability ODLs (*_caps.odl) from /etc/amx and subdirectories during first boot. This will also force all components to run as root"
+    default y
 
 endmenu
 
