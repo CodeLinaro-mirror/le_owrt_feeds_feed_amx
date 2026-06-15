@@ -3,14 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
-RAW_VERSION:=sah-next_v1.5.0
+RAW_VERSION:=sah-next_v1.6.0
 PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION)),$(patsubst v%,%,$(RAW_VERSION)),$(RAW_VERSION))
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
-PKG_SOURCE:=amx-fcgi-sah-next_v1.5.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.5.0
-PKG_HASH:=62ea8830a5f700009cbb8e5a4a3ab4179455d75a469e96a6251d4e0776d9fb7b
-PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-sah-next_v1.5.0
+PKG_SOURCE:=amx-fcgi-sah-next_v1.6.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.6.0
+PKG_HASH:=cb3b622930f990b558289ddec4fd7f41485e103adf0409ff2d6aaae191151877
+PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-sah-next_v1.6.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
