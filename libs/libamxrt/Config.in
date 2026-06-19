@@ -1,4 +1,4 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.41.1)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/blob/main/baf.yml instead
 config PACKAGE_libamxrt
     tristate
