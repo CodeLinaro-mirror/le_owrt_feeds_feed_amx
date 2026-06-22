@@ -1,0 +1,115 @@
+libsahtrace: skip zone-level lookup above max effective level
+
+sahTracevZ() resolves the per-zone trace level on every compiled zone trace,
+before sahTraceOutput() decides whether to emit anything. Built with
+SAHTRACES_LEVEL=500, the hot SAH_TRACEZ_INFO (400) and SAH_TRACEZ_IN/OUT (500)
+call sites in tight loops - e.g. pwhm / libswla nl80211 station polling - each
+pay a linear walk of the trace-zone list plus a strcmp per entry, and a second
+walk for the "all" fallback, only for the result to be discarded. On a 114
+station scaling run this zone-lookup subtree is ~5.9% of wld CPU.
+
+For any name, sahTraceGetZoneLevel() returns a named zone level, the "all"
+fallback level, or -1 - never more than the maximum level across all registered
+zones. Track that maximum (maxEffectiveZoneLevel, -1 when no zones) and return
+early from sahTracevZ() when the message level exceeds it: the trace could not
+be output regardless of which zone resolves. This is one integer compare, no
+allocation, output is byte-for-byte identical, and it degrades to the original
+behaviour (a no-op guard) when a zone is genuinely enabled high.
+
+The maximum is recomputed by walking the zone list at the four mutation points
+that can change an effective level: sahTraceAddZone(), sahTraceRemoveZone(),
+sahTraceRemoveAllZones() and sahTraceZoneSetLevel(). Recompute-all avoids the
+stale-maximum bug an incremental update would hit when the current-max zone is
+removed or lowered. Zone mutation is already documented as not thread safe, so
+no locking is added; the integer is read locklessly on the hot path, matching
+the existing zone-list contract.
+
+Upstream-Status: Pending
+Signed-off-by: Petr Štetiar <petr.stetiar@prplfoundation.org>
+---
+--- a/src/sahtrace.c
++++ b/src/sahtrace.c
+@@ -116,6 +116,36 @@
+ static sah_trace_zone* zones = NULL;
+ struct timespec startTime = {0, 0};
+ 
++/*
++ * Highest effective trace level across all registered zones, or -1 when none
++ * are registered. For any name, sahTraceGetZoneLevel() returns either a named
++ * zone level, the "all" fallback level, or -1 - never more than this maximum.
++ * So sahTracevZ() can skip the zone-list walk entirely whenever the message
++ * level exceeds it (the trace could not be output anyway). Recomputed by
++ * sahTraceRecomputeMaxLevel() at every zone mutation. Like the rest of the zone
++ * state, this is not thread safe; zones must be mutated single threaded.
++ */
++static int maxEffectiveZoneLevel = -1;
++
++static void sahTraceRecomputeMaxLevel(void) {
++    sah_trace_zone* curZone = zones;
++    int m = -1;
++
++    while(curZone) {
++        /*
++         * Compare as signed int: sah_trace_level is an enum the compiler may
++         * give an unsigned underlying type, which would promote the m == -1
++         * sentinel to UINT_MAX and make the comparison always false.
++         */
++        int level = (int) curZone->level;
++        if(level > m) {
++            m = level;
++        }
++        curZone = curZone->next;
++    }
++    maxEffectiveZoneLevel = m;
++}
++
+ 
+ /* function prototypes */
+ static void sahTraceOutput(int lvl, int traceLvl, const char* format, va_list vl);
+@@ -599,6 +629,7 @@
+         zones = newZone;
+     }
+     newZone->level = lvl;
++    sahTraceRecomputeMaxLevel();
+ }
+ 
+ /**
+@@ -625,6 +656,7 @@
+             }
+             free(curZone->name);
+             free(curZone);
++            sahTraceRecomputeMaxLevel();
+             return;
+         }
+         prevZone = curZone;
+@@ -649,6 +681,7 @@
+         free(zones);
+         zones = curZone;
+     }
++    sahTraceRecomputeMaxLevel();
+ }
+ 
+ /**
+@@ -772,6 +805,7 @@
+     }
+ 
+     zone->level = lvl;
++    sahTraceRecomputeMaxLevel();
+ }
+ 
+ /**
+@@ -859,6 +893,14 @@
+    @param ap variable argument list
+  */
+ void sahTracevZ(int lvl, const char* zone, const char* format, va_list ap) {
++    /*
++     * Skip the zone-list walk when the message cannot be output for any zone.
++     * maxEffectiveZoneLevel bounds sahTraceGetZoneLevel() from above, so
++     * lvl > maxEffectiveZoneLevel proves sahTraceOutput() would discard it.
++     */
++    if(lvl > maxEffectiveZoneLevel) {
++        return;
++    }
+     sahTraceOutput(lvl, sahTraceGetZoneLevel(zone), format, ap);
+ }
+ 
