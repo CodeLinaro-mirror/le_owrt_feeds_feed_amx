@@ -5,7 +5,7 @@ PKG_VERSION:=v0.3.3
 SHORT_DESCRIPTION:=Simple example application that creates a data model using the Ambiorix framework
 
 PKG_SOURCE:=dmtui-v0.3.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/applications/dmtui/-/archive/v0.3.3
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/amxlab/tui/applications/dmtui/-/archive/v0.3.3
 PKG_HASH:=51cfd6d4269e8d51722bbe6553c63fda040fadaa28787feb0d6f139c99f6137f
 PKG_BUILD_DIR:=$(BUILD_DIR)/dmtui-v0.3.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Examples
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/applications/dmtui
+  URL:=https://gitlab.com/soft.at.home/ambiorix/amxlab/tui/applications/dmtui
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxt

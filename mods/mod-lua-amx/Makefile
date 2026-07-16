@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/bindings/lua/mod-lua-amx/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-lua-amx
@@ -7,7 +7,7 @@ PKG_VERSION:=sah-next_v0.1.12
 SHORT_DESCRIPTION:=Ambiorix LUA extension
 
 PKG_SOURCE:=mod-lua-amx-sah-next_v0.1.12.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx/-/archive/sah-next_v0.1.12
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/bindings/lua/mod-lua-amx/-/archive/sah-next_v0.1.12
 PKG_HASH:=50cd365441808544c31e86ae6c76693cf0277dffbae06e60e94b1dd906f0a7a5
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-lua-amx-sah-next_v0.1.12
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/mod-lua-amx
+  URL:=https://gitlab.com/soft.at.home/ambiorix/bindings/lua/mod-lua-amx
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

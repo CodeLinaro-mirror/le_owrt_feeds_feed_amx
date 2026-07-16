@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxt
@@ -7,7 +7,7 @@ PKG_VERSION:=sah-next_v1.0.10
 SHORT_DESCRIPTION:=Common patterns implementation
 
 PKG_SOURCE:=libamxt-sah-next_v1.0.10.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.10
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt/-/archive/sah-next_v1.0.10
 PKG_HASH:=13080b18ed863164ec73844d98c0cc1220076808cb3232891e9ab179af66dae7
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxt-sah-next_v1.0.10
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxt
+  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxt
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   MENU:=1

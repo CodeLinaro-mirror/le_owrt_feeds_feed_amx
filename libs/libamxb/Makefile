@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE:=libamxb-sah-next_v4.22.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/sah-next_v4.22.1
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb/-/archive/sah-next_v4.22.1
 PKG_HASH:=aa0573ad6257896881ba48d4af27a5765d82085effb423859996735113b230c7
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-sah-next_v4.22.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -32,7 +32,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb
+  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxb
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

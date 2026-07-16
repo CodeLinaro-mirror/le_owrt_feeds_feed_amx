@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
 config PACKAGE_acl-manager
     tristate
     select SAH_SERVICES_ACL-MANAGER

@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/bindings/lua/lua-amx/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/bindings/lua/lua-amx/-/blob/main/baf.yml instead
 config PACKAGE_lua-amx
     tristate
     select SAH_LUA_AMX

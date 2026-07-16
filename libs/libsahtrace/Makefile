@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version master)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/libraries/libsahtrace/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libsahtrace
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Small and flexible library to enable tracing and logging
 
 PKG_SOURCE:=libsahtrace-sah-next-4.2_v0.1.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/archive/sah-next-4.2_v0.1.1
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/libraries/libsahtrace/-/archive/sah-next-4.2_v0.1.1
 PKG_HASH:=50dff46e6b0c2c0c1aacafb469ba2cd65e6ae06e8483e18e91b89dc4b2e7f884
 PKG_BUILD_DIR:=$(BUILD_DIR)/libsahtrace-sah-next-4.2_v0.1.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -27,7 +27,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace
+  URL:=https://gitlab.com/soft.at.home/libraries/libsahtrace
   MENU:=1
 endef
 

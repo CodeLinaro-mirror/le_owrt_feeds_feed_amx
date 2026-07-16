@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/applications/amx-fcgi/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-fcgi
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Ambiorix Fast CGI app for web-servers
 
 PKG_SOURCE:=amx-fcgi-sah-next_v1.5.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.5.0
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-fcgi/-/archive/sah-next_v1.5.0
 PKG_HASH:=62ea8830a5f700009cbb8e5a4a3ab4179455d75a469e96a6251d4e0776d9fb7b
 PKG_BUILD_DIR:=$(BUILD_DIR)/amx-fcgi-sah-next_v1.5.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -33,7 +33,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-fcgi
+  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-fcgi
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libamxm

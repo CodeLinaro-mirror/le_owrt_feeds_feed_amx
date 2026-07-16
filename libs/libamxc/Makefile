@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxc
@@ -7,7 +7,7 @@ PKG_VERSION:=sah-next_v2.10.3
 SHORT_DESCRIPTION:=library providing generic reusable data containers
 
 PKG_SOURCE:=libamxc-sah-next_v2.10.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc/-/archive/sah-next_v2.10.3
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc/-/archive/sah-next_v2.10.3
 PKG_HASH:=393c4b940b9c02c0b45a501bb3f6dba63a7ab0861ee07d36bcaac3ee6a63e3b4
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxc-sah-next_v2.10.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -26,7 +26,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxc
+  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxc
   MENU:=1
 endef
 

@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-amxb-ubus
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Ubus Backend
 
 PKG_SOURCE:=amxb_ubus-sah-next_v3.8.20.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.20
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus/-/archive/sah-next_v3.8.20
 PKG_HASH:=6d54baf8384dc20ca1e0ce012fa6da41ac87c92b27243b335c8b4fa9ca6edbc9
 PKG_BUILD_DIR:=$(BUILD_DIR)/amxb_ubus-sah-next_v3.8.20
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -24,7 +24,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amxb_backends/amxb_ubus
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amxb_backends/amxb_ubus
   DEPENDS += +libamxc
   DEPENDS += +libamxb
   DEPENDS += +libamxd

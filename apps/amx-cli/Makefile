@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=amx-cli
@@ -7,7 +7,7 @@ PKG_VERSION:=sah-next_v0.5.8
 SHORT_DESCRIPTION:=Ambiorix interactive CLI
 
 PKG_SOURCE:=amx-cli-sah-next_v0.5.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.8
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli/-/archive/sah-next_v0.5.8
 PKG_HASH:=9dd765e4fcaf807fbcf47d0466fc97c90ba3c144f290a0738bde6ed81a3f7d59
 PKG_BUILD_DIR:=$(BUILD_DIR)/amx-cli-sah-next_v0.5.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amx-cli
+  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amx-cli
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxt

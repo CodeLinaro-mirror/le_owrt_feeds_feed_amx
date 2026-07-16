@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=acl-manager
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=The ACL manager monitors ACL directory and merges ACL files
 
 PKG_SOURCE:=acl-manager-sah-next-4.1_v0.4.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager/-/archive/sah-next-4.1_v0.4.0
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager/-/archive/sah-next-4.1_v0.4.0
 PKG_HASH:=71684f1d9779252da073f63238f7d6511bf4f006aaa3f6607619672bb1720682
 PKG_BUILD_DIR:=$(BUILD_DIR)/acl-manager-sah-next-4.1_v0.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -33,7 +33,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/acl-manager
+  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/acl-manager
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libamxp

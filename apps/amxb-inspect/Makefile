@@ -5,7 +5,7 @@ PKG_VERSION:=v1.2.1
 SHORT_DESCRIPTION:=Ambiorix Backend inspector/validation tool
 
 PKG_SOURCE:=amxb-inspect-v1.2.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxb-inspect/-/archive/v1.2.1
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect/-/archive/v1.2.1
 PKG_HASH:=b6fc5c9b9d94884af362fda41f455adcaaf5dd7538a598616508ab44e6a56b5c
 PKG_BUILD_DIR:=$(BUILD_DIR)/amxb-inspect-v1.2.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxb-inspect
+  URL:=https://gitlab.com/soft.at.home/ambiorix/applications/amxb-inspect
   DEPENDS += +libamxb
   MENU:=1
 endef

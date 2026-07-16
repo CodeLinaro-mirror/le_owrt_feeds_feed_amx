@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.3)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_dm_mods/mod-busstats/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/modules/amx_dm_mods/mod-busstats/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-busstats
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Bus statistics
 
 PKG_SOURCE:=mod-busstats-sah-next_v0.2.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_dm_mods/mod-busstats/-/archive/sah-next_v0.2.5
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_dm_mods/mod-busstats/-/archive/sah-next_v0.2.5
 PKG_HASH:=62e502e01369c8ff43a86332df1b1c1aadb4fe4ea8089bf46415bc861aa9dbd9
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-busstats-sah-next_v0.2.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -26,7 +26,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_dm_mods/mod-busstats
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_dm_mods/mod-busstats
   DEPENDS += +libamxc
   DEPENDS += +libamxd
   DEPENDS += +libamxb

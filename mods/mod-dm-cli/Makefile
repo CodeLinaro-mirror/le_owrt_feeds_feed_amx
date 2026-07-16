@@ -5,7 +5,7 @@ PKG_VERSION:=v0.2.6
 SHORT_DESCRIPTION:=Data Model Command Line Interface
 
 PKG_SOURCE:=mod-dm-cli-v0.2.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.6
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli/-/archive/v0.2.6
 PKG_HASH:=371b9fa40876d02e48468bfd15c1975649817f69fed1829b3bd3a6ab169b84e3
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-dm-cli-v0.2.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-dm-cli
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-dm-cli
   DEPENDS += +libamxc
   DEPENDS += +libamxt
   DEPENDS += +libamxm

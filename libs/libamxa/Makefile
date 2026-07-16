@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxa
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Access control verification
 
 PKG_SOURCE:=libamxa-sah-next_v0.14.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa/-/archive/sah-next_v0.14.0
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa/-/archive/sah-next_v0.14.0
 PKG_HASH:=b3eb75e622ffed4264bd1f6e43e03105dd8e2250293194f55c74468189f2a2ca
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxa-sah-next_v0.14.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -32,7 +32,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxa
+  URL:=https://gitlab.com/soft.at.home/ambiorix/libraries/libamxa
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libamxd

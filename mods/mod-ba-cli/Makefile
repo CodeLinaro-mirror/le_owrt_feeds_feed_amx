@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mod-ba-cli
@@ -8,7 +8,7 @@ PKG_VERSION:=$(if $(filter v0% v1% v2% v3% v4% v5% v6% v7% v8% v9%,$(RAW_VERSION
 SHORT_DESCRIPTION:=Bus Agnostic Command Line Interface
 
 PKG_SOURCE:=mod-ba-cli-sah-next_v0.21.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.21.0
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli/-/archive/sah-next_v0.21.0
 PKG_HASH:=0f0f8b7bbb5aa40644e1a7e70421506c9dd1df89a40c6c438b7df3f64719a044
 PKG_BUILD_DIR:=$(BUILD_DIR)/mod-ba-cli-sah-next_v0.21.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -24,7 +24,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/modules/amx_cli/mod-ba-cli
+  URL:=https://gitlab.com/soft.at.home/ambiorix/modules/amx_cli/mod-ba-cli
   DEPENDS += +libamxc
   DEPENDS += +libamxt
   DEPENDS += +libamxm

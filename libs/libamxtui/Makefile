@@ -1,5 +1,5 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/soft.at.home/ambiorix/amxlab/tui/libraries/libamxtui/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxtui
@@ -7,7 +7,7 @@ PKG_VERSION:=sah-next_v0.1.8
 SHORT_DESCRIPTION:=Libamxtui is a library that provides terminal user interface widgets based on ncurses
 
 PKG_SOURCE:=libamxtui-sah-next_v0.1.8.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui/-/archive/sah-next_v0.1.8
+PKG_SOURCE_URL:=https://gitlab.com/soft.at.home/ambiorix/amxlab/tui/libraries/libamxtui/-/archive/sah-next_v0.1.8
 PKG_HASH:=1174b2a3748b814e69ed9ce3c5009c5441f3ac885bb58df2f2ff34601b05bb7e
 PKG_BUILD_DIR:=$(BUILD_DIR)/libamxtui-sah-next_v0.1.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Ambiorix
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui
+  URL:=https://gitlab.com/soft.at.home/ambiorix/amxlab/tui/libraries/libamxtui
   DEPENDS += +libamxc
   DEPENDS += +libamxt
   DEPENDS += +libamxp
