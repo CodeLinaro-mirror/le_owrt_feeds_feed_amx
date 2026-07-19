@@ -1,0 +1,7 @@
+%config {
+    %global backend-dir = [ "/usr/bin/mods/amxb", "usr/bin/mods/usp" ];
+
+    %global usp.EndpointID = "uuid::controller-webui";
+
+    %global usp.connect-retry = true;
+}
