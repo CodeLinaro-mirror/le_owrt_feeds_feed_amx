@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.6)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt/-/blob/main/baf.yml instead
 config PACKAGE_libamxrt
     tristate
     select SAH_LIB_AMXRT
@@ -10,10 +12,6 @@ menu "Select libamxrt build options"
 config SAH_LIB_AMXRT
     bool "Build libamxrt"
     default y
-    select KERNEL_EXT4_FS_SECURITY if USES_EXT4 || PACKAGE_kmod-fs-ext4
-    select KERNEL_JFFS2_FS_SECURITY if USES_JFFS2 || USES_JFFS2_NAND
-    select KERNEL_UBIFS_FS_SECURITY if USES_UBIFS
-    select KERNEL_F2FS_FS_SECURITY if PACKAGE_mkf2fs
 
 config SAH_AMXRT_RWDATAPATH
     string "Persistent storage location"
