@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version 2.40.0)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/applications/amxrt/-/blob/main/baf.yml instead
 config PACKAGE_amxrt
     tristate
     select SAH_SERVICES_AMXRT
@@ -10,6 +12,10 @@ menu "Select amxrt build options"
 config SAH_SERVICES_AMXRT
     bool "Build libamxrt application"
     default y
+
+config SAH_SERVICES_AMXRT_STOP_ORDER
+    int "Libamxrt application shutdown order"
+    default 90
 
 config SAH_SERVICES_AMXRT_PROCD_INIT_FUNCTIONS
     bool "Adds the procd init functions script in stead of the non-procd init functions script"
