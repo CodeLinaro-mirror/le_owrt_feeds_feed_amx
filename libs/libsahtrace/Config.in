@@ -1,3 +1,5 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version master)
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/core/libraries/libsahtrace/-/blob/main/baf.yml instead
 config PACKAGE_libsahtrace
     tristate
     select SAH_LIB_SAHTRACE
@@ -18,6 +20,7 @@ config SAH_TRACES_ENABLED
 config SAH_TRACES_LEVEL
     int "Maximum Trace Level"
     default 500
+    depends on SAH_TRACES_ENABLED
 
 config SAH_TRACES_SYSLOG_CONSOLE
     bool "Fall back to console if syslog daemon is not running"
@@ -37,6 +40,11 @@ config SAH_TRACE_COLORS_SIMPLE
     bool "Simple Color Scheme"
 
 endchoice
+
+config SAH_USER_TRACES_ENABLED
+    bool "Enable SAH User Traces"
+    default y
+    depends on SAH_TRACES_ENABLED
 
 endmenu
 
