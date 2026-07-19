@@ -1,13 +1,14 @@
 include $(TOPDIR)/rules.mk
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui/-/blob/main/baf.yml instead
 
 PKG_NAME:=libamxtui
-PKG_VERSION:=v0.1.7
+PKG_VERSION:=v0.1.7-ramopt
 SHORT_DESCRIPTION:=Libamxtui is a library that provides terminal user interface widgets based on ncurses
 
-PKG_SOURCE:=libamxtui-v0.1.7.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui/-/archive/v0.1.7
-PKG_HASH:=6bf9aa7276417534471d09925e31f99276e290348bbfced3534f7f5075622824
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxtui-v0.1.7
+PKG_SOURCE:=libamxtui-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/amxlab/tui/libraries/libamxtui/-/archive/5d2d1668b1ab63dca8eac9e28e1ba4494d6a9df7
+PKG_HASH:=eb07e11d97737679a97c43af0199ffcd017b5e0be49625e4abf8720d33350e7e
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxtui-5d2d1668b1ab63dca8eac9e28e1ba4494d6a9df7
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
