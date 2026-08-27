@@ -6,10 +6,12 @@ PKG_NAME:=libamxd
 PKG_VERSION:=v6.11.2
 SHORT_DESCRIPTION:=Data model C-API
 
-PKG_SOURCE:=libamxd-v6.11.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd/-/archive/v6.11.2
-PKG_HASH:=c8c4a45eca3ef9fab5aea589b0e2f87364354ffea562392465c4d8c4c36127d9
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxd-v6.11.2
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=test-nov20
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxd.git
+PKG_MIRROR_HASH:=9d308168e6a8092934b5aa07168ddfc9d1f77d44d8c1cf03c8186952aee820e5
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

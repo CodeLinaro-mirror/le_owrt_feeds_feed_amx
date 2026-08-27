@@ -6,10 +6,12 @@ PKG_NAME:=libamxp
 PKG_VERSION:=v2.14.1
 SHORT_DESCRIPTION:=Common patterns implementation
 
-PKG_SOURCE:=libamxp-v2.14.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp/-/archive/v2.14.1
-PKG_HASH:=847f1089e67abadfa954392c9053f56a9c99797a66224229ea49278c94f16c08
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxp-v2.14.1
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=test-nov20
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxp.git
+PKG_MIRROR_HASH:=843e831d468167d2fdd79886ee4f2222540ca9fcd6f4da37066d3356da2ada5b
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
