@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=v4.17.2
+PKG_VERSION:=v4.20.0
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
-PKG_SOURCE:=libamxb-v4.17.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.17.2
-PKG_HASH:=eccf8ef90860645f25eec5db457f3a068007596dedf52a1465e35340ba7ab46e
-PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.17.2
+PKG_SOURCE:=libamxb-v4.20.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxb/-/archive/v4.20.0
+PKG_HASH:=5bb5090136d958eaddbf6210392e14a68cff60c61489b524a5808af7c12fdcd6
+PKG_BUILD_DIR:=$(BUILD_DIR)/libamxb-v4.20.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -17,7 +17,15 @@ PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 
+HOST_BUILD_DEPENDS += libamxc/host
+HOST_BUILD_DEPENDS += libamxp/host
+HOST_BUILD_DEPENDS += libamxd/host
+HOST_BUILD_DEPENDS += uriparser/host
+
 include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/host-build.mk
+
+HOST_LDFLAGS += -Wl,-rpath,$(STAGING_DIR_HOSTPKG)/lib
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
@@ -39,8 +47,16 @@ define Build/Compile
 	$(call Build/Compile/Default, STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PKG_CONFIG_PATH=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include PKG_CONFIG=$(PKG_CONFIG))
 endef
 
+define Host/Compile
+	$(call Host/Compile/Default, STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include PKG_CONFIG=$(PKG_CONFIG))
+endef
+
 define Build/Install
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include PKG_CONFIG=$(PKG_CONFIG))
+endef
+
+define Host/Install
+	$(call Host/Compile/Default, install INSTALL=install D=$(STAGING_DIR_HOSTPKG) DEST=$(STAGING_DIR_HOSTPKG) STAGINGDIR=$(STAGING_DIR_HOSTPKG) CONFIGDIR=$(STAGING_DIR_HOSTPKG) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR_HOSTPKG)/lib/pkgconfig LIBDIR=/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin BINDIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR_HOSTPKG)/include INCLUDEDIR=/include PKG_CONFIG=$(PKG_CONFIG))
 endef
 
 define Build/InstallDev
@@ -57,4 +73,5 @@ define Package/$(PKG_NAME)/install
 	find $(1) -name *.pc -exec rm {} +;
 endef
 
+$(eval $(call HostBuild))
 $(eval $(call BuildPackage,$(PKG_NAME)))
