@@ -3,7 +3,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libamxb
-PKG_VERSION:=dev_v11
+PKG_VERSION:=v4.11.8
 SHORT_DESCRIPTION:=Bus agnostic C API (mediator)
 
 PKG_SOURCE_PROTO:=git
