@@ -7,9 +7,9 @@ PKG_VERSION:=2025Q2
 SHORT_DESCRIPTION:=Ambiorix Run Time API
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=feature/FEAT-498-prplrdkb-support-2025Q2-Rev
+PKG_SOURCE_VERSION:=feature/FEAT-498-testing
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/components/ambiorix/libraries/libamxrt.git
-PKG_MIRROR_HASH:=a873e91a2b6a359dac3c145b2444050fc6d0716a467cb56d93e7af8a359aa309
+PKG_MIRROR_HASH:=9f4207438c28ac83365364608e44642f916bf5d5a5caca1f7faa0c369f320a70
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
