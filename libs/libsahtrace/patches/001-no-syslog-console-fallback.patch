@@ -1,0 +1,20 @@
+Test only: do not set LOG_CONS in sahTraceOpen()
+
+Removes the block added by c4f55b6746dc ("src: makefile: fix usage of
+CONFIG_SAH_TRACES_SYSLOG_CONSOLE"), to check whether it causes the
+console flood seen on OSPv2 with Ambiorix v11.
+
+diff --git a/src/sahtrace.c b/src/sahtrace.c
+index 2b1fc58..f71efca 100644
+--- a/src/sahtrace.c
++++ b/src/sahtrace.c
+@@ -413,9 +413,6 @@ void sahTraceInitialize(const char* ident) {
+ void sahTraceOpen(const char* ident, sah_trace_type type) {
+     int flags = 0;
+ 
+-#ifdef CONFIG_SAH_TRACES_SYSLOG_CONSOLE
+-    flags |= LOG_CONS;
+-#endif
+     if(opened == 0) {
+         id = malloc(strlen(ident) + 1);
+         clock_gettime(CLOCK_MONOTONIC, &startTime);
